@@ -148,7 +148,7 @@ section {
 }
 
 .contact-btn:hover {
-  background-color: #cc0000;
+  background-color: #B71825;
   transform: translateY(-2px);
   color: white;
   text-decoration: none;
@@ -953,18 +953,24 @@ section {
 
   .industrial-labs-section .equipment-btn {
     display: inline-block;
-    background: #e50012;
+    background: #E01E2C;
     color: #fff;
     padding: 8px 20px;
     border-radius: 25px;
     margin-top: 15px;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
     transition: all 0.3s ease;
   }
 
   .industrial-labs-section .equipment-btn:hover {
-    background: #cc0000;
+    background: #B71825;
     transform: translateY(-2px);
   }
 }
@@ -1060,18 +1066,24 @@ section {
 
   .industrial-labs-section .equipment-btn {
     display: inline-block;
-    background: #e50012;
+    background: #E01E2C;
     color: #fff;
     padding: 10px 25px;
     border-radius: 25px;
     margin-top: 20px;
     text-decoration: none;
-    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
     transition: all 0.3s ease;
   }
 
   .industrial-labs-section .equipment-btn:hover {
-    background: #cc0000;
+    background: #B71825;
     transform: translateY(-2px);
   }
 }
@@ -1582,4 +1594,66 @@ section {
   .innovation-platform-section {
     padding: 50px 20px;
   }
+}
+
+/* Industrial Innovation Labs Equipment Cards */
+.equipment-container {
+  background: #000;
+  border-radius: 16px;
+  padding: 55px 55px;
+  height: 780px;
+}
+
+.equipment-card-wrapper {
+  height: 300px;
+}
+
+.equipment-image-container {
+  width: 203.35px;
+  height: 106.35px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.equipment-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.equipment-title {
+  font-family: Akhand;
+  font-size: 21.73px;
+  font-weight: 700;
+  line-height: 24.84px;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+}
+
+.equipment-description {
+  font-family: Akhand;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.63px;
+  letter-spacing: 0%;
+  opacity: 0.85;
+  margin-bottom: 2px;
+  flex-grow: 1;
+}
+
+.equipment-button {
+  background: #E01E2C;
+  border-radius: 2px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 160px;
+  align-self: flex-start;
+}
+
+.equipment-row-gap {
+  margin-top: 50px;
 }
