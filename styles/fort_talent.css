@@ -282,17 +282,127 @@ section {
   font-size: 60px;
   color: #e50012;
   font-weight: 900;
+  font-family: "Akhand", sans-serif !important;
 }
 .hero-left > p {
   font-size: 28px;
   line-height: 28px;
+  font-weight: bold;
+  font-family: "Akhand", sans-serif !important;
 }
 
 .hero-right {
   font-size: 32px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.1;
   width: 50%;
+  font-family: "Akhand", sans-serif !important;
+}
+
+/* Hero responsive styling */
+@media (max-width: 1500px) {
+  .hero-left > h1 {
+    font-size: 55px;
+  }
+  .hero-left > p {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .hero-right {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hero-left > h1 {
+    font-size: 50px;
+  }
+  .hero-left > p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .hero-right {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .hero-left > h1 {
+    font-size: 45px;
+  }
+  .hero-left > p {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .hero-right {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .hero-left > h1 {
+    font-size: 40px;
+  }
+  .hero-left > p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .hero-right {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .hero-left {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .hero-left > h1 {
+    font-size: 36px;
+  }
+  .hero-left > p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .hero-right {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left > h1 {
+    font-size: 32px;
+  }
+  .hero-left > p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .hero-right {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-left > h1 {
+    font-size: 28px;
+  }
+  .hero-left > p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .hero-right {
+    font-size: 18px;
+  }
 }
 
 /* innovation practicum */
