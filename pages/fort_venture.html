@@ -39,9 +39,16 @@
       </div>
     </nav>
     <!-- Hero Section -->
-    <section class="venture-hero position-relative" style="background: url('../assets/images/hero-4.png') center center/cover no-repeat;">
+    <section class="venture-hero position-relative">
+      <!-- Video Background -->
+      <div class="venture-hero-video-container">
+        <video class="venture-hero-video" autoplay muted loop playsinline>
+          <source src="../assets/videos/hero-background.mp4" type="video/mp4">
+          <!-- Fallback background image if video fails to load -->
+        </video>
+      </div>
       <div class="venture-hero-overlay"></div>
-      <div class="container d-flex align-items-center justify-content-between venture-hero-content">
+      <div class="container d-flex align-items-center justify-content-between venture-hero-content" style="z-index: 3; position: relative;">
         <div class="venture-hero-left">
           <h1 class="venture-hero-title">VENTURE</h1>
           <h2 class="venture-hero-subtitle">CREATION & SCALING</h2>
@@ -1168,6 +1175,7 @@
         });
       </script>
       <script src="../js/main.js"></script>
+      <script src="../js/hero-video.js"></script>
       <!-- <script src="observer.js"></script>
       <script src="scripts.js"></script>  -->
       <script src="../js/scroll-animation.js"></script>

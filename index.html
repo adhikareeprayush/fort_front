@@ -102,10 +102,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero w-100 position-relative" style="background: url('assets/images/hero-1.png') center center/cover no-repeat;">
+    <div class="hero w-100 position-relative">
+      <!-- Video Background -->
+      <div class="hero-video-container">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/videos/hero-background.mp4" type="video/mp4">
+          <!-- Fallback background image if video fails to load -->
+        </video>
+      </div>
       <div class="overlay-black-linear-gradient"></div>
       <section
-        class="z-3 d-flex gap-3 align-items-center justify-content-between"
+        class="z-3 d-flex gap-3 align-items-center justify-content-between position-relative"
+        style="z-index: 3;"
       >
         <div class="hero-left">
           <img src="assets/images/fort/hero/logo.png" alt="Fort" />
@@ -1043,6 +1051,7 @@ style="height: 764px; background-color: #e50012"
       });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/hero-video.js"></script>
     <!-- <script src="observer.js"></script>
     <script src="scripts.js"></script>  -->
     <script src="js/scroll-animation.js"></script>

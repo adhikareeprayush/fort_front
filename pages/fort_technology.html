@@ -98,9 +98,16 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="tech-hero position-relative" style="background: url('../assets/images/hero-3.png') center center/cover no-repeat;">
+    <section class="tech-hero position-relative">
+      <!-- Video Background -->
+      <div class="tech-hero-video-container">
+        <video class="tech-hero-video" autoplay muted loop playsinline>
+          <source src="../assets/videos/hero-background.mp4" type="video/mp4">
+          <!-- Fallback background image if video fails to load -->
+        </video>
+      </div>
       <div class="tech-hero-overlay"></div>
-      <div class="container d-flex align-items-center justify-content-between tech-hero-content">
+      <div class="container d-flex align-items-center justify-content-between tech-hero-content" style="z-index: 3; position: relative;">
         <div class="tech-hero-left">
           <h1 class="tech-hero-title">TECHNOLOGY</h1>
           <h2 class="tech-hero-subtitle">ADVANCEMENT & PRODUCT DEVELOPMENT</h2>
@@ -1800,6 +1807,7 @@
     });
   </script>
   <script src="../js/main.js"></script>
+  <script src="../js/hero-video.js"></script>
   <!-- <script src="observer.js"></script>
   <script src="scripts.js"></script>  -->
   <script src="../js/scroll-animation.js"></script>

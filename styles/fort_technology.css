@@ -200,9 +200,31 @@ section {
 }
 
 /* Hero Section Styles */
+.tech-hero-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tech-hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
 .tech-hero {
   position: relative;
-  background: url('../assets/images/fort/technology/hero-bg.jpg') center center/cover no-repeat;
+  background: url('../assets/images/hero-3.png') center center/cover no-repeat;
   min-height: calc(100vh - 122px);
   height: calc(100vh - 122px);
   color: #fff;
@@ -214,8 +236,8 @@ section {
 .tech-hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.7);
-  z-index: 1;
+  background: rgba(9, 4, 0, 0.63);
+  z-index: 2;
 }
 
 .tech-hero-content {
