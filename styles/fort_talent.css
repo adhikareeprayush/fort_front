@@ -28,10 +28,18 @@ section {
   section {
     padding: 50px 160px;
   }
+
+  .hero {
+    padding: 50px 160px;
+  }
 }
 
 @media (max-width: 1360px) {
   section {
+    padding: 50px 120px;
+  }
+
+  .hero {
     padding: 50px 120px;
   }
 }
@@ -40,10 +48,18 @@ section {
   section {
     padding: 50px 80px;
   }
+
+  .hero {
+    padding: 50px 80px;
+  }
 }
 
 @media (max-width: 1120px) {
   section {
+    padding: 50px 60px;
+  }
+
+  .hero {
     padding: 50px 60px;
   }
 }
@@ -52,16 +68,28 @@ section {
   section {
     padding: 50px 60px;
   }
+
+  .hero {
+    padding: 50px 60px;
+  }
 }
 
 @media (max-width: 768px) {
   section {
     padding: 50px 40px;
   }
+
+  .hero {
+    padding: 50px 40px;
+  }
 }
 
 @media (max-width: 576px) {
   section {
+    padding: 50px 20px;
+  }
+
+  .hero {
     padding: 50px 20px;
   }
 }
@@ -241,6 +269,7 @@ section {
   height: calc(100vh - 122px); /* Adjusted for nav height */
   position: relative;
   background: url('../assets/images/hero-2.png') center center/cover no-repeat;
+  padding: 50px 200px;
 }
 .hero-left {
   width: 30%;
