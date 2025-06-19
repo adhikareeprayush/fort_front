@@ -1802,6 +1802,63 @@
       });
     });
   </script>
+  
+  <script>
+    // Initialize tabSwiper
+    const tabSwiper = new Swiper(".tabSwiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      on: {
+        slideChange: function () {
+          updateTabHighlight(this.realIndex);
+        }
+      }
+    });
+
+    // Initialize tabSwiper2
+    const tabSwiper2 = new Swiper(".tabSwiper2", {
+      loop: true,
+      navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+    });
+
+    // Tab highlight functionality
+    function updateTabHighlight(activeIndex) {
+      const tabHeaders = document.querySelectorAll('.tab-header');
+      tabHeaders.forEach((header, index) => {
+        header.classList.remove('active');
+        if (index === activeIndex) {
+          header.classList.add('active');
+        }
+      });
+    }
+
+    // Manual tab clicking
+    document.querySelectorAll('.tab-header').forEach((header, index) => {
+      header.addEventListener('click', () => {
+        tabSwiper.slideToLoop(index);
+        updateTabHighlight(index);
+      });
+    });
+  </script>
+  
   <script src="../js/main.js"></script>
   <script src="../js/hero-video.js"></script>
   <!-- <script src="observer.js"></script>
