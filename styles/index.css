@@ -231,41 +231,253 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 100%;
   height: calc(100vh - 122px); /* Adjusted for nav height */
   position: relative;
   background: url('../assets/images/hero-1.png') center center/cover no-repeat;
+  padding: 0 200px;
 }
+
+.hero section {
+  width: 100%;
+  padding: 0;
+}
+
 .hero-left {
-  width: 30%;
+  width: 35%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 .hero-left > img {
   width: 100%;
-  height: 100%;
+  max-width: 400px;
+  height: auto;
   object-fit: contain;
 }
+
 .hero-right {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1;
-  width: 50%;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 60%;
+  text-align: right;
+}
+
+@media (max-width: 1500px) {
+  .hero {
+    padding: 0 160px;
+  }
+  
+  .hero-right {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hero {
+    padding: 0 120px;
+  }
+  
+  .hero-right {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .hero {
+    padding: 0 80px;
+  }
+  
+  .hero-right {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .hero {
+    padding: 0 60px;
+  }
+  
+  .hero-right {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero {
+    padding: 0 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-left {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  
+  .hero-right {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 40px;
+  }
+  
+  .hero-left {
+    width: 70%;
+  }
+  
+  .hero-right {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 0 20px;
+  }
+  
+  .hero-left {
+    width: 80%;
+  }
+  
+  .hero-right {
+    font-size: 20px;
+  }
 }
 
 /* about section */
 .about-banner {
   display: flex;
   align-items: center;
-  background-image: url("./assets/images/fort/about/background.png");
+  background-image: url("../assets/images/fort/about/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 200px;
+  min-height: 500px;
 }
+
+.about-banner .h-100 {
+  width: 100%;
+}
+
 .about-left {
   color: #E50012;
   margin: 0;
   text-transform: uppercase;
-  font-size: 32px;
-  line-height: 30px;
-  font-weight: bold;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title-line1,
+.about-title-line2 {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  letter-spacing: 1.2px;
+}
+
+.about-title-line2 {
+  margin-top: 8px;
+}
+
+.about-content {
+  padding-left: 80px;
+}
+
+.about-description {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.8;
+  margin: 0;
+  color: #444;
+}
+
+.about-description:first-child {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1500px) {
+  .about-banner {
+    padding: 80px 160px;
+  }
+  
+  .about-content {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .about-banner {
+    padding: 80px 120px;
+  }
+  
+  .about-content {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .about-banner {
+    padding: 80px 80px;
+  }
+  
+  .about-content {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .about-banner {
+    padding: 80px 60px;
+  }
+  
+  .about-content {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  .about-banner {
+    padding: 60px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    padding: 60px 40px;
+    min-height: 400px;
+  }
+  
+  .about-content {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  
+  .about-title-line1,
+  .about-title-line2 {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+  
+  .about-description {
+    font-size: 16px;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-banner {
+    padding: 50px 20px;
+  }
 }
 
 /* Fort Centres */
