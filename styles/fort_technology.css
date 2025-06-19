@@ -83,6 +83,12 @@ section {
   font-weight: bold;
 }
 
+.contact-btn.active {
+  color: white !important;
+  background-color: #e50012;
+  font-weight: bold;
+}
+
 .logo-container {
   width: auto;
   min-width: 300px;

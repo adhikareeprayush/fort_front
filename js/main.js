@@ -31,10 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Set active navigation link based on current page
   navLinks.forEach((link) => {
+    // Remove any existing active class first
+    link.classList.remove("active");
+    
     const linkPath = new URL(link.href).pathname;
-
+    const currentPath = window.location.pathname;
+    
+    // Handle exact matches and special cases
     if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else if (currentPath.includes("index.html") && link.textContent.trim() === "About") {
+      link.classList.add("active");
+    } else if (currentPath === "/" && link.textContent.trim() === "About") {
+      link.classList.add("active");
+    } else if (currentPath.includes("fort_talent") && link.textContent.trim() === "Talent") {
+      link.classList.add("active");
+    } else if (currentPath.includes("fort_technology") && link.textContent.trim() === "Technology") {
+      link.classList.add("active");
+    } else if (currentPath.includes("fort_venture") && link.textContent.trim() === "Ventures") {
       link.classList.add("active");
     }
   });
