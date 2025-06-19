@@ -546,109 +546,75 @@ section {
 
 /* innovation practicum */
 .practicum-banner {
-  background-image: url("./assets/images/fort/about/background.png");
+  background-image: url("../assets/images/fort/about/background.png");
 }
-
-.practicum-content-container {
-  width: 100%;
-  max-width: 1400px;
-}
-
-.practicum-entries-display {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 400px;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.practicum-entries-display.d-none {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.practicum-entries-display:not(.d-none) {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.practicum-entry {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  opacity: 0.5;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.practicum-entry.active {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.entry-number {
-  position: relative;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.entry-number .number {
-  font-size: 48px;
-  font-weight: 900;
-  color: #e50012;
-  background: rgba(229, 0, 18, 0.1);
-  border: 2px solid #e50012;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.entry-number img {
-  width: 120px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-.entry-content {
-  color: white;
-  max-width: 400px;
-}
-
-.entry-content h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #e50012;
+.practicum-left {
+  margin: 0;
   text-transform: uppercase;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: bold;
 }
 
-.entry-content p {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.6;
-  text-align: left;
+/* Modified Swiper for 2 slides per view */
+.practicum-dual-swiper .swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  gap: 15px;
+  height: auto;
 }
 
-.practicum-entry:hover {
-  opacity: 0.8;
-  transform: translateY(-5px);
+.practicum-dual-swiper .swiper-slide img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
 }
 
-.practicum-entry.active:hover {
-  opacity: 1;
-  transform: scale(1.05) translateY(-5px);
+.practicum-dual-swiper .swiper-slide p {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 1.5 !important;
+  color: white !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+.practicum-slide-image {
+  max-height: 120px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Responsive styles for dual swiper */
+@media (max-width: 1024px) {
+  .practicum-dual-swiper .swiper-slide img {
+    max-height: 100px;
+  }
+  
+  .practicum-dual-swiper .swiper-slide p {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .practicum-dual-swiper .swiper-slide img {
+    max-height: 80px;
+  }
+  
+  .practicum-dual-swiper .swiper-slide p {
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .practicum-dual-swiper .swiper-slide img {
+    max-height: 70px;
+  }
+  
+  .practicum-dual-swiper .swiper-slide p {
+    font-size: 11px !important;
+  }
 }
 
 .fort-swiper-container {
@@ -665,35 +631,22 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
   position: relative;
   width: 100%;
   margin: auto;
 }
 
 .custom-button {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
   z-index: 10;
-  transition: all 0.3s ease;
-  padding: 5px;
-  border-radius: 50%;
-  background: rgba(229, 0, 18, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.custom-button:hover {
-  background: rgba(229, 0, 18, 0.2);
-  transform: scale(1.1);
 }
 
 .custom-button img {
-  width: 16px;
-  height: 16px;
-  filter: brightness(0) saturate(100%) invert(12%) sepia(93%) saturate(7426%) hue-rotate(357deg) brightness(91%) contrast(119%);
+  width: 100%;
+  height: 100%;
 }
 
 .swiper {
