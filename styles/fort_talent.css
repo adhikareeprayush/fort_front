@@ -556,12 +556,23 @@ section {
   font-weight: bold;
 }
 
-/* Modified Swiper for 2 slides per view */
+/* Modified Swiper for 2 slides per view - Force override */
+.practicum-dual-swiper {
+  width: 100% !important;
+}
+
+.practicum-dual-swiper .swiper-wrapper {
+  width: 100% !important;
+  display: flex !important;
+}
+
 .practicum-dual-swiper .swiper-slide {
   display: flex !important;
   flex-direction: column;
   gap: 15px;
   height: auto;
+  width: calc(50% - 15px) !important; /* Force 2 slides per view on desktop */
+  flex-shrink: 0 !important;
 }
 
 .practicum-dual-swiper .swiper-slide img {
@@ -597,6 +608,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  .practicum-dual-swiper .swiper-slide {
+    width: 100% !important; /* Single slide on mobile */
+  }
+  
   .practicum-dual-swiper .swiper-slide img {
     max-height: 80px;
   }
