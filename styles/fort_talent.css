@@ -756,13 +756,16 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: white;
+  background-image: url("../assets/images/fort/about/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 40px;
   border-radius: 15px;
 }
 
 .partners-slide {
-  background-color: white;
+  background-color: transparent;
 }
 
 .partners-slide .partner-line {
@@ -947,10 +950,10 @@ section {
 }
 
 .partners-slide .swiper-slide {
-  background: white !important;
+  background: transparent !important;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: none;
 }
