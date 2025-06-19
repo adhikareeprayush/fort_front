@@ -866,7 +866,7 @@ section {
 
 /* Fort Centres Section Specific Styling */
 .fort-centres-section {
-  height: 850px !important;
+  height: 940px !important;
   padding: 0 !important;
 }
 
@@ -891,6 +891,13 @@ section {
   margin: 0 auto;
 }
 
+.fort-centres-main-container {
+  width: 100%;
+  max-width: 90vw;
+  transform: scale(1.035);
+  transform-origin: center;
+}
+
 @media (max-width: 1500px) {
   .fort-centres-section .section-header {
     padding: 30px 0 0 160px !important;
@@ -899,6 +906,10 @@ section {
   
   .fort-centres-content {
     margin: 0 160px 50px 160px !important;
+  }
+  
+  .fort-centres-main-container {
+    transform: scale(1.02);
   }
 }
 
@@ -911,6 +922,10 @@ section {
   .fort-centres-content {
     margin: 0 120px 50px 120px !important;
   }
+  
+  .fort-centres-main-container {
+    transform: scale(1.0);
+  }
 }
 
 @media (max-width: 1275px) {
@@ -922,6 +937,10 @@ section {
   .fort-centres-content {
     margin: 0 80px 40px 80px !important;
   }
+  
+  .fort-centres-main-container {
+    transform: scale(0.98);
+  }
 }
 
 @media (max-width: 1120px) {
@@ -932,6 +951,10 @@ section {
   
   .fort-centres-content {
     margin: 0 60px 40px 60px !important;
+  }
+  
+  .fort-centres-main-container {
+    transform: scale(0.95);
   }
 }
 
@@ -948,6 +971,10 @@ section {
   .fort-centres-content {
     margin: 0 60px 30px 60px !important;
   }
+  
+  .fort-centres-main-container {
+    transform: scale(0.92);
+  }
 }
 
 @media (max-width: 768px) {
@@ -963,6 +990,10 @@ section {
   .fort-centres-content {
     margin: 0 40px 30px 40px !important;
   }
+  
+  .fort-centres-main-container {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 576px) {
@@ -977,6 +1008,10 @@ section {
   
   .fort-centres-content {
     margin: 0 20px 20px 20px !important;
+  }
+  
+  .fort-centres-main-container {
+    transform: scale(0.85);
   }
 }
 
