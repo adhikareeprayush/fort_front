@@ -360,8 +360,8 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 200px;
-  min-height: 500px;
+  padding: 80px 200px;
+  min-height: 450px;
 }
 
 .about-banner .h-100 {
@@ -380,14 +380,14 @@ section {
 
 .about-title-line1,
 .about-title-line2 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 32pt;
+  line-height: 34pt;
   margin: 0;
   letter-spacing: 1.2px;
 }
 
 .about-title-line2 {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .about-title-fort {
@@ -395,19 +395,19 @@ section {
 }
 
 .about-content {
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .about-description {
-  font-size: 19px;
+  font-size: 20pt;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 1.4;
   margin: 0;
   color: #444;
 }
 
 .about-description:first-child {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 1500px) {
@@ -469,13 +469,13 @@ section {
   
   .about-title-line1,
   .about-title-line2 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 26pt;
+    line-height: 28pt;
     text-align: center;
   }
   
   .about-description {
-    font-size: 16px;
+    font-size: 18pt;
     text-align: center !important;
   }
 }
