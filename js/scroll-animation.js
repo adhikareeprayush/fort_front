@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll("h1[id^='count']");
   const options = { threshold: 0.5 }; // Trigger when 50% of the section is visible
 
+  // Store original values for each counter
+  const originalValues = new Map();
+  counters.forEach((counter) => {
+    const value = parseInt(counter.textContent.replace(/,/g, ""), 10);
+    originalValues.set(counter, value);
+  });
+
   function animateCounter(counter, maxValue) {
     let start = 0;
     const duration = 1000; // Total animation time in ms
@@ -21,13 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCounter();
   }
 
+  function resetCounter(counter) {
+    counter.textContent = "0";
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
+      const counter = entry.target;
+      const maxValue = originalValues.get(counter);
+      
       if (entry.isIntersecting) {
-        const counter = entry.target;
-        const maxValue = parseInt(counter.textContent.replace(/,/g, ""), 10);
+        // Start animation when element comes into view
         animateCounter(counter, maxValue);
-        observer.unobserve(counter); // Stop observing after animation
+      } else {
+        // Reset counter when element goes out of view
+        resetCounter(counter);
       }
     });
   }, options);
