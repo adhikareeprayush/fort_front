@@ -538,13 +538,13 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: white;
+  background-color: transparent;
   padding: 40px;
   border-radius: 15px;
 }
 
 .partners-slide {
-  background-color: white;
+  background-color: transparent;
 }
 
 .partners-slide .partner-line {
@@ -561,7 +561,7 @@ section {
 }
 
 .partners-slide .swiper-slide {
-  background: white !important;
+  background: transparent !important;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -795,11 +795,14 @@ section {
 .tab-header2 {
   color: white;
   cursor: pointer;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 20px;
 }
 .tab-header2 p {
-  font-size: 15px;
-  line-height: 28.8px;
-  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
 }
 .tab-header2.active {
   color: #e50012;
@@ -819,13 +822,15 @@ section {
 
 .tab2-h1 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 32px;
   color: #e50012;
 }
 .tab2-p {
   font-size: 12.39px;
-  line-height: 18.6px;
+  line-height: 18.58px;
+  font-weight: 400;
+  font-family: Akhand, sans-serif !important;
 }
 
 .tab2-img-container {
@@ -835,7 +840,8 @@ section {
   gap: 40px;
 }
 .tab2-img-container > div {
-  height: 137px;
+  height: 115px;
+  width: 270px;
 }
 .tab2-img-container img {
   height: 100%;
@@ -843,16 +849,25 @@ section {
 }
 
 
-/* card container */
-.card-container{
-    
+@media (max-width: 768px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 20px;
+  }
 }
 
 /* Industrial Innovation Labs Section - Mobile Redesign */
 @media (max-width: 768px) {
-  .industrial-labs-section {
-    padding: 30px 15px;
-    background: #fff;
+  .industrial-labs-section .container {
+    max-width: 100%;
+    padding: 0;
   }
 
   .industrial-labs-section .container {
@@ -956,11 +971,6 @@ section {
 
 /* Industrial Innovation Labs Section - Tablet Redesign */
 @media (min-width: 769px) and (max-width: 991px) {
-  .industrial-labs-section {
-    padding: 40px 20px;
-    background: #fff;
-  }
-
   .industrial-labs-section .container {
     max-width: 720px;
     margin: 0 auto;
@@ -1516,5 +1526,60 @@ section {
   
   .container {
     padding: 0 20px;
+  }
+}
+
+/* Industrial Innovation Labs and Platform Sections - Consistent Padding */
+.industrial-labs-section,
+.innovation-platform-section {
+  padding: 50px 200px;
+}
+
+@media (max-width: 1500px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 140px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 120px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 80px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 60px;
+  }
+}
+
+@media (max-width: 920px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .industrial-labs-section,
+  .innovation-platform-section {
+    padding: 50px 20px;
   }
 }
