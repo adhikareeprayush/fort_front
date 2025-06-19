@@ -258,7 +258,7 @@ section {
 
 .tech-hero-title {
   color: #e50012;
-  font-size: 4rem;
+  font-size: 60pt;
   font-weight: 900;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -267,7 +267,7 @@ section {
 
 .tech-hero-subtitle {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 28pt;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
@@ -281,7 +281,7 @@ section {
 }
 
 .tech-hero-right p {
-  font-size: 1.8rem;
+  font-size: 32pt;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
@@ -292,15 +292,15 @@ section {
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .tech-hero-title {
-    font-size: 3.5rem;
+    font-size: 50pt;
   }
   
   .tech-hero-subtitle {
-    font-size: 1.6rem;
+    font-size: 24pt;
   }
   
   .tech-hero-right p {
-    font-size: 1.6rem;
+    font-size: 28pt;
   }
   
   .tech-hero-right {
@@ -314,15 +314,15 @@ section {
   }
   
   .tech-hero-title {
-    font-size: 3rem;
+    font-size: 42pt;
   }
   
   .tech-hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 20pt;
   }
   
   .tech-hero-right p {
-    font-size: 1.4rem;
+    font-size: 24pt;
   }
   
   .tech-hero-right {
@@ -351,12 +351,12 @@ section {
   }
   
   .tech-hero-title {
-    font-size: 2.8rem;
+    font-size: 36pt;
     margin-bottom: 0.8rem;
   }
   
   .tech-hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 18pt;
   }
   
   .tech-hero-right {
@@ -365,7 +365,7 @@ section {
   }
   
   .tech-hero-right p {
-    font-size: 1.2rem;
+    font-size: 20pt;
     max-width: 500px;
     margin: 0 auto;
   }
@@ -377,15 +377,15 @@ section {
   }
   
   .tech-hero-title {
-    font-size: 2.2rem;
+    font-size: 30pt;
   }
   
   .tech-hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 16pt;
   }
   
   .tech-hero-right p {
-    font-size: 1rem;
+    font-size: 18pt;
   }
 }
 

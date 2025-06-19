@@ -262,7 +262,7 @@ section {
   font-weight: 700;
   line-height: 1.2;
   width: 60%;
-  text-align: right;
+  text-align: left;
 }
 
 @media (max-width: 1500px) {
@@ -320,7 +320,7 @@ section {
   .hero-right {
     width: 100%;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
   }
 }
 
