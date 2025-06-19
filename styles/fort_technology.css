@@ -1,5 +1,15 @@
 @import "../assets/Fonts/stylesheet.css";
 
+/* Body background */
+body {
+  background-image: url("../assets/images/fort/about/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 /* Global box-sizing and font settings can be kept if needed */
 * {
   box-sizing: border-box;
