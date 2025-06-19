@@ -493,43 +493,130 @@ section {
   height: 220px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .fort-swiper-container {
     width: 240px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .fort-swiper-container {
+    width: 220px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fort-swiper-container {
+    width: 200px;
     height: 160px;
   }
 }
-@media (max-width: 700px) {
+
+@media (max-width: 600px) {
   .fort-swiper-container {
-    width: 200px;
+    width: 180px;
     height: 140px;
   }
 }
-@media (max-width: 600px) {
-  .fort-swiper-container {
-    width: 18px;
-    height: 120px;
-  }
-}
+
 @media (max-width: 500px) {
   .fort-swiper-container {
-    width: 180px;
-    height: 110px;
+    width: 160px;
+    height: 120px;
   }
   .fort-swiper-container-left {
     left: 15px !important;
-    bottom: 60px;
+    bottom: 40px;
   }
   .fort-swiper-container-right {
     right: 15px !important;
-    bottom: 60px;
+    bottom: 40px;
   }
 }
+
+@media (max-width: 400px) {
+  .fort-swiper-container {
+    width: 140px;
+    height: 110px;
+  }
+  .fort-swiper-container-left {
+    left: 10px !important;
+    bottom: 30px;
+  }
+  .fort-swiper-container-right {
+    right: 10px !important;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .fort-swiper-container {
+    width: 130px;
+    height: 100px;
+  }
+  .fort-swiper-container-left {
+    left: 0 !important;
+    bottom: 20px;
+  }
+  .fort-swiper-container-right {
+    right: 0 !important;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fort-swiper-container {
+    width: 120px;
+    height: 90px;
+  }
+  .fort-swiper-container-left {
+    left: 0 !important;
+    bottom: 15px;
+  }
+  .fort-swiper-container-right {
+    right: 0 !important;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .fort-swiper-container {
+    width: 110px;
+    height: 85px;
+  }
+  .fort-swiper-container-left {
+    left: 0 !important;
+    bottom: 10px;
+  }
+  .fort-swiper-container-right {
+    right: 0 !important;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .fort-swiper-container {
+    width: 100px;
+    height: 80px;
+  }
+  .fort-swiper-container-left {
+    left: 0 !important;
+    bottom: 5px;
+  }
+  .fort-swiper-container-right {
+    right: 0 !important;
+    bottom: 5px;
+  }
+}
+
 .fort-swiper-container-left {
   position: absolute;
-  left: 10x;
+  left: 10px;
   bottom: -40px;
 }
+
 .fort-swiper-container-right {
   position: absolute;
   right: 10px;
