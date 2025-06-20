@@ -447,7 +447,50 @@ section {
 }
 
 .swiper {
-  width: 90%;
+  width: 100%;
+}
+
+/* Platform Swiper - Give it more width */
+.platformSwiper {
+  width: 100% !important;
+  margin: auto;
+}
+
+.custom-swiper-wrapper {
+  gap: 15px !important;
+}
+
+/* Platform-specific wrapper - position arrows outside content */
+.platform-offerings-container .custom-swiper-wrapper {
+  position: relative;
+  gap: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Override Bootstrap px-2 padding for platform offerings alignment */
+.platform-offerings-container .custom-swiper-wrapper.px-2 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.platform-custom-prev,
+.platform-custom-next {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+}
+
+.platform-custom-prev {
+  left: -80px !important;
+}
+
+.platform-custom-next {
+  right: -80px !important;
 }
 
 .swiper-slide {
@@ -1696,29 +1739,47 @@ section {
 .platform-offerings-container {
   background: #000;
   border-radius: 16px;
-  padding: 35px 45px;
+  padding: 45px 80px 20px 80px;
+  height: auto;
+  position: relative;
+  text-align: left;
 }
 
 .platform-offerings-title {
   color: #E01E2C;
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 0%;
+  line-height: 100%;
+  font-family: Akhand, sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .platform-card-wrapper {
-  height: 320px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+  color: white;
 }
 
 .platform-image-container {
-  width: 203.35px;
-  height: 203.35px;
+  width: 113.64px;
+  height: 99px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .platform-image {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  filter: none !important;
 }
 
 .platform-card-title {
@@ -1727,12 +1788,19 @@ section {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .platform-card-description {
   font-size: 0.95rem;
   line-height: 1.4;
   opacity: 0.9;
+  color: white;
+  text-align: left;
+  flex-grow: 1;
 }
 
 /* Additional Platform Section Styles */
@@ -1749,4 +1817,103 @@ section {
     width: 100%;
     padding: 0 15px;
   }
+}
+
+/* Remove any potential image filters for platform images */
+.platform-image-container img,
+.platform-image {
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Platform Swiper Navigation Buttons - Positioned outside content */
+.platform-custom-prev img,
+.platform-custom-next img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Platform Swiper Container Adjustments - Consolidated */
+.platformSwiper {
+  width: 100% !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+}
+
+.platformSwiper .swiper-wrapper {
+  width: 100% !important;
+}
+
+.platformSwiper .swiper-slide {
+  width: 100% !important;
+}
+
+.platformSwiper .row {
+  margin: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Responsive Platform Navigation - Keep outside positioning */
+@media (max-width: 768px) {
+  .platform-custom-prev {
+    left: -50px !important;
+  }
+  
+  .platform-custom-next {
+    right: -50px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform-custom-prev {
+    left: -30px !important;
+  }
+  
+  .platform-custom-next {
+    right: -30px !important;
+  }
+}
+
+/* Platform Offerings Header Alignment */
+.platform-offerings-container .d-flex {
+  align-items: flex-start !important;
+}
+
+.platform-offerings-container .custom-swiper-wrapper {
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Ensure proper vertical alignment */
+.platform-offerings-title {
+  line-height: 1.2;
+  flex-grow: 1;
+}
+
+/* Remove any conflicting padding/margins */
+.platformSwiper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.platformSwiper .row {
+  margin: 0;
+  width: 100%;
+}
+
+/* Remove Bootstrap column padding for platform offerings alignment */
+.platform-offerings-container .col-md-6,
+.platform-offerings-container .col-lg-3 {
+  padding-left: 0 !important;
+  padding-right: 15px !important;
+}
+
+.platform-offerings-container .col-md-6:first-child,
+.platform-offerings-container .col-lg-3:first-child {
+  padding-left: 0 !important;
 }
