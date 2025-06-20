@@ -1469,3 +1469,44 @@ section {
   font-weight: 400;
 }
 
+/* CVS Portfolio background styles */
+.airbus-bg {
+  background: url("../assets/Fast/Forge\ Fast/Airbus/airbus-bg.jpg") no-repeat
+    center center/cover;
+  border-radius: 20px;
+}
+
+.bosch-bg {
+  background: url("../assets/Fast/Forge\ Fast/Bosch/bosch-bg.jpg") no-repeat center
+    center/cover;
+  border-radius: 20px;
+}
+
+.overlay-violet {
+  background-color: #010e2be4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.overlay-pink {
+  background-color: #330121e4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.cvs-airbus .metric-counter {
+  color: #26a4d3 !important;
+}
+
+.cvs-bosch .metric-counter {
+  color: #db2092 !important;
+}
+
