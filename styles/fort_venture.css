@@ -966,7 +966,8 @@ section {
 
 .img-fluid {
   object-fit: contain;
-  background-color: white;
+  background: url('../assets/images/fort/about/background.png') center/cover;
+  background-attachment: fixed;
   padding: 10px;
   border-radius: 5px;
 }
@@ -1003,13 +1004,15 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: white;
+  background: url('../assets/images/fort/about/background.png') center/cover;
+  background-attachment: fixed;
   padding: 40px;
   border-radius: 15px;
 }
 
 .partners-slide {
-  background-color: white;
+  background: url('../assets/images/fort/about/background.png') center/cover;
+  background-attachment: fixed;
 }
 
 .partners-slide .partner-line {
@@ -1026,7 +1029,8 @@ section {
 }
 
 .partners-slide .swiper-slide {
-  background: white !important;
+  background: url('../assets/images/fort/about/background.png') center/cover !important;
+  background-attachment: fixed !important;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1097,10 +1101,11 @@ section {
   border: none;
 }
 
-/* Force white background for partner logos, override all previous rules */
+/* Use background image for partner logos, override all previous rules */
 .partners-slide .swiper-slide,
 .partners-slide .swiper-wrapper .swiper-slide {
-  background: white !important;
+  background: url('../assets/images/fort/about/background.png') center/cover !important;
+  background-attachment: fixed !important;
 }
 
 /* --- CVS Portfolio Section --- */
