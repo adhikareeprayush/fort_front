@@ -1365,3 +1365,28 @@ section {
   }
 }
 
+/* Metric Counter Animations */
+.metric-counter {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.metric-counter:hover {
+  transform: scale(1.05);
+}
+
+.metrics-section {
+  overflow: hidden;
+}
+
+/* Animation for when counters are being animated */
+.metric-counter.animating {
+  animation: pulse 0.1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
