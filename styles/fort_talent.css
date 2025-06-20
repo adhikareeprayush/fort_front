@@ -719,7 +719,6 @@ section {
 
 .img-fluid {
   object-fit: contain;
-  background-color: white;
   padding: 10px;
   border-radius: 5px;
 }

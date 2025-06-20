@@ -1033,8 +1033,6 @@ section {
 
 .img-fluid {
   object-fit: contain;
-  background: url('../assets/images/fort/about/background.png') center/cover;
-  background-attachment: fixed;
   padding: 10px;
   border-radius: 5px;
 }
