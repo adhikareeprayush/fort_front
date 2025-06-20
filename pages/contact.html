@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <style>
       .contact-section {
-        background: #f8f9fa;
+        background: url('../assets/images/fort/about/background.png') center center/cover no-repeat, #f8f9fa;
         padding: 80px 0;
       }
       .contact-form {
@@ -164,17 +164,17 @@
         <li class="nav-item"><a href="fort_talent.html" class="nav-link">Talent</a></li>
         <li class="nav-item"><a href="fort_technology.html" class="nav-link">Technology</a></li>
         <li class="nav-item"><a href="fort_venture.html" class="nav-link">Ventures</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link contact-btn active">Contact Us</a></li>
       </ul>
-      <div class="hamburger-menu">☰</div>
-      <div class="mobile-menu hide">
-        <div class="close-menu" style="cursor: pointer">X</div>
+      <div id="hamburger" class="hamburger-menu">☰</div>
+      <div id="close" class="close-menu hide">✕</div>
+      <div id="mobile-menu" class="mobile-menu hide">
         <ul class="d-flex flex-column gap-3">
           <li class="nav-item"><a href="../index.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="fort_talent.html" class="nav-link">Talent</a></li>
           <li class="nav-item"><a href="fort_technology.html" class="nav-link">Technology</a></li>
           <li class="nav-item"><a href="fort_venture.html" class="nav-link">Ventures</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link contact-btn active">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -333,34 +333,43 @@
     <script src="../js/main.js"></script>
     <script src="../js/hero-video.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        const mobileMenu = document.querySelector(".mobile-menu");
-        const navLinks = document.querySelectorAll(".mobile-menu .nav-link:not(.contact-btn)");
-        const closeMenu = document.querySelector(".close-menu");
+      // Mobile menu functionality
+      const hamburger = document.getElementById('hamburger');
+      const closeBtn = document.getElementById('close');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navSection = document.querySelector('.nav-section');
 
-        // Toggle mobile menu visibility
-        hamburgerMenu.addEventListener("click", () => {
-          mobileMenu.classList.toggle("show");
-          mobileMenu.classList.toggle("hide");
-          document.body.style.overflow = mobileMenu.classList.contains("show") ? "hidden" : "";
-        });
+      function openMenu() {
+        mobileMenu.classList.remove('hide');
+        hamburger.classList.add('hide');
+        closeBtn.classList.remove('hide');
+        navSection.classList.add('menu-open');
+        document.body.style.overflow = 'hidden';
+      }
 
-        closeMenu.addEventListener("click", () => {
-          mobileMenu.classList.toggle("show");
-          mobileMenu.classList.toggle("hide");
-          document.body.style.overflow = "";
-        });
+      function closeMenu() {
+        mobileMenu.classList.add('hide');
+        hamburger.classList.remove('hide');
+        closeBtn.classList.add('hide');
+        navSection.classList.remove('menu-open');
+        document.body.style.overflow = '';
+      }
 
-        // Close mobile menu only for navigation links (excluding contact button)
-        navLinks.forEach((element) => {
-          element.addEventListener("click", () => {
-            mobileMenu.classList.add("hide");
-            mobileMenu.classList.remove("show");
-            document.body.style.overflow = "";
-          });
-        });
+      hamburger.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+
+      // Close menu when clicking on links
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!navSection.contains(event.target) && !mobileMenu.classList.contains('hide')) {
+          closeMenu();
+        }
       });
     </script>
   </body>
-</html> 
+</html>

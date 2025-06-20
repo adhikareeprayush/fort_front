@@ -27,8 +27,8 @@
         <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
       </ul>
       <div class="hamburger-menu">☰</div>
+      <div class="close-menu hide">✕</div>
       <div class="mobile-menu hide">
-        <div class="close-menu" style="cursor: pointer">X</div>
         <ul class="d-flex flex-column gap-3">
           <li class="nav-item"><a href="../index.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="fort_talent.html" class="nav-link">Talent</a></li>
@@ -1526,6 +1526,42 @@
           speed: 800,
           autoHeight: false,
           allowTouchMove: true, // Enabled for multiple slides
+        });
+
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger-menu');
+        const closeBtn = document.querySelector('.close-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navSection = document.querySelector('.nav-section');
+
+        function openMenu() {
+          mobileMenu.classList.remove('hide');
+          mobileMenu.classList.add('show');
+          navSection.classList.add('menu-open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+          mobileMenu.classList.add('hide');
+          mobileMenu.classList.remove('show');
+          navSection.classList.remove('menu-open');
+          document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+
+        // Close menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', closeMenu);
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!navSection.contains(event.target) && !mobileMenu.classList.contains('hide')) {
+            closeMenu();
+          }
         });
       </script>
     </body>

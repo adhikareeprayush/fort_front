@@ -66,6 +66,29 @@
           <a href="../index.html" class="nav-link">About</a>
         </li>
         <li class="nav-item">
+          <a href="fort_talent.html" class="nav-link active">Talent</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_technology.html" class="nav-link">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_venture.html" class="nav-link">Ventures</a>
+        </li>
+        <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
+      </ul>
+      <div class="hamburger-menu" id="hamburger-btn" role="button" tabindex="0" aria-label="Toggle navigation menu">
+        <span>☰</span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu (separate from nav) -->
+    <div class="mobile-menu hide" id="mobile-menu" role="navigation" aria-label="Mobile navigation menu">
+      <div class="close-menu" id="close-btn" role="button" tabindex="0" aria-label="Close navigation menu">&times;</div>
+      <ul class="d-flex flex-column gap-3">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
           <a href="fort_talent.html" class="nav-link">Talent</a>
         </li>
         <li class="nav-item">
@@ -76,26 +99,7 @@
         </li>
         <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
       </ul>
-      <div class="hamburger-menu">☰</div>
-      <div class="mobile-menu hide">
-        <div class="close-menu" style="cursor: pointer">X</div>
-        <ul class="d-flex flex-column gap-3">
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="fort_talent.html" class="nav-link">Talent</a>
-          </li>
-          <li class="nav-item">
-            <a href="fort_technology.html" class="nav-link">Technology</a>
-          </li>
-          <li class="nav-item">
-            <a href="fort_venture.html" class="nav-link">Ventures</a>
-          </li>
-          <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    </div>
 
     <!-- Hero Section -->
     <div class="hero w-100 position-relative">
@@ -1078,6 +1082,75 @@
         
         // Auto-advance functionality (optional)
         // setInterval(nextPage, 8000); // Uncomment to auto-advance every 8 seconds
+      });
+    </script>
+
+    <script>
+      // Mobile Menu JavaScript
+      window.addEventListener('load', function() {
+        const hamburger = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-btn');
+
+        function showMenu() {
+          if (mobileMenu && hamburger) {
+            mobileMenu.style.display = 'flex';
+            mobileMenu.classList.remove('hide');
+            mobileMenu.classList.add('show');
+            hamburger.classList.add('menu-open');
+            document.body.style.overflow = 'hidden';
+          }
+        }
+
+        function hideMenu() {
+          if (mobileMenu && hamburger) {
+            mobileMenu.style.display = 'none';
+            mobileMenu.classList.remove('show');
+            mobileMenu.classList.add('hide');
+            hamburger.classList.remove('menu-open');
+            document.body.style.overflow = '';
+          }
+        }
+
+        if (hamburger) {
+          hamburger.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            showMenu();
+          };
+        }
+
+        if (closeBtn) {
+          closeBtn.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            hideMenu();
+          };
+        }
+
+        const navLinks = document.querySelectorAll('#mobile-menu .nav-link');
+        navLinks.forEach(function(link) {
+          link.onclick = function() {
+            hideMenu();
+          };
+        });
+
+        if (mobileMenu) {
+          mobileMenu.onclick = function(e) {
+            if (e.target === mobileMenu) {
+              hideMenu();
+            }
+          };
+        }
+
+        const menuContent = document.querySelector('#mobile-menu ul');
+        if (menuContent) {
+          menuContent.onclick = function(e) {
+            e.stopPropagation();
+          };
+        }
+
+        hideMenu();
       });
     </script>
   </body>

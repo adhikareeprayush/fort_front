@@ -80,26 +80,30 @@
         </li>
         <li class="nav-item"><a href="pages/contact.html" class="nav-link contact-btn">Contact Us</a></li>
       </ul>
-      <div class="hamburger-menu">☰</div>
-      <div class="mobile-menu hide">
-        <div class="close-menu" style="cursor: pointer">X</div>
-        <ul class="d-flex flex-column gap-3">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/fort_talent.html" class="nav-link">Talent</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/fort_technology.html" class="nav-link">Technology</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/fort_venture.html" class="nav-link">Ventures</a>
-          </li>
-          <li class="nav-item"><a href="pages/contact.html" class="nav-link contact-btn">Contact Us</a></li>
-        </ul>
+      <div class="hamburger-menu" id="hamburger-btn" role="button" tabindex="0" aria-label="Toggle navigation menu">
+        <span>☰</span>
       </div>
     </nav>
+
+    <!-- Mobile Menu (separate from nav) -->
+    <div class="mobile-menu hide" id="mobile-menu" role="navigation" aria-label="Mobile navigation menu">
+      <div class="close-menu" id="close-btn" role="button" tabindex="0" aria-label="Close navigation menu">&times;</div>
+      <ul class="d-flex flex-column gap-3">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/fort_talent.html" class="nav-link">Talent</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/fort_technology.html" class="nav-link">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a href="pages/fort_venture.html" class="nav-link">Ventures</a>
+        </li>
+        <li class="nav-item"><a href="pages/contact.html" class="nav-link contact-btn">Contact Us</a></li>
+      </ul>
+    </div>
 
     <!-- Hero Section -->
     <div class="hero w-100 position-relative">
@@ -1062,33 +1066,79 @@ style="background-color: #e50012"
     <script src="scripts.js"></script>  -->
     <script src="js/scroll-animation.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        const mobileMenu = document.querySelector(".mobile-menu");
-        const navLinks = document.querySelectorAll(".mobile-menu .nav-link:not(.contact-btn)");
-        const closeMenu = document.querySelector(".close-menu");
+      // Wait for DOM to be fully loaded
+      window.addEventListener('load', function() {
+        const hamburger = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-btn');
 
-        // Toggle mobile menu visibility
-        hamburgerMenu.addEventListener("click", () => {
-          mobileMenu.classList.toggle("show");
-          mobileMenu.classList.toggle("hide");
-          document.body.style.overflow = mobileMenu.classList.contains("show") ? "hidden" : "";
+        // Show menu function
+        function showMenu() {
+          if (mobileMenu && hamburger) {
+            mobileMenu.style.display = 'flex';
+            mobileMenu.classList.remove('hide');
+            mobileMenu.classList.add('show');
+            hamburger.classList.add('menu-open'); // Hide hamburger
+            document.body.style.overflow = 'hidden';
+          }
+        }
+
+        // Hide menu function
+        function hideMenu() {
+          if (mobileMenu && hamburger) {
+            mobileMenu.style.display = 'none';
+            mobileMenu.classList.remove('show');
+            mobileMenu.classList.add('hide');
+            hamburger.classList.remove('menu-open'); // Show hamburger
+            document.body.style.overflow = '';
+          }
+        }
+
+        // Hamburger click event
+        if (hamburger) {
+          hamburger.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            showMenu();
+          };
+        }
+
+        // Close button click event
+        if (closeBtn) {
+          closeBtn.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            hideMenu();
+          };
+        }
+
+        // Close menu when clicking on nav links
+        const navLinks = document.querySelectorAll('#mobile-menu .nav-link');
+        navLinks.forEach(function(link) {
+          link.onclick = function() {
+            hideMenu();
+          };
         });
 
-        closeMenu.addEventListener("click", () => {
-          mobileMenu.classList.toggle("show");
-          mobileMenu.classList.toggle("hide");
-          document.body.style.overflow = "";
-        });
+        // Close menu when clicking outside (on the overlay)
+        if (mobileMenu) {
+          mobileMenu.onclick = function(e) {
+            if (e.target === mobileMenu) {
+              hideMenu();
+            }
+          };
+        }
 
-        // Close mobile menu only for navigation links (excluding contact button)
-        navLinks.forEach((element) => {
-          element.addEventListener("click", () => {
-            mobileMenu.classList.add("hide");
-            mobileMenu.classList.remove("show");
-            document.body.style.overflow = "";
-          });
-        });
+        // Prevent menu from closing when clicking on menu content
+        const menuContent = document.querySelector('#mobile-menu ul');
+        if (menuContent) {
+          menuContent.onclick = function(e) {
+            e.stopPropagation();
+          };
+        }
+
+        // Initial setup - ensure menu is hidden
+        hideMenu();
       });
     </script>
   </body>
