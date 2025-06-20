@@ -1657,3 +1657,96 @@ section {
 .equipment-row-gap {
   margin-top: 50px;
 }
+
+/* Industrial Innovation Platform Section */
+.platform-section-bg {
+  background: url('../assets/images/fort/about/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.platform-main-title {
+  color: #E01E2C;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-family: Akhand, sans-serif;
+}
+
+.platform-subtitle {
+  color: #E50012;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  font-family: Akhand, sans-serif;
+  margin-top: -20px;
+}
+
+.platform-description {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 100%;
+  font-family: Akhand, sans-serif;
+}
+
+.platform-offerings-container {
+  background: #000;
+  border-radius: 16px;
+  padding: 35px 45px;
+}
+
+.platform-offerings-title {
+  color: #E01E2C;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.platform-card-wrapper {
+  height: 320px;
+}
+
+.platform-image-container {
+  width: 203.35px;
+  height: 203.35px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.platform-image {
+  object-fit: contain;
+}
+
+.platform-card-title {
+  color: #E01E2C;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.platform-card-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Additional Platform Section Styles */
+.innovation-platform-section img {
+  transition: transform 0.3s ease;
+}
+
+.innovation-platform-section .btn-outline-light:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 1200px) {
+  .innovation-platform-section .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
