@@ -536,7 +536,7 @@
 
     <!-- Value Capture Models Section -->
     <section class="value-capture-section" style="background: white;">
-      <div class="container" style="max-width: 1180px;">
+      <div class="container" style="max-width: 1240px;">
         <!-- Header -->
         <div class="row align-items-start mb-4">
           <div class="col-md-4">
@@ -607,7 +607,7 @@
 
     <!-- CVS Portfolio Section -->
     <section class="cvs-portfolio-section" style="background: white;">
-      <div class="container" style="max-width: 1180px; position: relative;">
+      <div class="container" style="max-width: 1240px; position: relative;">
         
         <div class="row align-items-start mb-4">
           <div class="col-md-4">
@@ -617,64 +617,75 @@
           </div>
         </div>
         <div style="background: #000; border-radius: 16px; padding: 40px 60px; position: relative;">
-          <!-- Navigation Arrows - Just inside the edges -->
-          <div style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer;">
+          <!-- Navigation Arrows - Hidden for single slide -->
+          <div class="cvs-portfolio-prev" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer; display: none;">
             <img src="../assets/images/fort/icons/arrow-left.png" alt="Previous" style="width: 40px; height: 40px;">
           </div>
-          <div style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer;">
+          <div class="cvs-portfolio-next" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer; display: none;">
             <img src="../assets/images/fort/icons/arrow-right.png" alt="Next" style="width: 40px; height: 40px;">
           </div>
 
-          <div class="cvs-portfolio-header">
-            <img src="../assets/images/vedantasparklogo.png" alt="Vedanta Spark" class="cvs-vedanta-logo" style="height: 54px; margin: 0;" />
-            <img src="../assets/images/vedantasparkright.png" alt="Vedanta Spark" class="cvs-vedanta-logo" style="height: 54px; margin: 0;" />
-          </div>
-          <div class="cvs-portfolio-content" style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center;">
-            <div class="cvs-portfolio-left" style="width: 45%;">
-              <div class="cvs-vedanta-desc" style="font-size: 1.1rem; line-height: 1.6; color: #fff; margin-bottom: 40px;">
-                Vedanta Spark is a groundbreaking corporate open innovation initiative aimed at transforming the energy and resources sector through collaboration with startups. In partnership with Forge Innovation & Ventures, the program explores 16 opportunity areas to drive digital transformation and sustainability.<br><br>
-                It offers two engagement models: commercial partnerships, which involve paid pilot projects that can scale into comprehensive solutions, and equity investments that capture technological advantages. Startups retain their intellectual property while gaining access to Vedanta's extensive ecosystem. With 80 startups engaged across 120 projects, Vedanta Spark exemplifies a commitment to operational excellence and sustainable innovation in India's industrial landscape.
+          <!-- Swiper Container -->
+          <div class="swiper cvs-portfolio-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="cvs-portfolio-header">
+                  <img src="../assets/images/vedantasparklogo.png" alt="Vedanta Spark" class="cvs-vedanta-logo" style="height: 54px; margin: 0;" />
+                  <img src="../assets/images/vedantasparkright.png" alt="Vedanta Spark" class="cvs-vedanta-logo" style="height: 54px; margin: 0;" />
+                </div>
+                <div class="cvs-portfolio-content" style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center;">
+                  <div class="cvs-portfolio-left" style="width: 45%;">
+                    <div class="cvs-vedanta-desc" style="font-size: 1.1rem; line-height: 1.6; color: #fff; margin-bottom: 40px;">
+                      Vedanta Spark is a groundbreaking corporate open innovation initiative aimed at transforming the energy and resources sector through collaboration with startups. In partnership with Forge Innovation & Ventures, the program explores 16 opportunity areas to drive digital transformation and sustainability.<br><br>
+                      It offers two engagement models: commercial partnerships, which involve paid pilot projects that can scale into comprehensive solutions, and equity investments that capture technological advantages. Startups retain their intellectual property while gaining access to Vedanta's extensive ecosystem. With 80 startups engaged across 120 projects, Vedanta Spark exemplifies a commitment to operational excellence and sustainable innovation in India's industrial landscape.
+                    </div>
+                  </div>
+                  <div class="cvs-portfolio-right" style="width: 50%;">
+                    <img src="../assets/images/cvsportfolio.png" alt="CVS Portfolio Circular" style="width: 100%; max-width: 460px; height: auto;" />
+                  </div>
+                </div>
+                <div class="cvs-portfolio-metrics-grid" style="margin-top: 60px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; width: 100%; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="74" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#INNOVATION CHALLENGES</span>
+                    <span style="color: #fff; font-size: 0.7rem; opacity: 0.8;">(Access to Opportunity themes)</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="1190" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUPS DISCOVERED</span>
+                    <span style="color: #fff; font-size: 0.7rem; opacity: 0.8;">(From 27 Countries across the globe)</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="180" data-suffix="+" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUPS SHORTLISTED</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="62" data-suffix="+" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUP PARTNERS<br>IDENTIFIED</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="28" data-prefix="₹ " data-suffix=" Cr" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">₹ 0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">STRATEGIC<br>INVESTMENT<br>BUDGETED</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="84" data-prefix="₹ " data-suffix=" Cr" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">₹ 0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">BUSINESS VALUE<br>CREATED</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="2" data-suffix="X" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">BUSINESS IMPACT FOR<br>VEDANTA (ROI)</span>
+                  </div>
+                  <div class="cvs-metric" style="text-align: center;">
+                    <span class="metric-counter" data-target="111" style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">0</span>
+                    <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUP PARTNERS<br>IDENTIFIED</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="cvs-portfolio-right" style="width: 50%;">
-              <img src="../assets/images/cvsportfolio.png" alt="CVS Portfolio Circular" style="width: 100%; max-width: 460px; height: auto;" />
-            </div>
-          </div>
-          <div class="cvs-portfolio-metrics-grid" style="margin-top: 60px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;">
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">74</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#INNOVATION CHALLENGES</span>
-              <span style="color: #fff; font-size: 0.7rem; opacity: 0.8;">(Access to Opportunity themes)</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">1190</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUPS DISCOVERED</span>
-              <span style="color: #fff; font-size: 0.7rem; opacity: 0.8;">(From 27 Countries across the globe)</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">180+</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUPS SHORTLISTED</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">62+</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUP PARTNERS<br>IDENTIFIED</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">₹ 28 Cr</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">STRATEGIC<br>INVESTMENT<br>BUDGETED</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">₹ 84 Cr</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">BUSINESS VALUE<br>CREATED</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">2X</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">BUSINESS IMPACT FOR<br>VEDANTA (ROI)</span>
-            </div>
-            <div class="cvs-metric" style="text-align: center;">
-              <span style="color: #b6ff7a; font-size: 2rem; font-weight: 900; display: block; margin-bottom: 5px;">111</span>
-              <span style="color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: block;">#STARTUP PARTNERS<br>IDENTIFIED</span>
-            </div>
+            
+            <!-- Add pagination dots - Hidden for single slide -->
+            <div class="swiper-pagination cvs-portfolio-pagination" style="position: relative; margin-top: 30px; display: none;"></div>
           </div>
         </div>
       </div>
@@ -1339,6 +1350,28 @@
       <script src="scripts.js"></script>  -->
       <script src="../js/scroll-animation.js"></script>
       <script>
+        // Force trigger metrics animation after page load
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            const metricsSection = document.querySelector('.metrics-row');
+            if (metricsSection) {
+              metricsSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              
+              // Manually trigger the intersection observer
+              const counters = document.querySelectorAll('.metric-counter');
+              counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                if (target && counter.textContent === '0') {
+                  // Trigger animation
+                  const event = new CustomEvent('trigger-animation');
+                  counter.dispatchEvent(event);
+                }
+              });
+            }
+          }, 1000);
+        });
+      </script>
+      <script>
         document.addEventListener("DOMContentLoaded", () => {
           const hamburgerMenu = document.querySelector(".hamburger-menu");
           const mobileMenu = document.querySelector(".mobile-menu");
@@ -1391,6 +1424,25 @@
           },
           speed: 1000, // Smooth transition
           autoHeight: false, // Fixed height container
+        });
+
+        // CVS Portfolio Swiper - disabled auto-play for single slide
+        const cvsPortfolioSwiper = new Swiper(".cvs-portfolio-swiper", {
+          loop: false, // Disabled since we only have one slide
+          autoplay: false, // Disabled for single slide
+          pagination: {
+            el: ".cvs-portfolio-swiper .swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".cvs-portfolio-next",
+            prevEl: ".cvs-portfolio-prev",
+          },
+          effect: "slide", // Changed from fade for better single slide experience
+          speed: 800,
+          autoHeight: false,
+          allowTouchMove: false, // Disabled since there's only one slide
         });
       </script>
     </body>

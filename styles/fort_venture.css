@@ -1403,3 +1403,16 @@ section {
   background-color: #e50012;
 }
 
+/* CVS Portfolio Swiper Pagination */
+.cvs-portfolio-swiper .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+}
+
+.cvs-portfolio-swiper .swiper-pagination-bullet-active {
+  background-color: #e50012;
+}
+
