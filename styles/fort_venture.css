@@ -993,30 +993,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background: url('../assets/images/fort/about/background.png') center/cover;
-  background-attachment: fixed;
   padding: 40px;
   border-radius: 15px;
-  position: relative;
-}
-
-.partners-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../assets/images/fort/about/background.png') center/cover;
-  background-attachment: fixed;
-  filter: blur(15px);
-  border-radius: 15px;
-  z-index: -1;
-}
-
-.partners-slide {
-  background: url('../assets/images/fort/about/background.png') center/cover;
-  background-attachment: fixed;
 }
 
 .partners-slide .partner-line {
