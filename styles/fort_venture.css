@@ -302,19 +302,6 @@ section {
     flex: 1;
 }
 
-.compass-title {
-    font-weight: bold;
-    color: #e50012;
-    font-size: 24px;
-    line-height: 1.3;
-    margin-bottom: 16px;
-}
-
-.compass-subtitle {
-    font-size: 22px;
-    color: #000;
-    margin-bottom: 24px;
-}
 
 .compass-description {
     font-size: 18px;
@@ -1010,6 +997,21 @@ section {
   background-attachment: fixed;
   padding: 40px;
   border-radius: 15px;
+  position: relative;
+}
+
+.partners-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/images/fort/about/background.png') center/cover;
+  background-attachment: fixed;
+  filter: blur(15px);
+  border-radius: 15px;
+  z-index: -1;
 }
 
 .partners-slide {
@@ -1433,22 +1435,8 @@ section {
   max-width: 1180px;
 }
 
-.compass-section .heading {
-  color: #e50012;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: left;
-}
 
-.compass-section .description {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: #333;
-  text-align: left;
-  margin: 0;
-  padding-top: 25px;
-}
+
 
 .compass-section .compass-logo {
   height: 90px;
@@ -1457,14 +1445,6 @@ section {
   margin-bottom: 20px;
 }
 
-.compass-section .compass-text {
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: #333;
-  text-align: left;
-  margin: 0;
-  width: 370.5px;
-}
 
 .compass-section .compass-text .highlight {
   font-weight: 600;
