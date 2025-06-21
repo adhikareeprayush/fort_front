@@ -1917,3 +1917,185 @@ section {
 .platform-offerings-container .col-lg-3:first-child {
   padding-left: 0 !important;
 }
+
+/* Responsive Styles for Industrial Innovation Platform Section */
+@media (max-width: 992px) {
+  .platform-main-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .platform-subtitle {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  
+  .platform-description {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  .platform-offerings-container {
+    padding: 35px 50px 20px 50px;
+  }
+  
+  .platform-offerings-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .platform-main-title {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  
+  .platform-subtitle {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .platform-description {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.4;
+  }
+  
+  .platform-description br {
+    display: none;
+  }
+  
+  .platform-offerings-container {
+    padding: 20px 30px 15px 30px;
+    margin-top: 20px;
+  }
+  
+  .platform-offerings-title {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .platform-card-wrapper {
+    height: auto;
+    min-height: 200px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .platform-image-container {
+    width: 80px;
+    height: 70px;
+    margin: 0 0 10px 0;
+  }
+  
+  .platform-card-title {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+  .platform-card-description {
+    font-size: 0.85rem;
+    text-align: left;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 576px) {
+  .innovation-platform-section .row.mb-4 {
+    margin-bottom: 15px !important;
+  }
+  
+  .platform-main-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .platform-subtitle {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .platform-description {
+    font-size: 13px;
+  }
+  
+  .platform-offerings-container {
+    padding: 15px 15px 10px 15px;
+    border-radius: 12px;
+  }
+  
+  .platform-offerings-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .platform-card-wrapper {
+    min-height: 180px;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .platform-image-container {
+    width: 60px;
+    height: 55px;
+    margin-bottom: 8px;
+  }
+  
+  .platform-card-title {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+  
+  .platform-card-description {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  
+  /* Hide navigation arrows on very small screens */
+  .platform-custom-prev,
+  .platform-custom-next {
+    display: none !important;
+  }
+  
+  /* Ensure swiper works properly on small screens */
+  .platformSwiper {
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform-main-title {
+    font-size: 16px;
+  }
+  
+  .platform-subtitle {
+    font-size: 15px;
+  }
+  
+  .platform-description {
+    font-size: 12px;
+  }
+  
+  .platform-offerings-container {
+    padding: 15px 10px 10px 10px;
+  }
+  
+  .platform-offerings-title {
+    font-size: 16px;
+  }
+  
+  .platform-card-title {
+    font-size: 0.9rem;
+  }
+  
+  .platform-card-description {
+    font-size: 0.75rem;
+  }
+}
