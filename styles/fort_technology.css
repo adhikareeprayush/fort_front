@@ -1857,24 +1857,46 @@ section {
   padding: 0 !important;
 }
 
-/* Responsive Platform Navigation - Keep outside positioning */
+/* Responsive Platform Navigation - Hide on mobile screens */
 @media (max-width: 768px) {
-  .platform-custom-prev {
-    left: -50px !important;
-  }
-  
+  .platform-custom-prev,
   .platform-custom-next {
-    right: -50px !important;
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
   }
 }
 
 @media (max-width: 480px) {
-  .platform-custom-prev {
-    left: -30px !important;
+  .platform-custom-prev,
+  .platform-custom-next {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+/* Force hide navigation arrows on all mobile screens */
+@media (max-width: 992px) {
+  .platform-custom-prev,
+  .platform-custom-next,
+  .custom-swiper-wrapper .platform-custom-prev,
+  .custom-swiper-wrapper .platform-custom-next {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
   
-  .platform-custom-next {
-    right: -30px !important;
+  /* Ensure swiper wrapper doesn't reserve space for arrows */
+  .custom-swiper-wrapper {
+    position: relative !important;
+  }
+  
+  .platformSwiper {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
