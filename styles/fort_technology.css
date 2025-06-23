@@ -467,13 +467,6 @@ section {
   position: relative;
   gap: 0 !important;
   padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Override Bootstrap px-2 padding for platform offerings alignment */
-.platform-offerings-container .custom-swiper-wrapper.px-2 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .platform-custom-prev,
