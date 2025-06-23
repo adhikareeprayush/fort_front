@@ -1777,24 +1777,32 @@ section {
 }
 
 .platform-image-container {
-  width: 113.64px;
+  width: 100%;
   height: 99px;
   overflow: hidden;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-shrink: 0;
+  text-align: left !important;
 }
 
 .platform-image {
-  width: 100%;
+  width: auto !important;
   height: 100%;
   object-fit: contain;
-  filter: none !important;
+  filter: grayscale(100%) !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  max-width: none !important;
+}
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .platform-card-title {
-  color: #E01E2C;
+  color: #ffffff;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.2;
