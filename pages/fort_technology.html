@@ -786,11 +786,10 @@
             <div class="tab-card-container col-md-4 gap-3">
               <div class="tab-header2 active" data-tab2="0">
                 <p class="w-auto text-uppercase">
-                  innovation&nbsp;infrastructure
+                  INNOVATION&nbsp;INFRASTRUCTURE
                 </p>
               </div>
-              <span
-""                style="line-height: 10px; font-size: 20px"
+              <span style="line-height: 10px; font-size: 20px"
                 class="text-white"
               >
                 .</span>
@@ -810,7 +809,7 @@
               <div class="swiper-wrapper">
                 <div id="tab20" class="tab-slide2 swiper-slide">
                   <div class="d-flex flex-column gap-2">
-                    <h1 class="tab2-h1">Innovation Infrastructure</h1>
+                    <h1 class="tab2-h1">INNOVATION INFRASTRUCTURE</h1>
                     <p class="tab2-p">
                       Forge's Technical Infrastructure includes the various
                       machinery, equipment, and tools to help i nnovators
@@ -1947,8 +1946,8 @@
     const tabSwiper2 = new Swiper(".tabSwiper2", {
       loop: true,
       navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
+        nextEl: ".custom-next2",
+        prevEl: ".custom-prev2",
       },
       autoplay: {
         delay: 2000,
@@ -1956,6 +1955,11 @@
       },
       slidesPerView: 1,
       spaceBetween: 30,
+      on: {
+        slideChange: function () {
+          updateTabHighlight2(this.realIndex);
+        }
+      }
     });
 
     // Tab highlight functionality
@@ -1969,11 +1973,30 @@
       });
     }
 
+    // Tab highlight functionality for tabSwiper2
+    function updateTabHighlight2(activeIndex) {
+      const tabHeaders2 = document.querySelectorAll('.tab-header2');
+      tabHeaders2.forEach((header, index) => {
+        header.classList.remove('active');
+        if (index === activeIndex) {
+          header.classList.add('active');
+        }
+      });
+    }
+
     // Manual tab clicking
     document.querySelectorAll('.tab-header').forEach((header, index) => {
       header.addEventListener('click', () => {
         tabSwiper.slideToLoop(index);
         updateTabHighlight(index);
+      });
+    });
+
+    // Manual tab clicking for tabSwiper2
+    document.querySelectorAll('.tab-header2').forEach((header, index) => {
+      header.addEventListener('click', () => {
+        tabSwiper2.slideToLoop(index);
+        updateTabHighlight2(index);
       });
     });
   </script>

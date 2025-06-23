@@ -710,6 +710,7 @@ section {
 }
 .tab-header.active {
   color: #e50012;
+  font-weight: 700;
 }
 
 .tab-image > img {
@@ -851,6 +852,7 @@ section {
 }
 .tab-header2.active {
   color: #e50012;
+  font-weight: 700;
 }
 
 .tab-image2 > img {
