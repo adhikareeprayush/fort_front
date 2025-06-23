@@ -2151,3 +2151,30 @@ section {
 .equipment-row-gap {
   margin-top: 20px;
 }
+
+/* Industrial Innovation Labs Section - Desktop Layout Alignment */
+.industrial-labs-section .row.mb-4 {
+  margin-bottom: 2.5rem !important;
+}
+
+.industrial-labs-section .col-md-5 h2 {
+  margin-bottom: 0;
+  padding-right: 20px;
+}
+
+.industrial-labs-section .col-md-7 h3 {
+  margin-bottom: 0.5rem !important;
+}
+
+.industrial-labs-section .col-md-7 p {
+  margin-bottom: 0;
+}
+
+/* Ensure consistent content alignment across sections */
+.industrial-labs-section .d-none.d-lg-block {
+  margin-bottom: 0;
+}
+
+.industrial-labs-section .equipment-container {
+  margin-top: 2.5rem;
+}
