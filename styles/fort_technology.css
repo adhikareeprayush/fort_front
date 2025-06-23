@@ -488,11 +488,11 @@ section {
 }
 
 .platform-custom-prev {
-  left: -80px !important;
+  left: -40px !important;
 }
 
 .platform-custom-next {
-  right: -80px !important;
+  right: -40px !important;
 }
 
 .swiper-slide {
