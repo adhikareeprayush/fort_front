@@ -601,6 +601,8 @@ section {
   border: 1px solid rgba(229, 0, 18, 0.2);
   position: relative;
   overflow: hidden;
+  /* Override Bootstrap padding classes */
+  padding: 10px !important; /* Reduce from p-4 py-5 (24px + 48px top/bottom) */
 }
 
 .practicum-container::before {
@@ -801,6 +803,7 @@ section {
 
 .fort-swiper-container {
   position: relative;
+  padding: 15px !important; /* Reduce from p-4 (24px) */
 }
 
 /* Responsive styles for dual swiper */
