@@ -895,8 +895,8 @@ section {
   gap: 30px; /* Reduced from 40px */
 }
 .tab2-img-container > div {
-  height: 100px; /* Reduced from 115px */
-  width: 250px; /* Reduced from 270px */
+  height: 140px; /* Increased from 100px */
+  width: 300px; /* Increased from 250px */
 }
 .tab2-img-container img {
   height: 100%;
@@ -2248,8 +2248,8 @@ section {
 /* Innovation Infrastructure Section - Responsive Improvements */
 @media (max-width: 1200px) {
   .tab2-img-container > div {
-    width: 220px;
-    height: 90px;
+    width: 280px; /* Increased from 220px */
+    height: 120px; /* Increased from 90px */
   }
   
   .tab2-img-container {
@@ -2270,8 +2270,8 @@ section {
   }
   
   .tab2-img-container > div {
-    width: 200px;
-    height: 80px;
+    width: 260px; /* Increased from 200px */
+    height: 110px; /* Increased from 80px */
   }
   
   .tab-slide2 {
@@ -2291,5 +2291,10 @@ section {
   
   .main-tab-container2 {
     padding: 20px 0;
+  }
+  
+  .tab2-img-container > div {
+    width: 240px;
+    height: 100px;
   }
 }
