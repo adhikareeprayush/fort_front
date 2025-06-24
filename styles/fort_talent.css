@@ -30,7 +30,7 @@ section {
   }
 
   .hero {
-    padding: 50px 160px;
+    padding: 0 160px; /* Match section horizontal padding */
   }
 }
 
@@ -40,7 +40,7 @@ section {
   }
 
   .hero {
-    padding: 50px 120px;
+    padding: 0 120px; /* Match section horizontal padding */
   }
 }
 
@@ -50,7 +50,7 @@ section {
   }
 
   .hero {
-    padding: 50px 80px;
+    padding: 0 80px; /* Match section horizontal padding */
   }
 }
 
@@ -60,7 +60,7 @@ section {
   }
 
   .hero {
-    padding: 50px 60px;
+    padding: 0 60px; /* Match section horizontal padding */
   }
 }
 
@@ -70,7 +70,7 @@ section {
   }
 
   .hero {
-    padding: 50px 60px;
+    padding: 0 60px; /* Match section horizontal padding */
   }
 }
 
@@ -80,7 +80,7 @@ section {
   }
 
   .hero {
-    padding: 50px 40px;
+    padding: 0 40px; /* Match section horizontal padding */
   }
 }
 
@@ -90,7 +90,7 @@ section {
   }
 
   .hero {
-    padding: 50px 20px;
+    padding: 0 20px; /* Match section horizontal padding */
   }
 }
 
@@ -269,8 +269,17 @@ section {
   height: calc(100vh - 122px); /* Adjusted for nav height */
   position: relative;
   background: url('../assets/images/hero-2.png') center center/cover no-repeat;
-  padding: 50px 200px;
+  padding: 0 200px; /* Match section horizontal padding, remove vertical padding */
 }
+
+/* Override Bootstrap container padding for talent hero */
+.hero .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
 .hero-left {
   width: 100%;
   display: flex;

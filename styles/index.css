@@ -295,12 +295,12 @@ section {
   height: calc(100vh - 122px); /* Adjusted for nav height */
   position: relative;
   background: url('../assets/images/hero-1.png') center center/cover no-repeat;
-  padding: 0 200px;
+  padding: 0 200px; /* Match about section padding */
 }
 
 .hero section {
   width: 100%;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .hero-left {
@@ -331,7 +331,7 @@ section {
 
 @media (max-width: 1500px) {
   .hero {
-    padding: 0 160px;
+    padding: 0 160px; /* Match about section padding */
   }
   
   .hero-right {
@@ -341,7 +341,7 @@ section {
 
 @media (max-width: 1360px) {
   .hero {
-    padding: 0 120px;
+    padding: 0 120px; /* Match about section padding */
   }
   
   .hero-right {
@@ -351,7 +351,7 @@ section {
 
 @media (max-width: 1275px) {
   .hero {
-    padding: 0 80px;
+    padding: 0 80px; /* Match about section padding */
   }
   
   .hero-right {
@@ -361,7 +361,7 @@ section {
 
 @media (max-width: 1120px) {
   .hero {
-    padding: 0 60px;
+    padding: 0 60px; /* Match about section padding */
   }
   
   .hero-right {
@@ -373,8 +373,7 @@ section {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 60px; /* Match about section padding pattern */
     height: auto;
   }
   .hero-left {
@@ -391,7 +390,7 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 0 40px;
+    padding: 0 40px; /* Match about section padding */
   }
   
   .hero-left {
@@ -405,8 +404,7 @@ section {
 
 @media (max-width: 576px) {
   .hero {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 20px; /* Match about section padding */
     min-height: 320px;
   }
   .hero-left {
@@ -415,7 +413,7 @@ section {
   }
   .hero-right {
     font-size: clamp(1rem, 6vw, 1.5rem);
-    padding: 0 2vw;
+    padding: 0 0; /* Remove extra horizontal padding */
   }
 }
 
@@ -447,6 +445,49 @@ section {
   .hero-right {
     font-size: 16px;
     line-height: 1.4;
+  }
+}
+
+/* Override global section padding for hero section specifically */
+@media (max-width: 1500px) {
+  .hero section {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hero section {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1275px) {
+  .hero section {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1120px) {
+  .hero section {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero section {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero section {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero section {
+    padding: 0 !important;
   }
 }
 
