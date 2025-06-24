@@ -478,7 +478,7 @@ section {
 
 .about-title-line1,
 .about-title-line2 {
-  font-size: 32pt;
+  font-size: 32px;
   line-height: 34pt;
   margin: 0;
   letter-spacing: 1.2px;
@@ -494,12 +494,16 @@ section {
 
 .about-content {
   padding-left: 60px;
+  margin-top: 0;
 }
 
 .about-description {
-  font-size: 20pt;
-  font-weight: 500;
-  line-height: 1.4;
+  font-family: "Akhand", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-block-start: 0px;
+  margin-block-end: 48px;
   margin: 0;
   color: #444;
 }
@@ -515,6 +519,7 @@ section {
   
   .about-content {
     padding-left: 60px;
+    margin-top: 0;
   }
 }
 
@@ -525,6 +530,7 @@ section {
   
   .about-content {
     padding-left: 50px;
+    margin-top: 0;
   }
 }
 
@@ -535,6 +541,7 @@ section {
   
   .about-content {
     padding-left: 40px;
+    margin-top: 0;
   }
 }
 
@@ -545,6 +552,7 @@ section {
   
   .about-content {
     padding-left: 40px;
+    margin-top: 0;
   }
 }
 
@@ -567,13 +575,16 @@ section {
   
   .about-title-line1,
   .about-title-line2 {
-    font-size: 26pt;
+    font-size: 26px;
     line-height: 28pt;
     text-align: center;
   }
   
   .about-description {
-    font-size: 18pt;
+    font-family: "Akhand", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
     text-align: center !important;
   }
 }
