@@ -17,10 +17,11 @@ section {
 }
 
 .section-header {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 900;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 1500px) {
@@ -365,7 +366,6 @@ section {
 
 /* CVS Compass */
 .compass-section {
-    padding: 64px 20px;
     background: url('../assets/images/fort/about/background.png') center/cover;
     background-attachment: fixed;
 }
@@ -448,7 +448,6 @@ section {
 .strategy-sandbox-bg {
   position: relative;
   background: none;
-  padding: 60px 0 60px 0;
   z-index: 1;
 }
 
@@ -582,7 +581,6 @@ section {
 .value-creation-section {
   position: relative;
   background: none;
-  padding: 60px 0 60px 0;
   z-index: 1;
 }
 .vcp-title {
@@ -710,7 +708,6 @@ section {
 .value-capture-section {
   position: relative;
   background: none;
-  padding: 60px 0 60px 0;
   z-index: 1;
 }
 .vcm-title {
@@ -884,7 +881,6 @@ section {
 .cvs-portfolio-section {
   position: relative;
   background: none;
-  padding: 60px 0 60px 0;
   z-index: 1;
 }
 .cvs-title {
@@ -1069,7 +1065,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px;
   border-radius: 15px;
 }
 
@@ -1168,10 +1163,6 @@ section {
 
 /* --- CVS Portfolio Section --- */
 @media (max-width: 768px) {
-  .cvs-portfolio-section {
-    padding: 40px 0;
-  }
-  
   .cvs-title {
     font-size: 1.8rem;
     margin-bottom: 25px;
@@ -1232,10 +1223,6 @@ section {
 
 /* Tablet Specific Styles for CVS Portfolio */
 @media (min-width: 769px) and (max-width: 991px) {
-  .cvs-portfolio-section {
-    padding: 50px 0;
-  }
-  
   .cvs-title {
     font-size: 2rem;
   }
@@ -1267,10 +1254,6 @@ section {
 
 /* Compass Section Responsive Styles */
 @media (max-width: 768px) {
-  .compass-section {
-    padding: 40px 15px;
-  }
-  
   .compass-container {
     flex-direction: column;
     gap: 25px;
@@ -1308,10 +1291,6 @@ section {
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-  .compass-section {
-    padding: 50px 25px;
-  }
-  
   .compass-container {
     gap: 30px;
   }
@@ -1396,10 +1375,6 @@ section {
     margin-bottom: 15px;
   }
   
-  section {
-    padding: 40px 20px;
-  }
-  
   .container {
     padding: 0 15px;
   }
@@ -1417,10 +1392,6 @@ section {
   .section-header {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
-  
-  section {
-    padding: 50px 30px;
   }
   
   .container {
@@ -1485,12 +1456,11 @@ section {
   background-attachment: fixed;
 }
 
-.compass-section .container {
-  max-width: 1180px;
+/* === COMPASS SECTION STYLES === */
+.compass-section {
+  background: url('../assets/images/fort/about/background.png') center/cover;
+  background-attachment: fixed;
 }
-
-
-
 
 .compass-section .compass-logo {
   height: 90px;
