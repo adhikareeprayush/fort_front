@@ -1024,10 +1024,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-image: url("../assets/images/fort/about/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 40px;
   border-radius: 15px;
 }
