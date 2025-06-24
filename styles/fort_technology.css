@@ -32,6 +32,7 @@ section {
   font-weight: 900;
   text-align: left;
   margin-bottom: 20px;
+  line-height: 120%;
 }
 
 @media (max-width: 1500px) {
