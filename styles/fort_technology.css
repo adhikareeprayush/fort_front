@@ -435,6 +435,7 @@ section {
   position: relative;
   width: 100%;
   margin: auto;
+  padding: 0 20px; /* Reduced padding */
 }
 
 .custom-button {
@@ -687,11 +688,12 @@ section {
 .main-tab-container {
   background-color: black;
   border-radius: 15px;
+  padding: 30px 0; /* Reduced from default padding */
 }
 .tab-card-container {
   position: relative;
   display: flex;
-  gap: 50px;
+  gap: 30px; /* Reduced from 50px */
 }
 .tab-header {
   color: white;
@@ -699,7 +701,7 @@ section {
 }
 .tab-header p {
   font-size: 15px;
-  line-height: 28.8px;
+  line-height: 24px; /* Reduced from 28.8px */
   font-weight: 400;
 }
 .tab-header.active {
@@ -708,7 +710,7 @@ section {
 }
 
 .tab-image > img {
-  width: 420px;
+  width: 350px; /* Reduced from 420px */
   object-fit: contain;
 }
 
@@ -744,32 +746,31 @@ section {
   width: 50%;
 }
 .table tbody tr td:first-child {
-  font-size: 20px;
+  font-size: 18px; /* Reduced from 20px */
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.3; /* Reduced from 1.4 */
 }
 
 .table tbody {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px; /* Reduced from 18px */
+  line-height: 1.4; /* Reduced from 1.5 */
 }
 
 .table th {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px; /* Reduced from 20px */
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 8px 0; /* Reduced from 10px */
 }
 .table tr {
-  /* padding: 2px 0px; */
   display: flex;
   height: 100%;
-  min-height: 120px;
+  min-height: 90px; /* Reduced from 120px */
 }
 
 .table th,
@@ -785,7 +786,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 15px 0px;
+  padding: 12px 0px; /* Reduced from 15px */
 }
 
 .table-left {
@@ -796,28 +797,25 @@ section {
 .table .table-left {
   text-transform: uppercase;
   font-weight: 600;
-  padding: 15px 0px;
-  font-size: 18px;
-  line-height: 1.3;
+  padding: 12px 0px; /* Reduced from 15px */
+  font-size: 16px; /* Reduced from 18px */
+  line-height: 1.2; /* Reduced from 1.3 */
 }
 .double-row {
-  /* padding: 0px !important; */
   display: flex !important;
   align-items: center;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 16px; /* Reduced from 18px */
+  line-height: 1.3; /* Reduced from 1.4 */
 }
 .double-row > div:first-child {
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 12px; /* Reduced from 15px */
   font-weight: 500;
-  /* border: 1px solid white; */
 }
 .double-row > div:last-child {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 12px; /* Reduced from 15px */
   font-weight: 500;
-  /* border: 1px solid white; */
 }
 .double-row > hr {
   z-index: 100 !important;
@@ -2156,6 +2154,30 @@ section {
   }
 }
 
+/* Outcome text optimization */
+.outcome-tab p {
+  font-size: 15px !important; /* Reduced font size */
+  line-height: 1.3 !important; /* Tighter line height */
+  margin: 0 !important; /* Remove default margins */
+}
+
+/* Make swiper wrapper more compact */
+.custom-swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px; /* Reduced padding */
+}
+
+/* Optimize section padding for this specific section */
+#industry {
+  padding: 30px 0 !important; /* Reduced from py-5 */
+}
+
 /* Ensure consistent vertical alignment for section headers */
 .practicum-banner .col-md-4 p {
   margin-top: 0 !important;
@@ -2182,4 +2204,42 @@ section {
 .row.mb-4 .col-md-8 {
   margin-top: 0;
   padding-top: 0;
+}
+
+/* Responsive adjustments for compact design */
+@media (max-width: 768px) {
+  .tab-image > img {
+    width: 280px; /* Further reduced for mobile */
+  }
+  
+  .table tr {
+    min-height: 80px; /* Even more compact on mobile */
+  }
+  
+  .table tbody tr td:first-child {
+    font-size: 16px;
+  }
+  
+  .table tbody {
+    font-size: 14px;
+  }
+  
+  .outcome-tab p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tab-image > img {
+    width: 250px;
+  }
+  
+  .table tr {
+    min-height: 70px;
+  }
+  
+  .tab-header p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
