@@ -834,11 +834,12 @@ section {
 .main-tab-container2 {
   background-color: black;
   border-radius: 15px;
+  padding: 25px 0; /* Add compact padding */
 }
 .tab-card-container2 {
   position: relative;
   display: flex;
-  gap: 50px;
+  gap: 35px; /* Reduced from 50px */
 }
 .tab-header2 {
   color: white;
@@ -865,7 +866,7 @@ section {
 .tab-slide2 {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 25px; /* Reduced from 40px for compactness */
   color: white;
 }
 
@@ -874,28 +875,28 @@ section {
   font-weight: 900;
   line-height: 26px;
   color: #e50012;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Reduced from 15px */
   text-transform: uppercase;
 }
 .tab2-p {
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 18px; /* Increased from 14px for better readability */
+  line-height: 1.5; /* Improved from 1.4 for better readability */
   font-weight: 400;
   color: #ffffff;
   font-family: Akhand, sans-serif !important;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced from 20px */
 }
 
 .tab2-img-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px; /* Reduced from 40px */
 }
 .tab2-img-container > div {
-  height: 115px;
-  width: 270px;
+  height: 100px; /* Reduced from 115px */
+  width: 250px; /* Reduced from 270px */
 }
 .tab2-img-container img {
   height: 100%;
@@ -2241,5 +2242,54 @@ section {
   .tab-header p {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+/* Innovation Infrastructure Section - Responsive Improvements */
+@media (max-width: 1200px) {
+  .tab2-img-container > div {
+    width: 220px;
+    height: 90px;
+  }
+  
+  .tab2-img-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab2-p {
+    font-size: 16px; /* Slightly smaller for mobile but still readable */
+    line-height: 1.4;
+  }
+  
+  .tab2-img-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .tab2-img-container > div {
+    width: 200px;
+    height: 80px;
+  }
+  
+  .tab-slide2 {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tab2-h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .tab2-p {
+    font-size: 15px;
+  }
+  
+  .main-tab-container2 {
+    padding: 20px 0;
   }
 }
