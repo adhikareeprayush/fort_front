@@ -1082,8 +1082,7 @@ section {
 }
 
 .partners-slide .swiper-slide {
-  background: url('../assets/images/fort/about/background.png') center/cover !important;
-  background-attachment: fixed !important;
+  background: transparent !important;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1154,11 +1153,10 @@ section {
   border: none;
 }
 
-/* Use background image for partner logos, override all previous rules */
+/* Use transparent background for partner logos */
 .partners-slide .swiper-slide,
 .partners-slide .swiper-wrapper .swiper-slide {
-  background: url('../assets/images/fort/about/background.png') center/cover !important;
-  background-attachment: fixed !important;
+  background: transparent !important;
 }
 
 /* --- CVS Portfolio Section --- */
