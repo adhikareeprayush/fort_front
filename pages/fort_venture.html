@@ -127,6 +127,13 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <div style="background: #000; border-radius: 16px; padding: 40px 60px; position: relative; min-height: 500px;">
+              <!-- Fixed Description - Always Visible -->
+              <div class="text-white mb-5">
+                <p style="font-size: 16px; line-height: 20px; font-weight: 400; margin: 0;">
+                  Forge.Fund fuels startup success by providing <span class="text-uppercase">CRITICAL PROGRAMMATIC INTERVENTIONS ACROSS THE ENTIRE LIFECYCLE OF PHY'GITAL (Hardware-First, Digital-Plus) TECH ventures</span> - spanning innovation, production, industrialisation and commercialisation - to ensure that its startups win at every stage :
+                </p>
+              </div>
+              
               <!-- Navigation Arrows - Just inside the edges -->
               <div class="strategic-services-prev" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); z-index: 10; cursor: pointer;">
                 <img src="../assets/images/fort/icons/arrow-left.png" alt="Previous" style="width: 40px; height: 40px;">
@@ -140,13 +147,6 @@
                 <div class="swiper-wrapper">
                   <!-- Slide 1: Original Content -->
                   <div class="swiper-slide">
-                    <!-- Description -->
-                    <div class="text-white mb-5">
-                      <p style="font-size: 16px; line-height: 20px; font-weight: 400; margin: 0;">
-                        Forge.Fund fuels startup success by providing <span class="text-uppercase">CRITICAL PROGRAMMATIC INTERVENTIONS ACROSS THE ENTIRE LIFECYCLE OF PHY'GITAL (Hardware-First, Digital-Plus) TECH ventures</span> - spanning innovation, production, industrialisation and commercialisation - to ensure that its startups win at every stage :
-                      </p>
-                    </div>
-
                     <!-- Three columns -->
                     <div class="row g-5">
                       <div class="col-md-4">
@@ -207,13 +207,6 @@
 
                   <!-- Slide 2: New Content -->
                   <div class="swiper-slide">
-                    <!-- Description -->
-                    <div class="text-white mb-5">
-                      <p style="font-size: 16px; line-height: 20px; font-weight: 400; margin: 0;">
-                        Forge.Fund fuels startup success by providing <span class="text-uppercase">CRITICAL PROGRAMMATIC INTERVENTIONS ACROSS THE ENTIRE LIFECYCLE OF PHY'GITAL (Hardware-First, Digital-Plus) TECH ventures</span> - spanning innovation, production, industrialisation and commercialisation - to ensure that its startups win at every stage :
-                      </p>
-                    </div>
-
                     <!-- Three columns -->
                     <div class="row g-5">
                       <div class="col-md-4">
@@ -274,13 +267,6 @@
 
                   <!-- Slide 3: Grants and Investments -->
                   <div class="swiper-slide">
-                    <!-- Description -->
-                    <div class="text-white mb-5">
-                      <p style="font-size: 16px; line-height: 20px; font-weight: 400; margin: 0;">
-                        Forge.Fund fuels startup success by providing <span class="text-uppercase">CRITICAL PROGRAMMATIC INTERVENTIONS ACROSS THE ENTIRE LIFECYCLE OF PHY'GITAL (Hardware-First, Digital-Plus) TECH ventures</span> - spanning innovation, production, industrialisation and commercialisation - to ensure that its startups win at every stage :
-                      </p>
-                    </div>
-
                     <!-- Three columns -->
                     <div class="row g-5">
                       <div class="col-md-4">
@@ -1503,7 +1489,7 @@
         const strategicServicesSwiper = new Swiper(".strategic-services-swiper", {
           loop: true,
           autoplay: {
-            delay: 5000, // 5 seconds auto-swipe
+            delay: 3000, // 3 seconds auto-swipe (reduced from 5 seconds)
             disableOnInteraction: false,
           },
           pagination: {
@@ -1516,7 +1502,7 @@
             prevEl: ".strategic-services-prev",
           },
           effect: "slide",
-          speed: 800, // Smooth transition
+          speed: 500, // Faster transition (reduced from 800ms)
           autoHeight: false, // Fixed height container
           slidesPerView: 1,
           spaceBetween: 30,
@@ -1526,7 +1512,7 @@
         const cvsPortfolioSwiper = new Swiper(".cvs-portfolio-swiper", {
           loop: true, // Enabled for multiple slides
           autoplay: {
-            delay: 5000,
+            delay: 3000, // 3 seconds auto-swipe (reduced from 5 seconds)
             disableOnInteraction: false,
           },
           pagination: {
@@ -1539,7 +1525,7 @@
             prevEl: ".cvs-portfolio-prev",
           },
           effect: "slide",
-          speed: 800,
+          speed: 500, // Faster transition (reduced from 800ms)
           autoHeight: false,
           allowTouchMove: true, // Enabled for multiple slides
         });
