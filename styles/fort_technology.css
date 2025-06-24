@@ -682,9 +682,17 @@ section {
   color: #e50012;
   line-height: normal;
   max-width: 163px;
+  font-weight: 600; /* Make titles bolder */
 }
 
-/* industrial workforce */
+/* Ensure proper typography hierarchy in future factory sections */
+.future_container p.text-white {
+  font-size: 16px !important;
+  line-height: 140% !important;
+  font-weight: 400 !important;
+}
+
+/* Industrial Innovation Labs Section */
 .main-tab-container {
   background-color: black;
   border-radius: 15px;
@@ -2296,5 +2304,40 @@ section {
   .tab2-img-container > div {
     width: 240px;
     height: 100px;
+  }
+}
+
+/* Future Factory Sections - Responsive Improvements */
+@media (max-width: 768px) {
+  .future_container {
+    padding: 30px 20px !important;
+  }
+  
+  .future_title {
+    font-size: 20px;
+    max-width: none;
+  }
+  
+  .future_container img {
+    height: 60px !important;
+  }
+  
+  /* Ensure description text is smaller than titles on mobile */
+  .future_container p.text-white {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .future_title {
+    font-size: 18px;
+  }
+  
+  .future_container img {
+    height: 50px !important;
+  }
+  
+  .future_container p.text-white {
+    font-size: 13px !important;
   }
 }
