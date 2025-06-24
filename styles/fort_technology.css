@@ -871,16 +871,21 @@ section {
 }
 
 .tab2-h1 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 26px;
   color: #e50012;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .tab2-p {
-  font-size: 12.39px;
-  line-height: 18.58px;
+  font-size: 14px;
+  line-height: 1.4;
   font-weight: 400;
+  color: #ffffff;
   font-family: Akhand, sans-serif !important;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .tab2-img-container {
