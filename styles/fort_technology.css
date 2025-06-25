@@ -2612,18 +2612,13 @@ section {
 
 /* Additional responsive improvements for better mobile experience */
 .platform-card-wrapper {
-  transition: all 0.3s ease;
+  /* Removed hover transition */
 }
 
-.platform-card-wrapper:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.08) !important;
-}
+/* Removed hover animation */
 
 @media (max-width: 767px) {
-  .platform-card-wrapper:hover {
-    transform: none;
-  }
+  /* Removed hover animation override */
 }
 
 /* Ensure consistent spacing on all devices */
@@ -2711,16 +2706,12 @@ section {
     background: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
-    transition: all 0.3s ease !important;
+    /* Removed transition property */
     min-height: 220px !important;
     height: auto !important;
   }
   
-  .platform-card-wrapper:hover {
-    transform: translateY(-3px) !important;
-    background: rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
-  }
+  /* Removed hover animation */
   
   /* Improve image presentation on mobile */
   .platform-image-container {
@@ -2805,13 +2796,10 @@ section {
     background: rgba(255, 255, 255, 0.06) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     min-height: 250px !important;
-    transition: all 0.3s ease !important;
+    /* Removed transition property */
   }
   
-  .platform-card-wrapper:hover {
-    transform: translateY(-5px) !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-  }
+  /* Removed hover animation */
   
   .platform-image-container {
     height: 85px !important;
