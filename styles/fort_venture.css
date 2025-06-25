@@ -272,6 +272,7 @@ section {
 
 
 /* Hero Section Styles */
+/* Hero Section Styles */
 .venture-hero-video-container {
   position: absolute;
   top: 0;
@@ -296,7 +297,7 @@ section {
 
 .venture-hero {
   position: relative;
-  background: url('../assets/images/hero-4.png') center center/cover no-repeat;
+  background: url('../assets/images/hero-3.png') center center/cover no-repeat;
   min-height: calc(100vh - 122px);
   height: calc(100vh - 122px);
   color: #fff;
@@ -304,24 +305,32 @@ section {
   align-items: center;
   overflow: hidden;
 }
+
 .venture-hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(9, 4, 0, 0.63);
   z-index: 2;
 }
+
 .venture-hero-content {
   position: relative;
   z-index: 2;
   width: 100%;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  min-height: inherit;
 }
+
 .venture-hero-left {
   flex: 1;
 }
+
 .venture-hero-title {
   color: #e50012;
   font-size: 60pt;
@@ -330,6 +339,7 @@ section {
   text-transform: uppercase;
   line-height: 1.1;
 }
+
 .venture-hero-subtitle {
   color: #fff;
   font-size: 28pt;
@@ -337,12 +347,14 @@ section {
   text-transform: uppercase;
   line-height: 1.2;
 }
+
 .venture-hero-right {
-  flex: 1.5;
+  flex: 1.6;
   padding-left: 60px;
   display: flex;
   align-items: center;
 }
+
 .venture-hero-right p {
   font-size: 32pt;
   font-weight: 700;
@@ -351,19 +363,164 @@ section {
   color: #fff;
   line-height: 1.3;
 }
-@media (max-width: 900px) {
-  .venture-hero-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    padding-top: 60px;
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .venture-hero-title {
+    font-size: 50pt;
   }
+  
+  .venture-hero-subtitle {
+    font-size: 24pt;
+  }
+  
+  .venture-hero-right p {
+    font-size: 28pt;
+  }
+  
   .venture-hero-right {
-    margin-left: 0;
-    max-width: 100%;
+    padding-left: 40px;
   }
 }
 
+@media (max-width: 991px) {
+  .venture-hero-content {
+    padding: 0 30px;
+  }
+  
+  .venture-hero-title {
+    font-size: 42pt;
+  }
+  
+  .venture-hero-subtitle {
+    font-size: 20pt;
+  }
+  
+  .venture-hero-right p {
+    font-size: 24pt;
+  }
+  
+  .venture-hero-right {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .venture-hero {
+    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
+  }
+  
+  .venture-hero-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .venture-hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .venture-hero-title {
+    font-size: 36pt;
+    margin-bottom: 0.8rem;
+  }
+  
+  .venture-hero-subtitle {
+    font-size: 18pt;
+  }
+  
+  .venture-hero-right {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .venture-hero-right p {
+    font-size: 20pt;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .venture-hero-content {
+    padding: 15px;
+  }
+  
+  .venture-hero-title {
+    font-size: 30pt;
+  }
+  
+  .venture-hero-subtitle {
+    font-size: 16pt;
+  }
+  
+  .venture-hero-right p {
+    font-size: 18pt;
+  }
+}
+
+/* Responsive hero for mobile - matches talent page */
+@media (max-width: 768px) {
+  .venture-hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    height: auto;
+    padding: 24px 20px;
+  }
+  .venture-hero-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 20px;
+  }
+  .venture-hero-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .venture-hero-title {
+    font-size: 32px;
+    margin-bottom: 0.8rem;
+  }
+  .venture-hero-subtitle {
+    font-size: 16px;
+  }
+  .venture-hero-right {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .venture-hero-right p {
+    font-size: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .venture-hero {
+    padding: 12px 6px;
+  }
+  .venture-hero-content {
+    padding: 8px;
+  }
+  .venture-hero-title {
+    font-size: 24px;
+  }
+  .venture-hero-subtitle {
+    font-size: 13px;
+  }
+  .venture-hero-right p {
+    font-size: 16px;
+  }
+}
 /* CVS Compass */
 .compass-section {
     background: url('../assets/images/fort/about/background.png') center/cover;
@@ -1317,118 +1474,7 @@ section {
   }
 }
 
-/* Hero Section Responsive Styles */
-@media (max-width: 768px) {
-  .venture-hero {
-    min-height: calc(100vh - 80px);
-    height: calc(100vh - 80px);
-  }
-  
-  .venture-hero-content {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .venture-hero-left {
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .venture-hero-title {
-    font-size: 45pt;
-    text-align: center;
-  }
-  
-  .venture-hero-subtitle {
-    font-size: 20pt;
-    text-align: center;
-  }
-  
-  .venture-hero-right {
-    padding-left: 0;
-    text-align: center;
-  }
-  
-  .venture-hero-right p {
-    font-size: 24pt;
-    text-align: center;
-  }
-}
 
-@media (min-width: 769px) and (max-width: 991px) {
-  .venture-hero-title {
-    font-size: 50pt;
-  }
-  
-  .venture-hero-subtitle {
-    font-size: 24pt;
-  }
-  
-  .venture-hero-right p {
-    font-size: 28pt;
-  }
-}
-
-/* Responsive hero for mobile - matches talent page */
-@media (max-width: 768px) {
-  .venture-hero {
-    flex-direction: column;
-    text-align: center;
-    min-height: auto;
-    height: auto;
-    padding: 24px 20px;
-  }
-  .venture-hero-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-    gap: 20px;
-  }
-  .venture-hero-left {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .venture-hero-title {
-    font-size: 32px;
-    text-align: center;
-  }
-  .venture-hero-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
-  .venture-hero-right {
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
-  }
-  .venture-hero-right p {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .venture-hero {
-    padding: 12px 6px;
-  }
-  .venture-hero-content {
-    padding: 8px;
-  }
-  .venture-hero-title {
-    font-size: 24px;
-  }
-  .venture-hero-subtitle {
-    font-size: 13px;
-  }
-  .venture-hero-right p {
-    font-size: 16px;
-  }
-}
 
 /* Common Elements Responsive Styles */
 @media (max-width: 768px) {
