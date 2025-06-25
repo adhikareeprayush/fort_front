@@ -1999,7 +1999,7 @@ section {
   letter-spacing: 0%;
   line-height: 100%;
   font-family: Akhand, sans-serif;
-  text-align: left;
+  text-align: left !important;
   margin-bottom: 20px;
 }
 
@@ -2300,7 +2300,7 @@ section {
   
   .platform-offerings-title {
     font-size: 22px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
   }
   
@@ -2370,7 +2370,7 @@ section {
   
   .platform-offerings-title {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 18px;
   }
   
@@ -2467,7 +2467,7 @@ section {
   
   .platform-offerings-title {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
   }
   
@@ -2523,6 +2523,7 @@ section {
   
   .platform-offerings-title {
     font-size: 16px;
+    text-align: left;
   }
   
   .platformSwiper .col-md-6,
@@ -3643,28 +3644,21 @@ section {
 
 /* Add responsive padding for equipment section */
 .equipment-main-container .platform-offerings-title {
-  text-align: center;
+  text-align: left;
   color: #E01E2C;
   font-size: 28px;
   font-weight: 900;
-  padding: 0 20px;
   margin-bottom: 30px;
 }
 
 .equipment-main-container .custom-swiper-wrapper {
-  padding: 0 20px;
   gap: 5px;
 }
 
 /* Zoom-level specific breakpoints (90% zoom = ~1440px becomes ~1296px) */
 @media (max-width: 1400px) and (min-width: 1200px) {
   .equipment-main-container .platform-offerings-title {
-    padding: 0 15px;
     font-size: 26px;
-  }
-  
-  .equipment-main-container .custom-swiper-wrapper {
-    padding: 0 15px;
   }
   
   .platform-card-wrapper {
@@ -3687,12 +3681,7 @@ section {
   }
   
   .equipment-main-container .platform-offerings-title {
-    padding: 0 10px;
     font-size: 24px;
-  }
-  
-  .equipment-main-container .custom-swiper-wrapper {
-    padding: 0 10px;
   }
   
   .platform-card-wrapper {
@@ -3716,21 +3705,7 @@ section {
 }
 
 /* Platform Section - Enhanced zoom handling */
-.innovation-platform-section .platform-offerings-container {
-  padding: 40px 20px 20px 20px;
-}
-
-@media (max-width: 1400px) and (min-width: 1200px) {
-  .innovation-platform-section .platform-offerings-container {
-    padding: 35px 15px 18px 15px;
-  }
-}
-
 @media (max-width: 1350px) and (min-width: 1200px) {
-  .innovation-platform-section .platform-offerings-container {
-    padding: 30px 10px 15px 10px;
-  }
-  
   .innovation-platform-section .platform-offerings-title {
     font-size: 24px;
   }
