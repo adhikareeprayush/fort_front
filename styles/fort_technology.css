@@ -1815,7 +1815,6 @@ section {
   width: auto !important;
   height: 100%;
   object-fit: contain;
-  filter: grayscale(100%) !important;
   margin-left: 0 !important;
   margin-right: auto !important;
   max-width: none !important;
@@ -1982,168 +1981,327 @@ section {
 }
 
 /* Responsive Styles for Industrial Innovation Platform Section */
-@media (max-width: 992px) {
-  .platform-main-title {
-    font-size: 22px;
-    margin-bottom: 15px;
+
+/* Desktop First Approach - Large screens */
+@media (min-width: 1200px) {
+  .innovation-platform-section .col-md-5 h2 {
+    font-size: 32px !important;
+    font-weight: 900;
+    line-height: 1.1;
   }
   
-  .platform-subtitle {
-    font-size: 20px;
-    margin-top: -10px;
+  .innovation-platform-section .col-md-7 h3 {
+    font-size: 24px !important;
+    font-weight: 700;
+    margin-bottom: 8px;
   }
   
-  .platform-description {
-    font-size: 16px;
+  .innovation-platform-section .col-md-7 p {
+    font-size: 18px !important;
+    line-height: 1.3;
+  }
+  
+  .platform-offerings-container {
+    padding: 45px 80px 20px 80px;
+  }
+  
+  .platform-card-wrapper {
+    height: 280px;
+  }
+}
+
+/* Medium Desktop */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .innovation-platform-section .col-md-5 h2 {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+  
+  .innovation-platform-section .col-md-7 h3 {
+    font-size: 22px !important;
+  }
+  
+  .innovation-platform-section .col-md-7 p {
+    font-size: 16px !important;
     line-height: 1.4;
   }
   
   .platform-offerings-container {
-    padding: 35px 50px 20px 50px;
+    padding: 40px 60px 20px 60px;
   }
   
-  .platform-offerings-title {
-    font-size: 24px;
-    margin-bottom: 25px;
+  .platform-card-wrapper {
+    height: 260px;
+  }
+  
+  .platform-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .platform-card-description {
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 768px) {
-  .platform-main-title {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 12px;
+/* Tablet Portrait */
+@media (max-width: 991px) and (min-width: 768px) {
+  .innovation-platform-section .container {
+    padding: 0 15px;
   }
   
-  .platform-subtitle {
-    font-size: 18px;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 8px;
+  .innovation-platform-section .row.mb-4 {
+    margin-bottom: 25px !important;
   }
   
-  .platform-description {
-    font-size: 14px;
-    text-align: left;
-    line-height: 1.4;
+  .innovation-platform-section .col-md-5,
+  .innovation-platform-section .col-md-7 {
+    margin-bottom: 15px;
   }
   
-  .platform-description br {
+  .innovation-platform-section .col-md-5 h2 {
+    font-size: 24px !important;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .innovation-platform-section .col-md-7 h3 {
+    font-size: 20px !important;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .innovation-platform-section .col-md-7 p {
+    font-size: 15px !important;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .innovation-platform-section .col-md-7 p br {
     display: none;
   }
   
   .platform-offerings-container {
-    padding: 20px 30px 15px 30px;
+    padding: 30px 40px 20px 40px;
+    margin-top: 25px;
+  }
+  
+  .platform-offerings-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .platform-card-wrapper {
+    height: auto;
+    min-height: 240px;
+    margin-bottom: 20px;
+  }
+  
+  .platform-image-container {
+    height: 80px;
+    margin-bottom: 12px;
+  }
+  
+  .platform-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .platform-card-description {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 767px) and (min-width: 576px) {
+  .innovation-platform-section {
+    padding: 40px 0;
+  }
+  
+  .innovation-platform-section .container {
+    padding: 0 20px;
+  }
+  
+  .innovation-platform-section .row.mb-4 {
+    margin-bottom: 20px !important;
+    text-align: center;
+  }
+  
+  .innovation-platform-section .col-md-5 h2 {
+    font-size: 22px !important;
+    margin-bottom: 12px;
+  }
+  
+  .innovation-platform-section .col-md-7 h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px;
+  }
+  
+  .innovation-platform-section .col-md-7 p {
+    font-size: 14px !important;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .innovation-platform-section .col-md-7 p br {
+    display: none;
+  }
+  
+  .platform-offerings-container {
+    padding: 25px 20px 15px 20px;
     margin-top: 20px;
+    border-radius: 12px;
   }
   
   .platform-offerings-title {
     font-size: 20px;
-    text-align: left;
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  
+  /* Convert to stack layout on mobile */
+  .platformSwiper .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .platformSwiper .col-md-6,
+  .platformSwiper .col-lg-3 {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
   }
   
   .platform-card-wrapper {
     height: auto;
     min-height: 200px;
-    margin-bottom: 15px;
-    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .platform-image-container {
-    width: 80px;
     height: 70px;
-    margin: 0 0 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .platform-image {
+    max-width: 80px;
+    height: auto;
   }
   
   .platform-card-title {
     font-size: 1.1rem;
-    text-align: left;
-    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.2;
   }
   
   .platform-card-description {
     font-size: 0.85rem;
-    text-align: left;
-    line-height: 1.3;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  /* Hide navigation arrows on mobile */
+  .platform-custom-prev,
+  .platform-custom-next {
+    display: none !important;
   }
 }
 
-@media (max-width: 576px) {
+/* Mobile Portrait */
+@media (max-width: 575px) {
+  .innovation-platform-section {
+    padding: 30px 0;
+  }
+  
+  .innovation-platform-section .container {
+    padding: 0 15px;
+  }
+  
   .innovation-platform-section .row.mb-4 {
     margin-bottom: 15px !important;
   }
   
-  .platform-main-title {
-    font-size: 18px;
+  .innovation-platform-section .col-md-5 h2 {
+    font-size: 20px !important;
     margin-bottom: 10px;
+    text-align: center;
   }
   
-  .platform-subtitle {
-    font-size: 16px;
+  .innovation-platform-section .col-md-7 h3 {
+    font-size: 16px !important;
     margin-bottom: 6px;
+    text-align: center;
   }
   
-  .platform-description {
-    font-size: 13px;
+  .innovation-platform-section .col-md-7 p {
+    font-size: 13px !important;
+    line-height: 1.5;
+    text-align: center;
   }
   
   .platform-offerings-container {
-    padding: 15px 15px 10px 15px;
-    border-radius: 12px;
+    padding: 20px 15px 12px 15px;
+    margin-top: 15px;
+    border-radius: 10px;
   }
   
   .platform-offerings-title {
     font-size: 18px;
-    margin-bottom: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .platformSwiper .col-md-6,
+  .platformSwiper .col-lg-3 {
+    max-width: 350px;
+    margin-bottom: 15px;
   }
   
   .platform-card-wrapper {
     min-height: 180px;
-    padding: 8px;
-    margin-bottom: 12px;
+    padding: 15px;
   }
   
   .platform-image-container {
-    width: 60px;
-    height: 55px;
-    margin-bottom: 8px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+  
+  .platform-image {
+    max-width: 70px;
   }
   
   .platform-card-title {
     font-size: 1rem;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     line-height: 1.1;
   }
   
   .platform-card-description {
     font-size: 0.8rem;
-    line-height: 1.2;
-  }
-  
-  /* Hide navigation arrows on very small screens */
-  .platform-custom-prev,
-  .platform-custom-next {
-    display: none !important;
-  }
-  
-  /* Ensure swiper works properly on small screens */
-  .platformSwiper {
-    overflow: visible !important;
+    line-height: 1.3;
   }
 }
 
+/* Extra Small Mobile */
 @media (max-width: 480px) {
-  .platform-main-title {
-    font-size: 16px;
+  .innovation-platform-section .col-md-5 h2 {
+    font-size: 18px !important;
   }
   
-  .platform-subtitle {
-    font-size: 15px;
+  .innovation-platform-section .col-md-7 h3 {
+    font-size: 15px !important;
   }
   
-  .platform-description {
-    font-size: 12px;
+  .innovation-platform-section .col-md-7 p {
+    font-size: 12px !important;
   }
   
   .platform-offerings-container {
@@ -2154,12 +2312,143 @@ section {
     font-size: 16px;
   }
   
+  .platformSwiper .col-md-6,
+  .platformSwiper .col-lg-3 {
+    max-width: 300px;
+  }
+  
+  .platform-card-wrapper {
+    min-height: 160px;
+    padding: 12px;
+  }
+  
+  .platform-image-container {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .platform-image {
+    max-width: 60px;
+  }
+  
   .platform-card-title {
     font-size: 0.9rem;
+    margin-bottom: 6px;
   }
   
   .platform-card-description {
     font-size: 0.75rem;
+    line-height: 1.2;
+  }
+}
+
+/* Improve swiper behavior on mobile */
+@media (max-width: 767px) {
+  .platformSwiper {
+    overflow: hidden !important;
+  }
+  
+  .platformSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .platformSwiper .row.g-4 {
+    gap: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .platformSwiper .row.g-4.px-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Ensure proper mobile stack layout */
+@media (max-width: 991px) {
+  .platform-custom-prev,
+  .platform-custom-next {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  
+  .custom-swiper-wrapper {
+    position: relative !important;
+    gap: 0 !important;
+  }
+}
+
+/* Additional responsive improvements for better mobile experience */
+.platform-card-wrapper {
+  transition: all 0.3s ease;
+}
+
+.platform-card-wrapper:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+@media (max-width: 767px) {
+  .platform-card-wrapper:hover {
+    transform: none;
+  }
+}
+
+/* Ensure consistent spacing on all devices */
+.innovation-platform-section {
+  min-height: auto;
+}
+
+/* Better text wrapping for long titles */
+.platform-card-title {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Smooth scrolling for mobile swiper */
+@media (max-width: 991px) {
+  .platformSwiper {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Ensure proper aspect ratio for images */
+.platform-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Prevent content overflow on very small screens */
+@media (max-width: 320px) {
+  .innovation-platform-section .container {
+    padding: 0 10px;
+  }
+  
+  .platform-offerings-container {
+    padding: 10px 8px 8px 8px;
+  }
+  
+  .platform-card-wrapper {
+    padding: 10px;
+    min-height: 140px;
+  }
+  
+  .platform-card-title {
+    font-size: 0.8rem;
+  }
+  
+  .platform-card-description {
+    font-size: 0.7rem;
   }
 }
 
