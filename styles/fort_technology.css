@@ -402,6 +402,64 @@ section {
   }
 }
 
+/* Responsive hero for mobile - matches talent page */
+@media (max-width: 768px) {
+  .tech-hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    height: auto;
+    padding: 24px 20px;
+  }
+  .tech-hero-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 20px;
+  }
+  .tech-hero-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .tech-hero-title {
+    font-size: 32px;
+    margin-bottom: 0.8rem;
+  }
+  .tech-hero-subtitle {
+    font-size: 16px;
+  }
+  .tech-hero-right {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .tech-hero-right p {
+    font-size: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .tech-hero {
+    padding: 12px 6px;
+  }
+  .tech-hero-content {
+    padding: 8px;
+  }
+  .tech-hero-title {
+    font-size: 24px;
+  }
+  .tech-hero-subtitle {
+    font-size: 13px;
+  }
+  .tech-hero-right p {
+    font-size: 16px;
+  }
+}
+
 /* innovation practicum */
 .practicum-banner {
   background-image: url("./assets/images/fort/about/background.png");
@@ -3569,5 +3627,155 @@ section {
   
   .future_container p.text-white {
     font-size: 13px !important;
+  }
+}
+
+/* Enhanced zoom-level responsive fixes for Industrial Innovation Labs */
+
+/* Equipment Section - Zoom Level Fixes */
+.equipment-main-container {
+  margin: 0 auto;
+  max-width: none;
+  padding: 40px 0;
+  background: #000;
+  border-radius: 8px;
+}
+
+/* Add responsive padding for equipment section */
+.equipment-main-container .platform-offerings-title {
+  text-align: center;
+  color: #E01E2C;
+  font-size: 28px;
+  font-weight: 900;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.equipment-main-container .custom-swiper-wrapper {
+  padding: 0 20px;
+  gap: 5px;
+}
+
+/* Zoom-level specific breakpoints (90% zoom = ~1440px becomes ~1296px) */
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .equipment-main-container .platform-offerings-title {
+    padding: 0 15px;
+    font-size: 26px;
+  }
+  
+  .equipment-main-container .custom-swiper-wrapper {
+    padding: 0 15px;
+  }
+  
+  .platform-card-wrapper {
+    padding: 18px;
+  }
+  
+  .platform-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .platform-card-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* 90% zoom level specific (handles ~1296px viewport) */
+@media (max-width: 1350px) and (min-width: 1200px) {
+  .industrial-labs-section {
+    padding: 50px 80px;
+  }
+  
+  .equipment-main-container .platform-offerings-title {
+    padding: 0 10px;
+    font-size: 24px;
+  }
+  
+  .equipment-main-container .custom-swiper-wrapper {
+    padding: 0 10px;
+  }
+  
+  .platform-card-wrapper {
+    padding: 16px;
+    height: 260px;
+  }
+  
+  .platform-image-container {
+    height: 90px;
+  }
+  
+  .platform-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .platform-card-description {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+}
+
+/* Platform Section - Enhanced zoom handling */
+.innovation-platform-section .platform-offerings-container {
+  padding: 40px 20px 20px 20px;
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .innovation-platform-section .platform-offerings-container {
+    padding: 35px 15px 18px 15px;
+  }
+}
+
+@media (max-width: 1350px) and (min-width: 1200px) {
+  .innovation-platform-section .platform-offerings-container {
+    padding: 30px 10px 15px 10px;
+  }
+  
+  .innovation-platform-section .platform-offerings-title {
+    font-size: 24px;
+  }
+}
+
+/* Remove any potential overflow issues */
+.equipment-main-container,
+.platform-offerings-container {
+  overflow-x: hidden;
+}
+
+.custom-swiper-wrapper {
+  overflow: visible;
+}
+
+/* Ensure proper row spacing */
+.equipment-main-container .row.g-4 {
+  margin: 0;
+  row-gap: 20px;
+}
+
+.equipment-main-container .col-md-6.col-lg-3 {
+  padding: 0 10px;
+}
+
+/* Better responsive handling for intermediate screen sizes */
+@media (max-width: 1300px) and (min-width: 1100px) {
+  .equipment-main-container .row.g-4 {
+    row-gap: 15px;
+  }
+  
+  .equipment-main-container .col-md-6.col-lg-3 {
+    padding: 0 8px;
+  }
+}
+
+/* Fix for very specific zoom scenarios */
+@media (min-width: 1200px) {
+  .equipment-main-container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .equipment-main-container [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -1371,6 +1371,65 @@ section {
   }
 }
 
+/* Responsive hero for mobile - matches talent page */
+@media (max-width: 768px) {
+  .venture-hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    height: auto;
+    padding: 24px 20px;
+  }
+  .venture-hero-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 20px;
+  }
+  .venture-hero-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .venture-hero-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .venture-hero-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .venture-hero-right {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .venture-hero-right p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .venture-hero {
+    padding: 12px 6px;
+  }
+  .venture-hero-content {
+    padding: 8px;
+  }
+  .venture-hero-title {
+    font-size: 24px;
+  }
+  .venture-hero-subtitle {
+    font-size: 13px;
+  }
+  .venture-hero-right p {
+    font-size: 16px;
+  }
+}
+
 /* Common Elements Responsive Styles */
 @media (max-width: 768px) {
   .section-header {
