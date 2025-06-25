@@ -1556,6 +1556,54 @@
           speed: 500, // Faster transition (reduced from 800ms)
           autoHeight: false,
           allowTouchMove: true, // Enabled for multiple slides
+          on: {
+            slideChange: function () {
+              // Trigger metrics animation for the new active slide
+              setTimeout(() => {
+                const activeSlide = document.querySelector('.cvs-portfolio-swiper .swiper-slide-active');
+                if (activeSlide) {
+                  const metrics = activeSlide.querySelectorAll('.metric-counter');
+                  metrics.forEach(counter => {
+                    const targetValue = parseInt(counter.getAttribute('data-target'), 10);
+                    const prefix = counter.getAttribute('data-prefix') || '';
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    
+                    if (targetValue) {
+                      // Reset counter first
+                      counter.textContent = prefix + "0" + suffix;
+                      
+                      // Trigger animation
+                      const event = new CustomEvent('animate-metric', { 
+                        detail: { targetValue, prefix, suffix, counter } 
+                      });
+                      document.dispatchEvent(event);
+                    }
+                  });
+                }
+              }, 100); // Small delay to ensure slide transition is complete
+            },
+            init: function () {
+              // Trigger animation for initial slide
+              setTimeout(() => {
+                const activeSlide = document.querySelector('.cvs-portfolio-swiper .swiper-slide-active');
+                if (activeSlide) {
+                  const metrics = activeSlide.querySelectorAll('.metric-counter');
+                  metrics.forEach(counter => {
+                    const targetValue = parseInt(counter.getAttribute('data-target'), 10);
+                    const prefix = counter.getAttribute('data-prefix') || '';
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    
+                    if (targetValue) {
+                      const event = new CustomEvent('animate-metric', { 
+                        detail: { targetValue, prefix, suffix, counter } 
+                      });
+                      document.dispatchEvent(event);
+                    }
+                  });
+                }
+              }, 500); // Initial delay
+            }
+          }
         });
 
         // Mobile menu functionality
