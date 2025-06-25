@@ -1015,8 +1015,8 @@ section {
 /* Removed hover animation */
 
 .practicum-slide-image {
-  max-height: 220px;
-  max-width: 280px;
+  max-height: 300px;
+  max-width: 380px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -1033,8 +1033,8 @@ section {
 }
 
 .practicum-slide-text {
-  font-size: 16px !important;
-  font-weight: 400 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
   line-height: 1.6 !important;
   color: white !important;
   text-align: left !important;
@@ -1125,16 +1125,16 @@ section {
 /* Responsive styles for dual swiper */
 @media (max-width: 1200px) {
   .practicum-slide-image {
-    max-height: 180px;
-    max-width: 260px;
+    max-height: 260px;
+    max-width: 340px;
   }
   
   .practicum-slide-text {
-    font-size: 15px !important;
+    font-size: 17px !important;
   }
   
   .practicum-image-container {
-    min-height: 180px;
+    min-height: 240px;
     margin-bottom: 8px;
   }
   
@@ -1145,12 +1145,12 @@ section {
 
 @media (max-width: 1024px) {
   .practicum-slide-image {
-    max-height: 160px;
-    max-width: 240px;
+    max-height: 240px;
+    max-width: 320px;
   }
   
   .practicum-slide-text {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
   
   .practicum-description {
@@ -1158,7 +1158,7 @@ section {
   }
   
   .practicum-image-container {
-    min-height: 160px;
+    min-height: 220px;
     margin-bottom: 6px;
   }
   
@@ -1174,16 +1174,16 @@ section {
   }
   
   .practicum-slide-image {
-    max-height: 100px;
+    max-height: 180px;
   }
   
   .practicum-slide-text {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
   
   .practicum-image-container {
     justify-content: center; /* Center images on mobile */
-    min-height: 120px;
+    min-height: 180px;
   }
 }
 
@@ -1216,16 +1216,16 @@ section {
   }
   
   .practicum-slide-text {
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
   
   .practicum-slide-image {
-    max-height: 120px;
-    max-width: 180px;
+    max-height: 180px;
+    max-width: 240px;
   }
   
   .practicum-image-container {
-    min-height: 120px;
+    min-height: 180px;
   }
 }
 
@@ -1603,12 +1603,12 @@ section {
   }
   
   .practicum-slide-image {
-    max-height: 140px;
-    max-width: 200px;
+    max-height: 200px;
+    max-width: 260px;
   }
   
   .practicum-image-container {
-    min-height: 140px;
+    min-height: 180px;
     justify-content: center;
     margin-bottom: 6px;
   }

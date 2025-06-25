@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // For ID-based counters (legacy)
         if (counter.id && counterIds.includes(counter.id)) {
           const targetValue = parseInt(counter.getAttribute('data-original-value'), 10);
-          animateCounter(counter, targetValue);
+        animateCounter(counter, targetValue);
         }
         // For class-based counters (CVS portfolio)
         else if (counter.classList.contains('metric-counter')) {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     counter.textContent = "0";
     observer.observe(counter);
   });
-
+    
   // Setup class-based counters (CVS portfolio)
   classCounters.forEach((counter) => {
     const prefix = counter.getAttribute('data-prefix') || '';
