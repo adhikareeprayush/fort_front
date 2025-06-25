@@ -910,9 +910,7 @@ section {
   align-items: flex-start;
 }
 
-.practicum-slide-item:hover {
-  transform: translateY(-5px);
-}
+/* Removed hover animation */
 
 .practicum-slide-content {
   display: flex;
@@ -930,14 +928,11 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 0;
-  transition: all 0.3s ease;
   margin-bottom: -100px;
   min-height: 200px;
 }
 
-.practicum-slide-item:hover .practicum-image-container {
-  transform: scale(1.05);
-}
+/* Removed hover animation */
 
 .practicum-slide-image {
   max-height: 220px;
@@ -1011,16 +1006,11 @@ section {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
   box-shadow: none;
   z-index: 10;
 }
 
-.custom-button:hover {
-  background: transparent;
-  transform: scale(1.1);
-  box-shadow: none;
-}
+/* Removed hover animation */
 
 .custom-button img {
   width: 32px;
@@ -1519,13 +1509,7 @@ section {
     height: 20px;
   }
   
-  .practicum-slide-item:hover {
-    transform: none; /* Disable hover effects on mobile */
-  }
-  
-  .practicum-slide-item:hover .practicum-image-container {
-    transform: none;
-  }
+  /* Removed hover animations */
   
   .practicum-slide-item {
     min-height: 340px;
