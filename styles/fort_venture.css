@@ -1492,6 +1492,20 @@ section {
 
 
 
+/* Responsive adjustments for diagram positioning */
+@media (max-width: 1200px) {
+  .compass-section .diagram-container {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .compass-section .diagram-container {
+    padding-left: 15px;
+    text-align: center;
+  }
+}
+
 /* Common Elements Responsive Styles */
 @media (max-width: 768px) {
   .section-header {
@@ -1626,7 +1640,7 @@ section {
 }
 
 .compass-section .diagram-container {
-  padding-left: 25px;
+  padding-left: 60px;
 }
 
 .compass-section .diagram-image {
