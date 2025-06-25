@@ -1680,5 +1680,19 @@ section {
   display: none !important;
 }
 
+/* Reduce gap between venture lifecycle and strategic services sections */
+.venture-lifecycle-section {
+  padding-bottom: 20px !important; /* Reduced from default 50px */
+}
+
+.strategic-services-section {
+  padding-top: 20px !important; /* Reduced from default 50px */
+}
+
+/* Ensure other sections maintain normal spacing */
+.compass-section {
+  padding-top: 50px !important;
+}
+
 /* Navigation Styles */
 
