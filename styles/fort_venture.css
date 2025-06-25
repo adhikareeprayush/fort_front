@@ -335,9 +335,10 @@ section {
   color: #e50012;
   font-size: 60pt;
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   text-transform: uppercase;
   line-height: 1.1;
+  text-align: left;
 }
 
 .venture-hero-subtitle {
@@ -346,6 +347,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
+  text-align: left;
 }
 
 .venture-hero-right {
@@ -414,7 +416,7 @@ section {
   .venture-hero-content {
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     gap: 30px;
   }
@@ -422,27 +424,30 @@ section {
   .venture-hero-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   
   .venture-hero-title {
     font-size: 36pt;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
+    text-align: left;
   }
   
   .venture-hero-subtitle {
     font-size: 18pt;
+    text-align: left;
   }
   
   .venture-hero-right {
     padding-left: 0;
-    text-align: center;
+    text-align: left;
   }
   
   .venture-hero-right p {
     font-size: 20pt;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
   }
 }
 
@@ -453,22 +458,26 @@ section {
   
   .venture-hero-title {
     font-size: 30pt;
+    margin-bottom: 0.2rem;
+    text-align: left;
   }
   
   .venture-hero-subtitle {
     font-size: 16pt;
+    text-align: left;
   }
   
   .venture-hero-right p {
     font-size: 18pt;
+    text-align: left;
   }
 }
 
-/* Responsive hero for mobile - matches talent page */
+/* Responsive hero for mobile - left aligned */
 @media (max-width: 768px) {
   .venture-hero {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     min-height: auto;
     height: auto;
     padding: 24px 20px;
@@ -476,32 +485,35 @@ section {
   .venture-hero-content {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     padding: 0;
-    gap: 20px;
+    gap: 15px;
   }
   .venture-hero-left {
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .venture-hero-title {
     font-size: 32px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.2rem;
+    text-align: left;
   }
   .venture-hero-subtitle {
     font-size: 16px;
+    text-align: left;
   }
   .venture-hero-right {
     width: 100%;
     padding-left: 0;
-    text-align: center;
+    text-align: left;
   }
   .venture-hero-right p {
     font-size: 20px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
   }
 }
 @media (max-width: 576px) {
@@ -513,12 +525,16 @@ section {
   }
   .venture-hero-title {
     font-size: 24px;
+    margin-bottom: 0.1rem;
+    text-align: left;
   }
   .venture-hero-subtitle {
     font-size: 13px;
+    text-align: left;
   }
   .venture-hero-right p {
     font-size: 16px;
+    text-align: left;
   }
 }
 /* CVS Compass */

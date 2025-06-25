@@ -433,9 +433,10 @@ section {
   color: #e50012;
   font-size: 60pt;
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   text-transform: uppercase;
   line-height: 1.1;
+  text-align: left;
 }
 
 .talent-hero-subtitle {
@@ -444,6 +445,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
+  text-align: left;
 }
 
 .talent-hero-right {
@@ -507,7 +509,7 @@ section {
   .talent-hero-content {
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     gap: 30px;
   }
@@ -515,41 +517,46 @@ section {
   .talent-hero-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   
   .talent-hero-title {
     font-size: 36pt;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 0.3rem;
   }
   
   .talent-hero-subtitle {
     font-size: 18pt;
-    text-align: center;
+    text-align: left;
   }
   
   .talent-hero-right {
     padding-left: 0;
-    text-align: center;
+    text-align: left;
   }
   
   .talent-hero-right p {
     font-size: 20pt;
-    text-align: center;
+    text-align: left;
   }
 }
 
 @media (max-width: 576px) {
   .talent-hero-title {
     font-size: 30pt;
+    margin-bottom: 0.2rem;
+    text-align: left;
   }
   
   .talent-hero-subtitle {
     font-size: 16pt;
+    text-align: left;
   }
   
   .talent-hero-right p {
     font-size: 18pt;
+    text-align: left;
   }
 }
 
