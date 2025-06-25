@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const counters = document.querySelectorAll(".metric-counter");
+  // Target the specific metric counter IDs used in venture page
+  const counterIds = ['count1', 'count2', 'count3', 'count4', 'count5', 'count6'];
+  const counters = counterIds.map(id => document.getElementById(id)).filter(el => el !== null);
+  
   const options = { 
     threshold: 0.3,
     rootMargin: "0px 0px -100px 0px"
@@ -26,23 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       currentValue = Math.floor(easeOutQuart * targetValue);
       
-      // Format number with leading zero if original had it and value < 10
-      const originalText = counter.getAttribute('data-target');
-      if (originalText.length === 2 && originalText.startsWith('0') && currentValue < 10) {
-        counter.textContent = '0' + currentValue;
-      } else {
-        counter.textContent = currentValue;
-      }
+      counter.textContent = currentValue;
       
       if (progress < 1) {
         requestAnimationFrame(updateCounter);
       } else {
         // Ensure final value is exact
-        if (originalText.length === 2 && originalText.startsWith('0') && targetValue < 10) {
-          counter.textContent = '0' + targetValue;
-        } else {
-          counter.textContent = targetValue;
-        }
+        counter.textContent = targetValue;
         counter.classList.remove('animating');
         animationStates.set(counter, false);
       }
@@ -52,19 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function resetCounter(counter) {
-    const originalText = counter.getAttribute('data-target');
-    if (originalText.length === 2 && originalText.startsWith('0')) {
-      counter.textContent = "00";
-    } else {
-      counter.textContent = "0";
-    }
+    counter.textContent = "0";
     animationStates.set(counter, false);
   }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const counter = entry.target;
-      const targetValue = parseInt(counter.getAttribute('data-target'), 10);
+      const targetValue = parseInt(counter.getAttribute('data-original-value'), 10);
       
       if (entry.isIntersecting) {
         // Start animation when element comes into view
@@ -79,13 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Observe all metric counters
   counters.forEach((counter) => {
-    // Initialize with 0 or 00 based on original format
-    const originalText = counter.getAttribute('data-target');
-    if (originalText.length === 2 && originalText.startsWith('0')) {
-      counter.textContent = "00";
-    } else {
-      counter.textContent = "0";
-    }
+    // Store the original target value
+    const originalValue = counter.textContent;
+    counter.setAttribute('data-original-value', originalValue);
+    
+    // Initialize with 0
+    counter.textContent = "0";
     
     observer.observe(counter);
   });

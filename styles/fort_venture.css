@@ -1534,8 +1534,34 @@ section {
   transform: scale(1.05);
 }
 
+/* metrics */
 .metrics-section {
+  background-color: black;
+  color: white;
   overflow: hidden;
+}
+
+.metrics-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.metrics-number {
+  display: flex;
+  align-items: center;
+  color: #e50012;
+}
+
+.metrics-number h1 {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 80px;
+}
+
+.metrics-text {
+  font-size: 24px;
+  line-height: 26px;
 }
 
 /* Animation for when counters are being animated */
