@@ -1766,8 +1766,163 @@ section {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0%;
-  line-height: 100%;
+  line-height: 1.4;
   font-family: Akhand, sans-serif;
+}
+
+/* Enhanced Platform Header Responsive Design */
+@media (max-width: 1500px) {
+  .platform-main-title {
+    font-size: 30px;
+  }
+  
+  .platform-subtitle {
+    font-size: 22px;
+  }
+  
+  .platform-description {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .platform-main-title {
+    font-size: 28px;
+  }
+  
+  .platform-subtitle {
+    font-size: 21px;
+  }
+  
+  .platform-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .platform-main-title {
+    font-size: 26px;
+  }
+  
+  .platform-subtitle {
+    font-size: 20px;
+  }
+  
+  .platform-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .platform-main-title {
+    font-size: 24px;
+  }
+  
+  .platform-subtitle {
+    font-size: 19px;
+  }
+  
+  .platform-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 920px) {
+  .platform-main-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .platform-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .platform-description {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .innovation-platform-section .row.mb-4 {
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  
+  .innovation-platform-section .col-12.col-md-5,
+  .innovation-platform-section .col-12.col-md-7 {
+    margin-bottom: 15px;
+  }
+  
+  .platform-main-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .platform-subtitle {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .platform-description {
+    font-size: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .platform-main-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .platform-subtitle {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .platform-description {
+    font-size: 11px;
+    line-height: 1.3;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform-main-title {
+    font-size: 16px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  .platform-subtitle {
+    font-size: 15px;
+    word-break: break-word;
+  }
+  
+  .platform-description {
+    font-size: 10px;
+    line-height: 1.2;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 375px) {
+  .platform-main-title {
+    font-size: 15px;
+  }
+  
+  .platform-subtitle {
+    font-size: 14px;
+  }
+  
+  .platform-description {
+    font-size: 9px;
+    max-width: 100%;
+  }
 }
 
 .platform-offerings-container {
@@ -2452,11 +2607,797 @@ section {
   }
 }
 
+/* Enhanced Mobile Responsive Design for Industrial Innovation Platform */
+
+/* Improve card layout for mobile devices */
+@media (max-width: 768px) {
+  /* Override existing styles for better mobile experience */
+  .platformSwiper .row.g-4 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .platformSwiper .col-12,
+  .platformSwiper .col-sm-6, 
+  .platformSwiper .col-md-6,
+  .platformSwiper .col-lg-3 {
+    width: 100% !important;
+    max-width: 380px !important;
+    margin-bottom: 20px !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Enhanced card design for mobile */
+  .platform-card-wrapper {
+    padding: 20px !important;
+    border-radius: 15px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s ease !important;
+    min-height: 220px !important;
+    height: auto !important;
+  }
+  
+  .platform-card-wrapper:hover {
+    transform: translateY(-3px) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  /* Improve image presentation on mobile */
+  .platform-image-container {
+    height: 80px !important;
+    justify-content: center !important;
+    margin-bottom: 15px !important;
+    padding: 10px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+  }
+  
+  .platform-image {
+    max-width: 70px !important;
+    max-height: 60px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    filter: brightness(1.1) !important;
+  }
+  
+  /* Better typography for mobile */
+  .platform-card-title {
+    font-size: 1rem !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    margin-bottom: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.3px !important;
+  }
+  
+  .platform-card-description {
+    font-size: 0.88rem !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    opacity: 0.95 !important;
+    color: #f0f0f0 !important;
+  }
+  
+  /* Improve platform offerings title on mobile */
+  .platform-offerings-title {
+    font-size: 22px !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+    padding: 0 10px !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Better platform container spacing */
+  .platform-offerings-container {
+    margin-top: 25px !important;
+    padding: 25px 15px 20px 15px !important;
+    border-radius: 18px !important;
+  }
+  
+  /* Ensure swiper doesn't interfere with mobile layout */
+  .platformSwiper .row.g-4.px-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Enhanced Tablet Responsive Design */
+@media (max-width: 991px) and (min-width: 769px) {
+  /* Optimize card layout for tablet */
+  .platformSwiper .row.g-4 {
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+  
+  .platformSwiper .col-12,
+  .platformSwiper .col-sm-6,
+  .platformSwiper .col-md-6,
+  .platformSwiper .col-lg-3 {
+    width: calc(50% - 10px) !important;
+    max-width: 350px !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .platform-card-wrapper {
+    padding: 25px !important;
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    min-height: 250px !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .platform-card-wrapper:hover {
+    transform: translateY(-5px) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .platform-image-container {
+    height: 85px !important;
+    justify-content: center !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .platform-image {
+    max-width: 80px !important;
+    max-height: 70px !important;
+  }
+  
+  .platform-card-title {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .platform-card-description {
+    font-size: 0.9rem !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Touch-friendly improvements for all mobile devices */
+@media (max-width: 991px) {
+  /* Improve touch targets */
+  .platform-card-wrapper {
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Better swiper behavior on touch devices */
+  .platformSwiper {
+    touch-action: pan-y !important;
+    overflow: hidden !important;
+  }
+  
+  .platformSwiper .swiper-slide {
+    touch-action: pan-y !important;
+  }
+  
+  /* Ensure proper spacing between sections */
+  .innovation-platform-section {
+    margin-bottom: 30px !important;
+  }
+  
+  /* Better mobile navigation behavior */
+  .platformSwiper .swiper-wrapper {
+    will-change: transform !important;
+  }
+}
+
+/* Very small mobile devices - Enhanced */
+@media (max-width: 480px) {
+  .platform-card-wrapper {
+    margin-bottom: 18px !important;
+    padding: 18px !important;
+    min-height: 200px !important;
+  }
+  
+  .platform-image-container {
+    height: 70px !important;
+    padding: 8px !important;
+  }
+  
+  .platform-image {
+    max-width: 60px !important;
+    max-height: 50px !important;
+  }
+  
+  .platform-card-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .platform-card-description {
+    font-size: 0.82rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .platform-offerings-container {
+    padding: 20px 12px 18px 12px !important;
+  }
+  
+  .platformSwiper .col-12,
+  .platformSwiper .col-sm-6,
+  .platformSwiper .col-md-6,
+  .platformSwiper .col-lg-3 {
+    max-width: 320px !important;
+    padding: 0 8px !important;
+  }
+}
+
 /* Outcome text optimization */
 .outcome-tab p {
   font-size: 15px !important; /* Reduced font size */
   line-height: 1.3 !important; /* Tighter line height */
   margin: 0 !important; /* Remove default margins */
+}
+
+/* Innovation Practicum Workforce Section Styles */
+.practicum-workforce-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  min-height: auto;
+}
+
+.practicum-workforce-title-wrapper {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.practicum-workforce-description-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  gap: 15px;
+}
+
+.practicum-workforce-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 900;
+  color: #E01E2C;
+  font-family: "Akhand", sans-serif !important;
+  text-align: left;
+  width: 400px;
+}
+
+.practicum-workforce-title .title-light {
+  font-weight: 400;
+}
+
+.practicum-workforce-title .title-bold {
+  font-weight: 900;
+}
+
+.practicum-workforce-subtitle {
+  color: #E01E2C;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Akhand", sans-serif !important;
+}
+
+.practicum-workforce-description {
+  color: #000;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  font-family: "Akhand", sans-serif !important;
+  margin: 0;
+  text-align: left;
+}
+
+/* Large Desktop */
+@media (max-width: 1500px) {
+  .practicum-workforce-container {
+    gap: 35px;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 30px;
+    width: 380px;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 17px;
+  }
+}
+
+/* Medium Desktop */
+@media (max-width: 1360px) {
+  .practicum-workforce-container {
+    gap: 30px;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 28px;
+    width: 360px;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 16px;
+  }
+}
+
+/* Small Desktop */
+@media (max-width: 1275px) {
+  .practicum-workforce-container {
+    gap: 25px;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 26px;
+    width: 340px;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 15px;
+  }
+  
+  .practicum-workforce-description-wrapper {
+    padding-left: 15px;
+  }
+}
+
+/* Large Tablet */
+@media (max-width: 1120px) {
+  .practicum-workforce-container {
+    gap: 20px;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 24px;
+    width: 320px;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 14px;
+  }
+  
+  .practicum-workforce-description-wrapper {
+    padding-left: 10px;
+  }
+}
+
+/* Medium Tablet */
+@media (max-width: 920px) {
+  .practicum-workforce-container {
+    gap: 18px;
+  }
+  
+  .practicum-workforce-title-wrapper {
+    flex: 0 0 40%;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 22px;
+    width: 300px;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .practicum-workforce-description-wrapper {
+    padding-left: 8px;
+  }
+}
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+  .practicum-workforce-container {
+    gap: 15px;
+  }
+  
+  .practicum-workforce-title-wrapper {
+    flex: 0 0 45%;
+  }
+
+  .practicum-workforce-title {
+    font-size: 20px;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .practicum-workforce-description-wrapper {
+    padding-left: 5px;
+    gap: 12px;
+  }
+}
+
+/* Mobile Landscape - Switch to Vertical Stack */
+@media (max-width: 576px) {
+  .practicum-workforce-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .practicum-workforce-title-wrapper {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .practicum-workforce-description-wrapper {
+    flex: none;
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.3;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .practicum-workforce-container {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 16px;
+    max-width: 95%;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 10px;
+    line-height: 1.2;
+    max-width: 95%;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 375px) {
+  .practicum-workforce-container {
+    gap: 12px;
+    padding: 0 5px;
+  }
+  
+  .practicum-workforce-title {
+    font-size: 15px;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
+  }
+  
+  .practicum-workforce-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    word-break: break-word;
+  }
+  
+  .practicum-workforce-description {
+    font-size: 9px;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+}
+
+/* Industrial Innovation Studios Section Styles */
+.industrial-studios-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  min-height: auto;
+}
+
+.industrial-studios-title-wrapper {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.industrial-studios-description-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.industrial-studios-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 900;
+  color: #E01E2C;
+  font-family: "Akhand", sans-serif !important;
+  text-align: left;
+  width: 400px;
+}
+
+.industrial-studios-description {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Akhand", sans-serif !important;
+  margin: 0;
+  text-align: left;
+}
+
+/* Large Desktop */
+@media (max-width: 1500px) {
+  .industrial-studios-container {
+    gap: 35px;
+  }
+  
+  .industrial-studios-title {
+    font-size: 30px;
+    width: 380px;
+  }
+  
+  .industrial-studios-description {
+    font-size: 17px;
+  }
+}
+
+/* Medium Desktop */
+@media (max-width: 1360px) {
+  .industrial-studios-container {
+    gap: 30px;
+  }
+  
+  .industrial-studios-title {
+    font-size: 28px;
+    width: 360px;
+  }
+  
+  .industrial-studios-description {
+    font-size: 16px;
+  }
+}
+
+/* Small Desktop */
+@media (max-width: 1275px) {
+  .industrial-studios-container {
+    gap: 25px;
+  }
+  
+  .industrial-studios-title {
+    font-size: 26px;
+    width: 340px;
+  }
+  
+  .industrial-studios-description {
+    font-size: 15px;
+  }
+  
+  .industrial-studios-description-wrapper {
+    padding-left: 15px;
+  }
+}
+
+/* Large Tablet */
+@media (max-width: 1120px) {
+  .industrial-studios-container {
+    gap: 20px;
+  }
+  
+  .industrial-studios-title {
+    font-size: 24px;
+    width: 320px;
+  }
+  
+  .industrial-studios-description {
+    font-size: 14px;
+  }
+  
+  .industrial-studios-description-wrapper {
+    padding-left: 10px;
+  }
+}
+
+/* Medium Tablet */
+@media (max-width: 920px) {
+  .industrial-studios-container {
+    gap: 18px;
+  }
+  
+  .industrial-studios-title-wrapper {
+    flex: 0 0 40%;
+  }
+  
+  .industrial-studios-title {
+    font-size: 22px;
+    width: 300px;
+  }
+  
+  .industrial-studios-description {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .industrial-studios-description-wrapper {
+    padding-left: 8px;
+  }
+}
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+  .industrial-studios-container {
+    gap: 15px;
+  }
+  
+  .industrial-studios-title-wrapper {
+    flex: 0 0 45%;
+  }
+
+  .industrial-studios-title {
+    font-size: 20px;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .industrial-studios-description {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  
+  .industrial-studios-description-wrapper {
+    padding-left: 5px;
+  }
+}
+
+/* Mobile Landscape - Switch to Vertical Stack */
+@media (max-width: 576px) {
+  .industrial-studios-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .industrial-studios-title-wrapper {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .industrial-studios-description-wrapper {
+    flex: none;
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  .industrial-studios-title {
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .industrial-studios-description {
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .industrial-studios-container {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .industrial-studios-title {
+    font-size: 16px;
+    max-width: 95%;
+  }
+  
+  .industrial-studios-description {
+    font-size: 10px;
+    line-height: 1.1;
+    max-width: 95%;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 375px) {
+  .industrial-studios-container {
+    gap: 12px;
+    padding: 0 5px;
+  }
+  
+  .industrial-studios-title {
+    font-size: 15px;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
+  }
+  
+  .industrial-studios-description {
+    font-size: 9px;
+    line-height: 1.1;
+    max-width: 100%;
+  }
 }
 
 /* Make swiper wrapper more compact */
