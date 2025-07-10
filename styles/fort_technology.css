@@ -23,6 +23,10 @@ h1 {
   margin: 0;
 }
 
+body,p{
+  font-size: 18pt;
+}
+
 section {
   padding: 50px 200px;
 }
@@ -100,19 +104,20 @@ section {
   font-weight: bold;
 }
 
-.logo-container {
-  width: auto;
-  min-width: 300px;
-  height: 100%;
-  object-fit: contain;
-}
-
 .logo-container > img {
   width: auto;
   height: 60px;
   object-fit: contain;
-  max-width: 100px;
+  max-width: 120px;
 }
+
+.nav-logo:first-child {
+  border-right: 2px solid white;
+  padding-right: 10px;
+  max-width: 140px;
+  margin-right: 10px;
+}
+
 .nav-logo:first-child {
   border-right: 2px solid white;
   padding-right: 10px;
@@ -261,7 +266,7 @@ section {
   margin: 0 !important;
 }
 
-.tech-hero-content {
+.hero-content {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -275,13 +280,13 @@ section {
   min-height: inherit;
 }
 
-.tech-hero-left {
+.hero-left {
   flex: 1;
 }
 
-.tech-hero-title {
+.hero-title {
   color: #e50012;
-  font-size: 60pt;
+  font-size: 90px;
   font-weight: 900;
   margin-bottom: 0.3rem;
   text-transform: uppercase;
@@ -289,7 +294,8 @@ section {
   text-align: left;
 }
 
-.tech-hero-subtitle {
+
+.hero-subtitle {
   color: #fff;
   font-size: 28pt;
   font-weight: 700;
@@ -298,14 +304,14 @@ section {
   text-align: left;
 }
 
-.tech-hero-right {
+.hero-right {
   flex: 1.6;
   padding-left: 60px;
   display: flex;
   align-items: center;
 }
 
-.tech-hero-right p {
+.hero-right p {
   font-size: 32pt;
   font-weight: 700;
   text-transform: uppercase;
@@ -320,19 +326,19 @@ section {
     padding: 0 160px; /* Match about section padding */
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 50pt;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 24pt;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 28pt;
   }
   
-  .tech-hero-right {
+  .hero-right {
     padding-left: 50px;
   }
 }
@@ -342,19 +348,19 @@ section {
     padding: 0 120px; /* Match about section padding */
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 42pt;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 20pt;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 24pt;
   }
   
-  .tech-hero-right {
+  .hero-right {
     padding-left: 40px;
   }
 }
@@ -364,19 +370,19 @@ section {
     padding: 0 80px; /* Match about section padding */
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 36pt;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 18pt;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 22pt;
   }
   
-  .tech-hero-right {
+  .hero-right {
     padding-left: 30px;
   }
 }
@@ -386,19 +392,19 @@ section {
     padding: 0 60px; /* Match about section padding */
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 32pt;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 16pt;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 20pt;
   }
   
-  .tech-hero-right {
+  .hero-right {
     padding-left: 25px;
   }
 }
@@ -411,14 +417,14 @@ section {
     height: auto;
   }
   
-  .tech-hero-content {
+  .hero-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 30px;
   }
   
-  .tech-hero-left {
+  .hero-left {
     width: 80%;
     margin-bottom: 24px;
     display: flex;
@@ -426,24 +432,24 @@ section {
     align-items: center;
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 28pt;
     text-align: center;
     margin-bottom: 0.3rem;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 14pt;
     text-align: center;
   }
   
-  .tech-hero-right {
+  .hero-right {
     width: 100%;
     padding-left: 0;
     text-align: center;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 18pt;
     text-align: center;
     font-size: clamp(1.1rem, 5vw, 2rem);
@@ -457,22 +463,22 @@ section {
     padding: 0 40px; /* Match about section padding */
   }
   
-  .tech-hero-left {
+  .hero-left {
     width: 70%;
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 24pt;
     margin-bottom: 0.3rem;
     text-align: center;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 12pt;
     text-align: center;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 16pt;
     text-align: center;
   }
@@ -484,23 +490,23 @@ section {
     min-height: 320px;
   }
   
-  .tech-hero-left {
+  .hero-left {
     width: 95%;
     margin-bottom: 16px;
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 22pt;
     margin-bottom: 0.2rem;
     text-align: center;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 11pt;
     text-align: center;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 14pt;
     text-align: center;
     font-size: clamp(1rem, 6vw, 1.5rem);
@@ -514,20 +520,20 @@ section {
     height: calc(100vh - 100px);
   }
   
-  .tech-hero-left {
+  .hero-left {
     width: 90%;
     margin-bottom: 20px;
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 20pt;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 10pt;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: clamp(0.9rem, 7vw, 1.2rem);
   }
 }
@@ -537,21 +543,21 @@ section {
     padding: 0 10px;
   }
   
-  .tech-hero-left {
+  .hero-left {
     width: 95%;
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 18pt;
     line-height: 1.4;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 9pt;
     line-height: 1.4;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 12pt;
     line-height: 1.4;
   }
@@ -824,6 +830,7 @@ section {
 /* footer */
 .footer {
   background-color: #181819;
+  font-size: 16px;
 }
 
 .footer .footer-head {
@@ -1466,54 +1473,54 @@ section {
 
 /* Tech Hero Section Responsive Styles */
 @media (max-width: 768px) {
-  .tech-hero {
+  .hero {
     min-height: calc(100vh - 80px);
     height: calc(100vh - 80px);
   }
   
-  .tech-hero-content {
+  .hero-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
   }
   
-  .tech-hero-left {
+  .hero-left {
     align-items: center;
     margin-bottom: 25px;
   }
   
-  .tech-hero-title {
+  .hero-title {
     font-size: 2.5rem;
     text-align: center;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 1.3rem;
     text-align: center;
   }
   
-  .tech-hero-right {
+  .hero-right {
     padding-left: 0;
     margin-top: 20px;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 1.1rem;
     text-align: center;
   }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-  .tech-hero-title {
+  .hero-title {
     font-size: 3rem;
   }
   
-  .tech-hero-subtitle {
+  .hero-subtitle {
     font-size: 1.5rem;
   }
   
-  .tech-hero-right p {
+  .hero-right p {
     font-size: 1.3rem;
   }
 }
@@ -1753,23 +1760,18 @@ section {
 
 /* Common Section Responsive Styles */
 @media (max-width: 768px) {
-  .section-header {
-    font-size: 1.8rem !important;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .section-subheader {
-    font-size: 1.2rem !important;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  .section-description {
-    font-size: 0.9rem !important;
-    text-align: center;
-    line-height: 1.5;
-  }
+ .logo-container > img {
+  width: auto;
+  height: 60px;
+  object-fit: contain;
+  max-width: 120px;
+}
+.nav-logo:first-child {
+  border-right: 2px solid white;
+  padding-right: 10px;
+  max-width: 140px;
+  margin-right: 10px;
+}
   
   .container {
     padding: 0 15px;
@@ -2333,27 +2335,14 @@ section {
   padding-left: 0 !important;
 }
 
+.innovation-platform-section h3{
+  color: #e50012;
+}
+
 /* Responsive Styles for Industrial Innovation Platform Section */
 
 /* Desktop First Approach - Large screens */
 @media (min-width: 1200px) {
-  .innovation-platform-section .col-md-5 h2 {
-    font-size: 32px !important;
-    font-weight: 900;
-    line-height: 1.1;
-  }
-  
-  .innovation-platform-section .col-md-7 h3 {
-    font-size: 24px !important;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  
-  .innovation-platform-section .col-md-7 p {
-    font-size: 18px !important;
-    line-height: 1.3;
-  }
-  
   .platform-offerings-container {
     padding: 45px 80px 20px 80px;
   }
@@ -3060,20 +3049,20 @@ section {
   color: #E01E2C;
   font-family: "Akhand", sans-serif !important;
   text-align: left;
-  width: 400px;
+  width: 450px;
 }
 
 .practicum-workforce-title .title-light {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .practicum-workforce-title .title-bold {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 .practicum-workforce-subtitle {
   color: #E01E2C;
-  font-size: 24px;
+  font-size: 20pt;
   line-height: 28.8px;
   font-weight: 700;
   text-transform: uppercase;
@@ -3083,9 +3072,7 @@ section {
 
 .practicum-workforce-description {
   color: #000;
-  font-size: 18px;
   line-height: 140%;
-  font-weight: 400;
   font-family: "Akhand", sans-serif !important;
   margin: 0;
   text-align: left;
@@ -3832,12 +3819,6 @@ section {
   }
 }
 
-/* Platform Section - Enhanced zoom handling */
-@media (max-width: 1350px) and (min-width: 1200px) {
-  .innovation-platform-section .platform-offerings-title {
-    font-size: 24px;
-  }
-}
 
 /* Remove any potential overflow issues */
 .equipment-main-container,
@@ -3882,3 +3863,14 @@ section {
     padding-right: 10px;
   }
 }
+
+
+.section-header{
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #e50012;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
