@@ -13,16 +13,15 @@ h1 {
   margin: 0;
 }
 
+body,p{
+  font-size: 18pt;
+}
+
+
 section {
   padding: 50px 200px;
 }
 
-.section-header {
-  font-size: 32px;
-  font-weight: 900;
-  text-align: left;
-  margin-bottom: 20px;
-}
 
 @media (max-width: 1500px) {
   section {
@@ -116,20 +115,20 @@ section {
   background-color: #e50012;
   font-weight: bold;
 }
-
-.logo-container {
-  width: auto;
-  min-width: 300px;
-  height: 100%;
-  object-fit: contain;
-}
-
 .logo-container > img {
   width: auto;
   height: 60px;
   object-fit: contain;
-  max-width: 100px;
+  max-width: 120px;
 }
+
+.nav-logo:first-child {
+  border-right: 2px solid white;
+  padding-right: 10px;
+  max-width: 140px;
+  margin-right: 10px;
+}
+
 .nav-logo:first-child {
   border-right: 2px solid white;
   padding-right: 10px;
@@ -282,28 +281,13 @@ section {
   flex: 1;
 }
 
-.hero-left > h1 {
-  color: #e50012;
-  font-size: 60pt;
-  font-weight: 900;
-  margin-bottom: 0.3rem;
-  text-transform: uppercase;
-}
-.hero-left > p {
-  color: #fff;
-  font-size: 28pt;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
 .hero-right {
   flex: 1.6;
   padding-left: 60px;
 }
 
 /* Talent-specific hero styles */
-.talent-hero-content {
+.hero-content {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -317,13 +301,13 @@ section {
   min-height: inherit;
 }
 
-.talent-hero-left {
+.hero-left {
   flex: 1;
 }
 
-.talent-hero-title {
+.hero-title {
   color: #e50012;
-  font-size: 60pt;
+  font-size: 90px;
   font-weight: 900;
   margin-bottom: 0.3rem;
   text-transform: uppercase;
@@ -331,7 +315,7 @@ section {
   text-align: left;
 }
 
-.talent-hero-subtitle {
+.hero-subtitle {
   color: #fff;
   font-size: 28pt;
   font-weight: 700;
@@ -340,14 +324,14 @@ section {
   text-align: left;
 }
 
-.talent-hero-right {
+.hero-right {
   flex: 1.6;
   padding-left: 60px;
   display: flex;
   align-items: center;
 }
 
-.talent-hero-right p {
+.hero-right p {
   font-size: 32pt;
   font-weight: 700;
   text-transform: uppercase;
@@ -362,19 +346,19 @@ section {
     padding: 0 160px; /* Match about section padding */
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 50pt;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 24pt;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 28pt;
   }
   
-  .talent-hero-right {
+  .hero-right {
     padding-left: 50px;
   }
 }
@@ -384,19 +368,19 @@ section {
     padding: 0 120px; /* Match about section padding */
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 42pt;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 20pt;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 24pt;
   }
   
-  .talent-hero-right {
+  .hero-right {
     padding-left: 40px;
   }
 }
@@ -406,19 +390,19 @@ section {
     padding: 0 80px; /* Match about section padding */
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 36pt;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 18pt;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 22pt;
   }
   
-  .talent-hero-right {
+  .hero-right {
     padding-left: 30px;
   }
 }
@@ -428,19 +412,19 @@ section {
     padding: 0 60px; /* Match about section padding */
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 32pt;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 16pt;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 20pt;
   }
   
-  .talent-hero-right {
+  .hero-right {
     padding-left: 25px;
   }
 }
@@ -453,14 +437,14 @@ section {
     height: auto;
   }
   
-  .talent-hero-content {
+  .hero-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 30px;
   }
   
-  .talent-hero-left {
+  .hero-left {
     width: 80%;
     margin-bottom: 24px;
     display: flex;
@@ -468,24 +452,24 @@ section {
     align-items: center;
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 28pt;
     text-align: center;
     margin-bottom: 0.3rem;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 14pt;
     text-align: center;
   }
   
-  .talent-hero-right {
+  .hero-right {
     width: 100%;
     padding-left: 0;
     text-align: center;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 18pt;
     text-align: center;
     font-size: clamp(1.1rem, 5vw, 2rem);
@@ -497,22 +481,22 @@ section {
     padding: 0 40px; /* Match about section padding */
   }
   
-  .talent-hero-left {
+  .hero-left {
     width: 70%;
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 24pt;
     margin-bottom: 0.3rem;
     text-align: center;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 12pt;
     text-align: center;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 16pt;
     text-align: center;
   }
@@ -524,23 +508,23 @@ section {
     min-height: 320px;
   }
   
-  .talent-hero-left {
+  .hero-left {
     width: 95%;
     margin-bottom: 16px;
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 22pt;
     margin-bottom: 0.2rem;
     text-align: center;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 11pt;
     text-align: center;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 14pt;
     text-align: center;
     font-size: clamp(1rem, 6vw, 1.5rem);
@@ -554,20 +538,20 @@ section {
     height: calc(100vh - 100px);
   }
   
-  .talent-hero-left {
+  .hero-left {
     width: 90%;
     margin-bottom: 20px;
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 20pt;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 10pt;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: clamp(0.9rem, 7vw, 1.2rem);
   }
 }
@@ -577,21 +561,21 @@ section {
     padding: 0 10px;
   }
   
-  .talent-hero-left {
+  .hero-left {
     width: 95%;
   }
   
-  .talent-hero-title {
+  .hero-title {
     font-size: 18pt;
     line-height: 1.4;
   }
   
-  .talent-hero-subtitle {
+  .hero-subtitle {
     font-size: 9pt;
     line-height: 1.4;
   }
   
-  .talent-hero-right p {
+  .hero-right p {
     font-size: 12pt;
     line-height: 1.4;
   }
@@ -1379,6 +1363,7 @@ section {
 /* footer */
 .footer {
   background-color: #181819;
+  font-size: 16px;;
 }
 
 .footer .footer-head {
@@ -1813,3 +1798,62 @@ section {
     font-size: 14px;
   }
 }
+
+
+
+/* Common Section Responsive Styles */
+@media (max-width: 768px) {
+ .logo-container > img {
+  width: auto;
+  height: 60px;
+  object-fit: contain;
+  max-width: 120px;
+}
+.nav-logo:first-child {
+  border-right: 2px solid white;
+  padding-right: 10px;
+  max-width: 140px;
+  margin-right: 10px;
+}
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .row {
+    margin: 0 -10px;
+  }
+  
+  [class*="col-"] {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .section-header {
+    font-size: 2rem !important;
+  }
+  
+  .section-subheader {
+    font-size: 1.3rem !important;
+  }
+  
+  .section-description {
+    font-size: 0.95rem !important;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+}
+
+
+.section-header{
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #e50012;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+

@@ -13,17 +13,16 @@ h1 {
   margin: 0;
 }
 
+
+body,p{
+  font-size: 18pt;
+}
+
+
 section {
   padding: 50px 200px;
 }
 
-.section-header {
-  font-size: 36px;
-  font-weight: 900;
-  text-align: left;
-  margin-bottom: 24px;
-  letter-spacing: 0.5px;
-}
 
 @media (max-width: 1500px) {
   section {
@@ -97,11 +96,12 @@ section {
   width: auto;
   height: 60px;
   object-fit: contain;
-  max-width: 100px;
+  max-width: 120px;
 }
 .nav-logo:first-child {
   border-right: 2px solid white;
   padding-right: 10px;
+  max-width: 140px;
   margin-right: 10px;
 }
 
@@ -517,13 +517,7 @@ section {
   font-family: "Akhand", sans-serif;
 }
 
-.about-title-line1,
-.about-title-line2 {
-  font-size: 32px;
-  line-height: 34pt;
-  margin: 0;
-  letter-spacing: 1.2px;
-}
+
 
 .about-title-line2 {
   margin-top: 4px;
@@ -962,6 +956,7 @@ section {
 /* footer */
 .footer {
   background-color: #181819;
+  font-size:16px;
 }
 
 .footer .footer-head {
@@ -1190,4 +1185,60 @@ section {
   }
 }
 
+
+
+/* Common Section Responsive Styles */
+@media (max-width: 768px) {
+ .logo-container > img {
+  width: auto;
+  height: 60px;
+  object-fit: contain;
+  max-width: 120px;
+}
+.nav-logo:first-child {
+  border-right: 2px solid white;
+  padding-right: 10px;
+  max-width: 140px;
+  margin-right: 10px;
+}
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .row {
+    margin: 0 -10px;
+  }
+  
+  [class*="col-"] {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .section-header {
+    font-size: 2rem !important;
+  }
+  
+  .section-subheader {
+    font-size: 1.3rem !important;
+  }
+  
+  .section-description {
+    font-size: 0.95rem !important;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.section-header{
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #e50012;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
 
