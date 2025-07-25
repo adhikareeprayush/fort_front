@@ -116,7 +116,8 @@ section {
 .nav-item {
   margin: 0 20px;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 .nav-item:hover {
   color: #e50012;
