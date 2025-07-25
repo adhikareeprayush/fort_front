@@ -119,7 +119,8 @@ section {
 .nav-item {
   margin: 0 20px;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
   font-family: "Akhand", sans-serif !important;
   font-weight: normal;
 }
@@ -1776,7 +1777,6 @@ section {
 
 .compass-section .diagram-image {
   width: 100%;
-  max-width: 550px;
   height: auto;
   display: block;
 }
@@ -1898,3 +1898,51 @@ section {
   letter-spacing: 0.5px;
 }
 
+
+.card-black-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.card-black{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 16px;
+  padding: 20px;
+  height: 320px;
+  color:white;
+}
+
+.card-black img{
+  height: 100px;
+  width: auto;
+  margin-bottom: 24px;
+  object-fit: contain;
+}
+
+.card-black h3{
+  color: #E50012;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .card-black-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  .card-black img {
+    height: 80px;
+  }
+  
+  .card-black {
+    padding: 15px;
+  }
+}
