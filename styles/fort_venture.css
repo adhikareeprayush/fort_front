@@ -1978,3 +1978,9 @@ section {
   opacity: 0.3; /* 👈 Set your desired background opacity here */
   z-index: -1;
 }
+
+.practicum-slide-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+}
