@@ -1,1751 +1,2294 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Forge Labs | Industrial Innovation Studios for Accelerated Product
+      Development
+    </title>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>
-    Forge Labs | Industrial Innovation Studios for Accelerated Product
-    Development
-  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Details -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Meta Details -->
+    <meta
+      name="description"
+      content="Forge Labs offers cutting-edge technology infrastructure and resources to accelerate product development across defence, manufacturing, health, climate, and mobility domains. Operates the largest Fab Lab Network in India accredited by the Fab Foundation, USA, delivering university-accredited Innovation Practicum."
+    />
+    <meta
+      name="keywords"
+      content="Industrial Innovation, Accelerated Product Development, Forge Labs, Fab Lab Network, Digital Fabrication, Manufacturing Technologies, Defence, Health, Climate, Mobility, Sustainability, Startups, Innovation Labs, Product Development Lifecycle"
+    />
+    <meta name="author" content="Forge Labs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
 
-  <meta name="description"
-    content="Forge Labs offers cutting-edge technology infrastructure and resources to accelerate product development across defence, manufacturing, health, climate, and mobility domains. Operates the largest Fab Lab Network in India accredited by the Fab Foundation, USA, delivering university-accredited Innovation Practicum." />
-  <meta name="keywords"
-    content="Industrial Innovation, Accelerated Product Development, Forge Labs, Fab Lab Network, Digital Fabrication, Manufacturing Technologies, Defence, Health, Climate, Mobility, Sustainability, Startups, Innovation Labs, Product Development Lifecycle" />
-  <meta name="author" content="Forge Labs" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/fort_talent.css" />
+    <title>Fort Technology</title>
+  </head>
 
-  <link rel="stylesheet" href="../styles/fort_technology.css" />
-  <title>Fort Technology</title>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="nav-section d-flex justify-content-between">
-    <div class="logo-container d-flex align-items-center gap-2 w-25">
-      <img class="nav-logo" src="../assets/images/fort/footer/logo1.svg" alt="" />
-      <img class="nav-logo" src="../assets/images/fort/navbar/logo2.png" alt="" />
-      <img class="nav-logo" src="../assets/images/fort/navbar/logo3.png" alt="" />
-    </div>
-    <ul class="nav-menus d-flex justify-content-between">
-      <li class="nav-item">
-        <a href="../index.html" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="fort_talent.html" class="nav-link">Talent</a>
-      </li>
-      <li class="nav-item">
-        <a href="fort_technology.html" class="nav-link active">Technology</a>
-      </li>
-      <li class="nav-item">
-        <a href="fort_venture.html" class="nav-link">Ventures</a>
-      </li>
-      <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
-    </ul>
-    <div class="hamburger-menu" id="hamburger-btn" role="button" tabindex="0" aria-label="Toggle navigation menu">
-      <span>☰</span>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu (separate from nav) -->
-  <div class="mobile-menu hide" id="mobile-menu" role="navigation" aria-label="Mobile navigation menu">
-    <div class="close-menu" id="close-btn" role="button" tabindex="0" aria-label="Close navigation menu">&times;</div>
-    <ul class="d-flex flex-column gap-3">
-      <li class="nav-item">
-        <a href="../index.html" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="fort_talent.html" class="nav-link">Talent</a>
-      </li>
-      <li class="nav-item">
-        <a href="fort_technology.html" class="nav-link">Technology</a>
-      </li>
-      <li class="nav-item">
-        <a href="fort_venture.html" class="nav-link">Ventures</a>
-      </li>
-      <li class="nav-item"><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
-    </ul>
-  </div>
-  </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <div class="hero w-100 position-relative">
-    <!-- Video Background -->
-    <div class="hero-video-container">
-      <video class="hero-video" autoplay muted loop playsinline>
-        <source src="../assets/videos/Video.mp4" type="video/mp4">
-        <!-- Fallback background image if video fails to load -->
-      </video>
-    </div>
-    <div class="overlay-black-linear-gradient"></div>
-    <div class="container d-flex align-items-center justify-content-between tech-hero-content"
-      style="z-index: 3; position: relative;">
-      <div class="hero-left">
-        <h1 class="hero-title">TECHNOLOGY</h1>
-        <h2 class="hero-subtitle">ADVANCEMENT & PRODUCT DEVELOPMENT</h2>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav-section d-flex justify-content-between">
+      <div class="logo-container d-flex align-items-center gap-2 w-25">
+        <img
+          class="nav-logo"
+          src="../assets/images/fort/footer/logo1.svg"
+          alt=""
+        />
+        <img
+          class="nav-logo"
+          src="../assets/images/fort/navbar/logo2.png"
+          alt=""
+        />
+        <img
+          class="nav-logo"
+          src="../assets/images/fort/navbar/logo3.png"
+          alt=""
+        />
       </div>
-      <div class="hero-right">
-        <p>
-          DEVELOPING, ADVANCING, APPLYING DISCOVERIES & BREAKTHROUGHS TO DRIVE INNOVATION-CATALYSED, ENDURING
-          COMPETITIVE ADVANTAGES
+      <ul class="nav-menus d-flex justify-content-between">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_talent.html" class="nav-link">Talent</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_technology.html" class="nav-link active">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_venture.html" class="nav-link">Ventures</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link contact-btn">Contact Us</a>
+        </li>
+      </ul>
+      <div
+        class="hamburger-menu"
+        id="hamburger-btn"
+        role="button"
+        tabindex="0"
+        aria-label="Toggle navigation menu"
+      >
+        <span>☰</span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu (separate from nav) -->
+    <div
+      class="mobile-menu hide"
+      id="mobile-menu"
+      role="navigation"
+      aria-label="Mobile navigation menu"
+    >
+      <div
+        class="close-menu"
+        id="close-btn"
+        role="button"
+        tabindex="0"
+        aria-label="Close navigation menu"
+      >
+        &times;
+      </div>
+      <ul class="d-flex flex-column gap-3">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_talent.html" class="nav-link">Talent</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_technology.html" class="nav-link">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a href="fort_venture.html" class="nav-link">Ventures</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link contact-btn">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero w-100 position-relative">
+      <!-- Video Background -->
+      <div class="hero-video-container">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="../assets/videos/technology.mp4" type="video/mp4" />
+          <!-- Fallback background image if video fails to load -->
+        </video>
+      </div>
+      <div class="overlay-black-linear-gradient"></div>
+      <div
+        class="container d-flex align-items-center justify-content-between tech-hero-content"
+        style="z-index: 3; position: relative"
+      >
+        <div class="hero-left">
+          <h1 class="hero-title">TECHNOLOGY</h1>
+          <h2 class="hero-subtitle">ADVANCEMENT & PRODUCT DEVELOPMENT</h2>
+        </div>
+        <div class="hero-right">
+          <p>
+            DEVELOPING, ADVANCING, APPLYING DISCOVERIES & BREAKTHROUGHS TO DRIVE
+            INNOVATION-CATALYSED, ENDURING COMPETITIVE ADVANTAGES
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industrial Innovation Pactrium Section -->
+    <section class="industrial-innovation-pactrium-red">
+      <div class="d-flex flex-column">
+        <h2 style="line-height: 0.5">INDUSTRIAL INNOVATION PRACTIUM</h2>
+        <p style="font-size: 22px">
+          To Generate And Develop Innovation-Capable <br />
+          Present & Future Industiral Workforce
         </p>
       </div>
-    </div>
-  </div>
+      <p style="font-weight: 600; max-width: 700px">
+        A comprehensive and unique portfolio of University Accredited/Affiliated
+        graduate education programs and professional development courses in
+        Innovation & Entrepreneurship.
+      </p>
+    </section>
 
-  <!-- Performance & impact metrics -->
-  <section class="w-100 d-flex flex-column gap-5 metrics-section">
-    <h1 class="text-uppercase section-header m-0">
-      PERFOMANCE AND IMPACT METRICS
-    </h1>
-    <div class="metrics-container row">
-      <div class="d-flex flex-column gap-4">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
-            <div class="metrics-item">
-              <div class="metrics-number">
-                <h1>0</h1>
-                <h1 id="count16" class="">8</h1>
+    <!-- Performance & impact metrics -->
+    <section class="w-100 d-flex flex-column gap-5 metrics-section">
+      <h1 class="text-uppercase section-header m-0" style="color: white">
+        PERFOMANCE AND IMPACT METRICS
+      </h1>
+      <div class="metrics-container row">
+        <div class="d-flex flex-column gap-4">
+          <div class="row justify-content-center gap-4">
+            <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
+              <div class="metrics-item">
+                <div class="metrics-number">
+                  <h1>0</h1>
+                  <h1 id="count16" class="">8</h1>
+                </div>
+                <span class="metrics-text text-uppercase"
+                  >Industrial Innovation labs
+                </span>
               </div>
-              <span class="metrics-text text-uppercase">Industrial Innovation labs
-              </span>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
-            <div class="metrics-item">
-              <div class="metrics-number">
-                <h1 id="count17" class="">28</h1>
+            <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
+              <div class="metrics-item">
+                <div class="metrics-number">
+                  <h1 id="count17" class="">28</h1>
+                </div>
+                <span class="metrics-text text-uppercase"
+                  >Startups engaged</span
+                >
               </div>
-              <span class="metrics-text text-uppercase">Startups engaged</span>
             </div>
-          </div>
 
-          <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
-            <div class="metrics-item">
-              <div class="metrics-number">
-                <h1 id="count18" class="">43</h1>
+            <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
+              <div class="metrics-item">
+                <div class="metrics-number">
+                  <h1 id="count18" class="">43</h1>
+                </div>
+                <span class="metrics-text text-uppercase"
+                  >Product Innovations</span
+                >
               </div>
-              <span class="metrics-text text-uppercase">Product Innovations</span>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
-            <div class="metrics-item">
-              <div class="metrics-number">
-                <h1 id="count19" class="">148</h1>
+            <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
+              <div class="metrics-item">
+                <div class="metrics-number">
+                  <h1 id="count19" class="">148</h1>
+                </div>
+                <span class="metrics-text text-uppercase"
+                  >Industrial Challenges</span
+                >
               </div>
-              <span class="metrics-text text-uppercase">Industrial Challenges</span>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
-            <div class="metrics-item">
-              <div class="metrics-number">
-                <h1>0</h1>
-                <h1 id="count20" class="">8</h1>
+            <div class="col-12 col-md-6 col-lg-4 row justify-content-center">
+              <div class="metrics-item">
+                <div class="metrics-number">
+                  <h1>0</h1>
+                  <h1 id="count20" class="">8</h1>
+                </div>
+                <span class="metrics-text text-uppercase"
+                  >Managed Innovation Projects
+                </span>
               </div>
-              <span class="metrics-text text-uppercase">Managed Innovation Projects
-              </span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Future Factories -->
-  <section class="practicum-banner w-100 d-flex flex-column gap-5">
-    <div class="h-100 d-flex flex-column flex-md-row gap-2 md:gap-0 justify-content-between align-items-start">
-      <!-- Headline -->
-      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
-        <p  class="text-center text-md-start section-header">
-          FUTURE FACTORIES <br />
-          LAUNCHPAD <span style="font-weight: 400;">FOR STARTUPS TO MAKE INDUSTRY INNOVATE, FASTER & BETTER</span>
-        </p>
-      </div>
-      <!-- Description -->
-      <div class="col-12 col-md-7 d-flex flex-column gap-3">
-        <p class="text-center text-md-start text-black">
-          Open Industrial Innovation Platform that bridges industrial
-          companies pursuing innovation powered transformation with startups
-          offering technology powered solutions.
-        </p>
-      </div>
-    </div>
-    <div class="future_container bg-black px-5" style="padding-top: 60px; padding-bottom: 60px;">
-      <div class="row g-4">
-        <div class="d-flex flex-column col-12 col-lg-4 gap-3 px-3">
-          <div class="w-100 d-flex align-items-center justify-content-start gap-3">
-            <img height="80px" class="object-fit-contain" src="../assets/images/fort/future_factories/1.png" alt="" />
-            <p class="future_title text-uppercase">
-              industrial innovation practicum
-            </p>
-          </div>
-          <div class="d-flex justify-content-start">
-            <p  class="text-white">
-              ADVANCED INDUSTRIAL SKILLS DEVELOPMENT services offered under
-              Forge's Innovation Practicum aim to enrich existing industrial
-              workforces at the levels of operators, engineers, managers, and
-              executives in technological competencies and innovation
-              management practices to gain exposure to building, deploying and
-              operating technological solutions as operating capabilities. 
-            </p>
-          </div>
-        </div>
-        <div class="d-flex flex-column col-12 col-lg-4 gap-3 px-3">
-          <div class="w-100 d-flex align-items-center justify-content-start gap-3">
-            <img height="80px" class="object-fit-contain" src="../assets/images/fort/future_factories/2.png" alt="" />
-            <p class="future_title text-uppercase">
-              industrial innovation labs
-            </p>
-          </div>
-          <div class="d-flex justify-content-start">
-            <p  class="text-white">
-              INDUSTRIAL INNOVATION LABS that deliver Forge's
-              university-accredited Innovation Practicum - democratising
-              access to tools, resources and expertise to translate innovative
-              ideas into factory-scale industrial-grade solutions faster,
-              better and cheaper.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex flex-column col-12 col-lg-4 gap-3 px-3">
-          <div class="w-100 d-flex align-items-center justify-content-start gap-3">
-            <img height="80px" class="object-fit-contain" src="../assets/images/fort/future_factories/3.png" alt="" />
-            <p class="future_title text-uppercase">
-              industrial innovation<br /> platform
-            </p>
-          </div>
-          <div class="d-flex justify-content-start">
-            <p style="font-size: 18px; line-height: 140%; font-weight: 400;" class="text-white">
-              INDUSTRIAL CO-INNOVATION PLATFORM that enables  industrial
-              enterprises to Discover, Validate and Partner/Procure innovative
-              & technologically advanced innovations & solutions  from
-              startups via direct procurement, joint-product development
-              and/or joint-industrialisation /GTM partnerships with these tech
-              ventures.
-            </p>
-          </div>
+    <!-- Industrial Innovation Studios -->
+    <section class="practicum-banner w-100 d-flex flex-column gap-5 banner">
+      <div class="innovation-workforce-container">
+        <div class="w-100 d-flex justify-content-between flex-wrap text-left">
+          <!-- Headline -->
+          <p class="section-header">
+            INDUSTRIAL TECHNOLOGY <br />
+            THRUST AREAS
+          </p>
+          <!-- Description -->
+          <p style="max-width: 900px; text-align: left !important">
+            The aggregate of the FORTs’ technology infrastructure & resources
+            offer tools, resources and expertise to translate innovative ideas
+            into factory-scale industrial-grade solutions - faster, better and
+            cheaper, by driving accelerated product development through
+            infrastructure across the entire product
+            innovation-compliance-certification-pilot production lifecycle
+            across 5 Industrial Technology Thrust Areas.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Industrial workforce -->
-  <section class="w-100 d-flex flex-column gap-5">
-      <!-- Headline -->
-      <div class="practicum-workforce-title-wrapper">
-        <p class="practicum-workforce-title section-header">
-          <span class="title-light">Innovation Practicum for</span><br>
-          <span class="title-bold">Industrial Workforce</span>
-        </p>
-      </div>
-      <!-- Description -->
-      <div class="practicum-workforce-description-wrapper">
-        <p class="practicum-workforce-subtitle">
-          Talent Enrichment In Industry
-        </p>
-        <p class="practicum-workforce-description">
-          Forge helps industrial companies upgrade their present skilled workforce, from operators to executives, into
-          future-ready innovative talent,
-          with practical tools and mindset of Innovation & Technology Management. IP-IW (Innovation Practicum for
-          Industrial Workforce) refreshes
-          and empowers the industrial workforce, unlocking their potential to solve real-world problems and propel the
-          industry to global
-          competitiveness. This initiative bridges the gap between academic theory and on-the-ground application through
-          the robust Practicum
-          training model, ensuring industrial companies harness the full potential of the innovative workforce.
-        </p>
-      </div>
-    </div>
-    <div id="industry" class="mt-2 py-5 w-100 main-tab-container">
-      <div class="gy-0 d-flex flex-column gap-3 align-items-center justify-content-center">
-        <div class="tab-container row text-center gx-0">
-          <div class="tab-card-container col-md-4">
-            <div class="tab-header active" data-tab="0">
-              <p class="w-auto text-uppercase">I.&nbsp;User</p>
-            </div>
-            <div class="tab-header" data-tab="1">
-              <p class="w-auto text-uppercase">II.&nbsp;Engineer</p>
-            </div>
-            <div class="tab-header" data-tab="2">
-              <p class="w-auto text-uppercase">III.&nbsp;Innovator</p>
-            </div>
-          </div>
-        </div>
-        <div class="custom-swiper-wrapper px-4">
-          <div class="custom-button custom-prev">
-            <img src="../assets/images/fort/icons/arrow-left.png" alt="Previous" />
-          </div>
-          <div class="swiper tabSwiper">
-            <div class="swiper-wrapper">
-              <div id="tab1"
-                class="tab-slide swiper-slide d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3">
-                <div class="tab-image">
-                 <div class="d-flex flex-column gap-1 text-white innovationTab-left">
-                  <div class="d-flex align-items-center" style="gap:50px;">
-                    <div class="position-relative">
-                      <div class="innovationTab-left-title">1</div>
-                      <img src="../assets/images/fort/technology/user-image.svg" alt="" class="innovationTab-left-image">
-                    </div>
-                    <div class="d-flex flex-column">
-                      <h2 style="line-height: 12px;">User</h2>
-                      <span class="fs-5" style="color: #E01E2C;">LEVEL 1</span>
-                    </div>
-                  </div>
-                  <h3>
-                    Gain foundational skills to understand and utilise tools through practical learning.
-                  </h3>
-                  <ul>
-                    <li>Equip participants with a solid understanding of fundamental innovation tools and techniques.
-                    </li>
-                    <li>Provide hands-on experience in using these tools to solve basic industrial prooblems.</li>
-                  </ul>
-                 </div>
-                </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>
-                        <p>Industrial Tech Domain</p>
-                      </th>
-                      <th>
-                        <p>Courses</p>
-                      </th>
-                      <th>
-                        <p>Outcomes</p>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="table-left">
-                        Industrial Robotics and Cobotics
-                      </td>
-                      <td class="double-row">
-                        <div>Mobile Robotics</div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div>Industrial Robotics</div>
-                      </td>
-                      <td class="double-row">
-                        <div class="outcome-tab">
-                          <p>
-                            Explore robotics by defining functionalities,
-                            identifying components, understanding motion,
-                            programming in C++, and integrating sensors for
-                            perception.
-                          </p>
-                        </div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div class="outcome-tab">
-                          <p>
-                            Understand industrial robotics fundamentals, use
-                            simulation software, program robotic movements,
-                            and optimize processes for efficiency.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-left">
-                        Electronics Design, Test and Verification
-                      </td>
-                      <td class="gx-0">Systems Design & Implementation</td>
-                      <td>
-                        <div class="outcome-tab">
-                          <p>
-                            Utilize LabVIEW for programming, DAQ setup, signal
-                            processing, and real-time data applications.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-left">
-                        Cyber Physical Control Systems
-                      </td>
-                      <td class="double-row">
-                        <div>Embedded Control <br>Systems</div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div>Pneumatics and Automation</div>
-                      </td>
-                      <td class="double-row">
-                        <div class="outcome-tab">
-                          <p>
-                            Gain knowledge of basic electronics, circuit
-                            theorems, DTM equipment, and digital circuit
-                            applications.
-                          </p>
-                        </div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div class="outcome-tab">
-                          <p>
-                            Apply pneumatics principles in industry, interpret
-                            system safety protocols, and experiment with PLCs
-                            in automation.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+      <!-- <div id="industry" class="mt-2 py-5 w-100 main-tab-container2">
+        <div
+          class="gy-0 d-flex flex-column gap-3 align-items-center justify-content-center"
+        >
+          <div class="tab-container row text-center gx-0">
+            <div class="tab-card-container col-md-4 gap-3">
+              <div class="tab-header2 active" data-tab2="0">
+                <p class="w-auto text-uppercase">
+                  INNOVATION&nbsp;INFRASTRUCTURE
+                </p>
               </div>
-              <div id="tab2"
-                class="tab-slide swiper-slide d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3">
-                <div class="tab-image">
-                   <div class="d-flex flex-column gap-1 text-white innovationTab-left">
-                  <div class="d-flex align-items-center" style="gap:50px;">
-                    <div class="position-relative">
-                      <div class="innovationTab-left-title">2</div>
-                      <img src="../assets/images/fort/technology/user-image.svg" alt="" class="innovationTab-left-image">
-                    </div>
-                    <div class="d-flex flex-column">
-                      <h2 style="line-height: 12px;">ENGINEER</h2>
-                      <span class="fs-5" style="color: #E01E2C;">LEVEL 2</span>
-                    </div>
-                  </div>
-                  <h3>
-                    Deepe Undertanding of Managing (Operating & Maintaining) Systems tomage complexity & dtive efficient innovation
-                  </h3>
-                  <ul>
-                    <li>Deepen participant understanding of how various systems with an industrial setting interact and influeence innovation.
-                    </li>
-                    <li>Develop skills for managing complex systems through systematic troubleshooting.</li>
-                  </ul>
-                 </div>
-                </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>
-                        <p>Industrial Tech Domain</p>
-                      </th>
-                      <th>
-                        <p>Courses</p>
-                      </th>
-                      <th>
-                        <p>Outcomes</p>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="table-left">
-                        Industrial Robotics and Cobotics
-                      </td>
-                      <td class="double-row">
-                        <div>Mobile Robotics</div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div>Industrial Robotics</div>
-                      </td>
-                      <td class="double-row">
-                        <div class="outcome-tab">
-                          <p>
-                            Apply advanced motion planning, implement robot
-                            vision for object recognition, and integrate
-                            sensors and actuators for robotic tasks.
-                          </p>
-                        </div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div class="outcome-tab">
-                          <p>
-                            Set up and program industrial robots, execute
-                            precise movements, perform welding and painting
-                            tasks, and ensure collision-free operations.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-left">
-                        Electronics Design, Test and Verification
-                      </td>
-                      <td class="gx-0">Systems Design & Implementation</td>
-                      <td>
-                        <div class="outcome-tab">
-                          <p>
-                            Advance in LabVIEW with modular and real-time
-                            programming, configure myRIO/RIO devices, and
-                            develop FPGA-integrated applications.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-left">
-                        Cyber Physical Control Systems
-                      </td>
-                      <td class="double-row">
-                        <div>Embedded Control Systems</div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div>Pneumatics and Automation</div>
-                      </td>
-                      <td class="double-row">
-                        <div class="outcome-tab">
-                          <p>
-                            Explore embedded systems, understand
-                            microcontroller components, and gain hands-on
-                            experience with Arduino IDEs.
-                          </p>
-                        </div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div class="outcome-tab">
-                          <p>
-                            Master industrial automation by maintaining
-                            pneumatic systems, diagnosing PLC issues, and
-                            optimizing productivity.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div id="tab3"
-                class="tab-slide swiper-slide d-flex flex-column flex-md-row align-items-center align-items-md-start gap-3">
-                <div class="tab-image">
-                   <div class="d-flex flex-column gap-1 text-white innovationTab-left">
-                  <div class="d-flex align-items-center" style="gap:50px;">
-                    <div class="position-relative">
-                      <div class="innovationTab-left-title">3</div>
-                      <img src="../assets/images/fort/technology/user-image.svg" alt="" class="innovationTab-left-image">
-                    </div>
-                    <div class="d-flex flex-column">
-                      <h2 style="line-height: 12px;">INNOVATOR</h2>
-                      <span class="fs-5" style="color: #E01E2C;">LEVEL 3</span>
-                    </div>
-                  </div>
-                  <h3>
-                    Become an innovation leader by creating, building, and deploying system-wide solutions for your organization
-                  </h3>
-                  <ul>
-                    <li>Empower participants to bevome active innovators by providing them with the skills to create, build and deploy innovative solutions.
-                    </li>
-                    <li>Equip participants with the ability to lead and manage innovation projects from ideation to implementation.</li>
-                  </ul>
-                 </div>
-                </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>
-                        <p>Industrial Tech Domain</p>
-                      </th>
-                      <th>
-                        <p>Courses</p>
-                      </th>
-                      <th>
-                        <p>Outcomes</p>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="table-left">
-                        Industrial Robotics and Cobotics
-                      </td>
-                      <td class="double-row">
-                        <div>Mobile Robotics</div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div>Industrial Robotics</div>
-                      </td>
-                      <td class="double-row">
-                        <div class="outcome-tab">
-                          <p>
-                            Explore robotics by defining functionalities,
-                            identifying components, understanding motion,
-                            programming in C++, and integrating sensors for
-                            perception.
-                          </p>
-                        </div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div class="outcome-tab">
-                          <p>
-                            Understand industrial robotics fundamentals, use
-                            simulation software, program robotic movements,
-                            and optimize processes for efficiency.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-left">
-                        Electronics Design, Test and Verification
-                      </td>
-                      <td class="gx-0">Systems Design & Implementation</td>
-                      <td>
-                        <div class="outcome-tab">
-                          <p>
-                            Utilize LabVIEW for programming, DAQ setup, signal
-                            processing, and real-time data applications.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-left">
-                        Cyber Physical Control Systems
-                      </td>
-                      <td class="double-row">
-                        <div>Embedded Control Systems</div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div>Pneumatics and Automation</div>
-                      </td>
-                      <td class="double-row">
-                        <div class="outcome-tab">
-                          <p>
-                            Gain knowledge of basic electronics, circuit
-                            theorems, DTM equipment, and digital circuit
-                            applications.
-                          </p>
-                        </div>
-                        <div class="table-hline" style="
-                              width: 100%;
-                              border-bottom: 1px solid #fcfaf6;
-                            "></div>
-                        <div class="outcome-tab">
-                          <p>
-                            Apply pneumatics principles in industry, interpret
-                            system safety protocols, and experiment with PLCs
-                            in automation.
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <span
+                style="line-height: 10px; font-size: 20px"
+                class="text-white"
+              >
+                .</span
+              >
+              <div class="tab-header2" data-tab2="1">
+                <p class="w-auto text-uppercase">PRODUCT&nbsp;ACCELERATION</p>
               </div>
             </div>
           </div>
-          <div class="custom-button custom-next">
-            <img src="../assets/images/fort/icons/arrow-right.png" alt="Previous" />
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- Industrial Innovation Studios -->
-  <section class="practicum-banner w-100 d-flex flex-column gap-5">
-    <div class="industrial-studios-container">
-      <!-- Headline -->
-      <div class="industrial-studios-title-wrapper">
-        <p class="section-header">
-          INDUSTRIAL INNOVATION<br>
-          STUDIOS FOR <span style="font-weight: 400;">
-          ACCELERATED<br>
-          PRODUCT DEVELOPMENT
-          </span>
-        </p>
-      </div>
-      <!-- Description -->
-      <div class="industrial-studios-description-wrapper">
-        <p class="">
-          A Network of Industrial Innovation Labs (spanning 7 different cities of Tamil Nadu - the largest network
-          of Fab Labs accredited by Fab Foundation, USA) that deliver India's ONLY University-Accredited &
-          Industry-Allied Innovation Practicum.
-        </p>
-      </div>
-    </div>
-    <div id="industry" class="mt-2 py-5 w-100 main-tab-container2">
-      <div class="gy-0 d-flex flex-column gap-3 align-items-center justify-content-center">
-        <div class="tab-container row text-center gx-0">
-          <div class="tab-card-container col-md-4 gap-3">
-            <div class="tab-header2 active" data-tab2="0">
-              <p class="w-auto text-uppercase">
-                INNOVATION&nbsp;INFRASTRUCTURE
-              </p>
+          <div class="custom-swiper-wrapper px-5">
+            <div class="custom-button custom-prev2">
+              <img
+                src="../assets/images/fort/icons/arrow-left.png"
+                alt="Previous"
+              />
             </div>
-            <span style="line-height: 10px; font-size: 20px" class="text-white">
-              .</span>
-            <div class="tab-header2" data-tab2="1">
-              <p class="w-auto text-uppercase">PRODUCT&nbsp;ACCELERATION</p>
-            </div>
-          </div>
-        </div>
-        <div class="custom-swiper-wrapper px-5">
-          <div class="custom-button custom-prev2">
-            <img src="../assets/images/fort/icons/arrow-left.png" alt="Previous" />
-          </div>
-          <div class="swiper tabSwiper2">
-            <div class="swiper-wrapper">
-              <div id="tab20" class="tab-slide2 swiper-slide">
-                <div class="d-flex flex-column gap-2">
-                  <h1 class="tab2-h1">INNOVATION INFRASTRUCTURE</h1>
-                  <p class="tab2-p">
-                    Forge's Technical Infrastructure includes the various
-                    machinery, equipment, and tools to help innovators
-                    design, build, test, and manufacture industrial tech
-                    solutions - this comprehensive infrastructure setup
-                    comprises 3 labs including Product Innovation Labs,
-                    Product Compliance Labs, and Pilot Production Facility.
-                    These labs have been designed to catalyse the
-                    hardware/tech innovation pursuits of innovators, makers,
-                    creators, tinkerers, startups & entrepreneurs across the
-                    product lifecycle. The vision is to create & catalyse
-                    innovation powered enterprises that harness the power at
-                    the intersection of hardware, software, and computing
-                    technologies to solve real-world problems, creating
-                    economic gains and delivering social impact.
-                  </p>
-                </div>
-                <div class="tab2-img-container">
-                  <div>
-                    <img src="../assets/images/fort/swiperTab/tab21.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="../assets/images/fort/swiperTab/tab22.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="../assets/images/fort/swiperTab/tab23.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div id="tab21" class="tab-slide2 swiper-slide">
-                <div class="d-flex flex-column gap-2">
-                  <h1 class="tab2-h1">PRODUCT ACCELERATION</h1>
-                  <p class="tab2-p">
-                    Supplementing its world-class technical infrastructure,
-                    Forge.Labs also provides the requisite processes, tools,
-                    techniques, and technical expertise applied in product
-                    development to help innovators build industry-grade
-                    products that achieve Product-Market Fit in the shortest
-                    time, at the lowest cost, and with minimal risk. To enable
-                    this, Forge's product acceleration services offer
-                    comprehensive Product Advisory, incorporating Product
-                    Management practices and augmenting technical resources to
-                    support every stage of product development.
-                  </p>
-                </div>
-                <div class="tab2-img-container justify-content-center gap-5">
-                  <div>
-                    <img src="../assets/images/fort/swiperTab/tab24.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="../assets/images/fort/swiperTab/tab25.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="custom-button custom-next2">
-            <img src="../assets/images/fort/icons/arrow-right.png" alt="Previous" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industrial Innovation Labs Section -->
-  <section class="industrial-labs-section">
-    <!-- Desktop Layout (lg and above) -->
-    <div class="d-none d-lg-block">
-        <div class="row mb-4">
-          <div class="col-md-5">
-            <h2 class="text-uppercase section-header" >
-              INDUSTRIAL INNOVATION<br>LABS</h2>
-          </div>
-          <div class="col-md-7">
-            <h3 class="mb-2" style="color: #E01E2C; font-size: 20pt; font-weight: 700;">State-of-the-art rapid
-              prototyping [Innovation] Labs</h3>
-            <p >Industrial Innovation Labs have
-              state-of-the-art lab facilities equipped with advanced digital fabrication tools such as 3D printers,
-              laser cutters, CNC machines, and electronics prototyping equipment with the primary objective to
-              democratise access to manufacturing technologies across students, innovators, startups and industrial
-              companies.</p>
-          </div>
-        </div>
-
-        <div class="equipment-main-container bg-black py-4">
-            <h3 class="text-uppercase mb-4 px-5 platform-offerings-title">EQUIPMENT & FACILITIES</h3>
-
-            <div class="custom-swiper-wrapper px-5">
-              <div class="row g-4">
-                <!-- First Row -->
-                <div class="col-md-6 col-lg-2-5">
-                  <div class="text-white d-flex flex-column h-100 platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems.png"
-                        alt="Industrial Robotics" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">INDUSTRIAL<br> ROBOTICS<br>& COBOTICS</h4>
-                    <p class="platform-card-description flex-grow-1">6-Axis Multifunctional Industrial Robot,<br>
-                      Robotic Controllers, Robotic Design &<br> Build Tools</p>
-                    <button class="btn text-white px-4 py-1 equipment-button mt-auto">List of Equipments</button>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5">
-                  <div class="text-white d-flex flex-column h-100 platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems.png"
-                        alt="Electronics Design" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">ELECTRONICS DESIGN,<br>TEST<br>& VERIFICATION
-                    </h4>
-                    <p class="platform-card-description flex-grow-1">Multifunctional & Mixed-Signal<br> Oscilloscopes,
-                      Function/Signal<br> Generator Network/Spectrum Analysers,<br> Industrial Grade Simulators</p>
-                    <button class="btn text-white px-4 py-1 equipment-button mt-auto">List of Equipments</button>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5">
-                  <div class="text-white d-flex flex-column h-100 platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems copy.png"
-                        alt="Industrial Design" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">INDUSTRIAL DESIGN<br>& FABRICATION</h4>
-                    <p class="platform-card-description flex-grow-1">Machining Workbench Tools, Power Tools<br> & Laser
-                      Cutters Advanced CAD/CAM/CAE<br> Design & Simulation Tools</p>
-                    <button class="btn text-white px-4 py-1 equipment-button mt-auto">List of Equipments</button>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5">
-                  <div class="text-white d-flex flex-column h-100 platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-                        alt="Accelerated Computing" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">ADDITIVE<br>MANUFACTURING &<br>DIGITAL FABRICATION</h4>
-                    <p class="platform-card-description flex-grow-1">Edge IoT & Edge AI Processors, Advanced<br>
-                      Workstations</p>
-                    <button class="btn text-white px-4 py-1 equipment-button mt-auto">List of Equipments</button>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5">
-                  <div class="text-white d-flex flex-column h-100 platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-                        alt="Accelerated Computing" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">INDUSTRIAL<br>INTELLIGENCE &<br>DIGITAL PRODUCTION</h4>
-                    <p class="platform-card-description flex-grow-1">Edge IoT & Edge AI Processors, Advanced<br>
-                      Workstations</p>
-                    <button class="btn text-white px-4 py-1 equipment-button mt-auto">List of Equipments</button>
-                  </div>
-                </div>
-
-                <!-- Second Row with larger gap -->
-                <div class="col-md-6 col-lg-2-5 equipment-row-gap">
-                  <div class="text-white d-flex flex-column h-100 platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems.png"
-                        alt="Cyber Physical" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">ADVANCED COMPUTING<br>& COMMUNICATIONS <br />SYSTEMS</h4>
-                    <p class="platform-card-description flex-grow-1">Vision Intelligence Systems, Drives &<br> Actuators
-                      for Automation &<br> Mechatronics, HMI & PLC Systems</p>
-                    <button class="btn text-white px-4 py-1 equipment-button mt-auto">List of Equipments</button>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5 equipment-row-gap">
-                  <div class="text-white d-flex flex-column platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems.png"
-                        alt="Additive Manufacturing" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">HARDWARE SYSTEMS<br>ENGINEERING</h4>
-                    <p class="platform-card-description">Industrial-Grade Multi-material 3D Printers, 3D<br> Scanners
+            <div class="swiper tabSwiper2">
+              <div class="swiper-wrapper">
+                <div id="tab20" class="tab-slide2 swiper-slide">
+                  <div class="d-flex flex-column gap-2">
+                    <h1 class="tab2-h1">INNOVATION INFRASTRUCTURE</h1>
+                    <p class="tab2-p">
+                      Forge's Technical Infrastructure includes the various
+                      machinery, equipment, and tools to help innovators design,
+                      build, test, and manufacture industrial tech solutions -
+                      this comprehensive infrastructure setup comprises 3 labs
+                      including Product Innovation Labs, Product Compliance
+                      Labs, and Pilot Production Facility. These labs have been
+                      designed to catalyse the hardware/tech innovation pursuits
+                      of innovators, makers, creators, tinkerers, startups &
+                      entrepreneurs across the product lifecycle. The vision is
+                      to create & catalyse innovation powered enterprises that
+                      harness the power at the intersection of hardware,
+                      software, and computing technologies to solve real-world
+                      problems, creating economic gains and delivering social
+                      impact.
                     </p>
-                    <button class="btn text-white px-4 py-1 equipment-button">List of Equipments</button>
+                  </div>
+                  <div class="tab2-img-container">
+                    <div>
+                      <img
+                        src="../assets/images/fort/swiperTab/tab21.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../assets/images/fort/swiperTab/tab22.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../assets/images/fort/swiperTab/tab23.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-
-                <div class="col-md-6 col-lg-2-5 equipment-row-gap">
-                  <div class="text-white d-flex flex-column platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems copy.png"
-                        alt="Electronics Rapid" class="img-fluid w-100 h-100 platform-image">
-                    </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">EDGE AI &<br>WEARABLE COMPUTING</h4>
-                    <p class="platform-card-description">PCB Assembly & Testing Station, PCB<br> Design Software,
-                      Electronics<br>Prototyping Toolkits</p>
-                    <button class="btn text-white px-4 py-1 equipment-button">List of Equipments</button>
+                <div id="tab21" class="tab-slide2 swiper-slide">
+                  <div class="d-flex flex-column gap-2">
+                    <h1 class="tab2-h1">PRODUCT ACCELERATION</h1>
+                    <p class="tab2-p">
+                      Supplementing its world-class technical infrastructure,
+                      Forge.Labs also provides the requisite processes, tools,
+                      techniques, and technical expertise applied in product
+                      development to help innovators build industry-grade
+                      products that achieve Product-Market Fit in the shortest
+                      time, at the lowest cost, and with minimal risk. To enable
+                      this, Forge's product acceleration services offer
+                      comprehensive Product Advisory, incorporating Product
+                      Management practices and augmenting technical resources to
+                      support every stage of product development.
+                    </p>
                   </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5 equipment-row-gap">
-                  <div class="text-white d-flex flex-column platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-                        alt="Industrial Metaverse" class="img-fluid w-100 h-100 platform-image">
+                  <div class="tab2-img-container justify-content-center gap-5">
+                    <div>
+                      <img
+                        src="../assets/images/fort/swiperTab/tab24.png"
+                        alt=""
+                      />
                     </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">EV - POWER<br>ELECTRONICS & <br />MACHINES</h4>
-                    <p class="platform-card-description">VR/MR Headsets, CAD/CAM to AR/VR<br> Translation Softwares
-                      Metaverse SDKs, 3D Visualisation Softwares</p>
-                    <button class="btn text-white px-4 py-1 equipment-button">List of Equipments</button>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-2-5 equipment-row-gap">
-                  <div class="text-white d-flex flex-column platform-card-wrapper">
-                    <div class="platform-image-container">
-                      <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-                        alt="Industrial Metaverse" class="img-fluid w-100 h-100 platform-image">
+                    <div>
+                      <img
+                        src="../assets/images/fort/swiperTab/tab25.png"
+                        alt=""
+                      />
                     </div>
-                    <h4 class="text-uppercase mb-2 platform-card-title">AUTONOMOUS MOBILE<br>ROBOTICS</h4>
-                    <p class="platform-card-description">VR/MR Headsets, CAD/CAM to AR/VR<br> Translation Softwares
-                      Metaverse SDKs, 3D Visualisation Softwares</p>
-                    <button class="btn text-white px-4 py-1 equipment-button">List of Equipments</button>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="custom-button custom-next2">
+              <img
+                src="../assets/images/fort/icons/arrow-right.png"
+                alt="Previous"
+              />
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div
+        class="practicum-container w-100 p-4 py-5"
+        style="background-color: black; border-radius: 20px"
+      >
+        <div class="p-4">
+          <div
+            class="practicum-slide-container modified-pacticum-slide-container"
+          >
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Mobile and Tablet Layout -->
-      <div class="d-block d-lg-none">
-        <div class="header-card">
-          <h2 class="text-uppercase" style="font-size: 32px;">INDUSTRIAL INNOVATION LABS</h2>
-          <h3 class="text-uppercase">State-of-the-art rapid prototyping [Innovation] Labs</h3>
+    <!-- Innovation Infrastructure sectionn -->
+    <section class="practicum-banner w-100 d-flex flex-column gap-5 banner">
+      <div class="innovation-workforce-container">
+        <div class="w-100 d-flex justify-content-between flex-wrap text-left">
+          <!-- Headline -->
+          <p class="section-header">
+            INNOVATION<br />
+            INFRASTRUCTURE
+          </p>
+          <!-- Description -->
+          <p style="max-width: 900px; text-align: left !important">
+            Forge’s Technical Infrastructure includes the various machinery,
+            equipment, and tools to help i nnovators design, build, test, and
+            manufacture industrial tech solutions - this comprehensive
+            infrastructure setup comprises 3 labs including Product Innovation
+            Labs, Product Compliance Labs, and Pilot Production Facility. These
+            labs have been designed to catalyse the hardware/tech innovation
+            pursuits of innovators, makers, creators, tinkerers, startups &
+            entrepreneurs across the product lifecycle. The vision is to create
+            & catalyse innovation powered enterprises that harness the power at
+            the intersection of hardware, software, and computing technologies
+            to solve real-world problems, creating economic gains and delivering
+            social impact.
+          </p>
         </div>
-
-        <div class="desc-card">
-          <p style="line-height: 1.4;">Industrial Innovation Labs have state-of-the-art lab facilities equipped with
-            advanced digital fabrication tools such as 3D printers, laser cutters, CNC machines, and electronics
-            prototyping equipment with the primary objective to democratise access to manufacturing technologies across
-            students, innovators, startups and industrial companies.</p>
-        </div>
-
-        <div class="equipment-grid">
-          <!-- Industrial Robotics Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems.png"
-              alt="Industrial Robotics">
-            <h4>INDUSTRICAL ROBOTICS & COBOTICS</h4>
-            <p>6-Axis Multifunctional Industrial Robot, Robotic Controllers, Robotic Design & Build Tools</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Electronics Design Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems.png"
-              alt="Electronics Design">
-            <h4>Electronics DESIGN, TEST & VERIFICATION</h4>
-            <p>Multifunctional & Mixed-Signal Oscilloscopes, Function/Signal Generator Network/Spectrum Analysers</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Industrial Design Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems copy.png"
-              alt="Industrial Design">
-            <h4>INDUSTRIAL DESIGN & FABRICATION</h4>
-            <p>Machining Workbench Tools, Power Tools & Laser Cutters Advanced CAD/CAM/CAE Design & Simulation Tools</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Accelerated Computing Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-              alt="Accelerated Computing">
-            <h4>ADDITIVE MANUFACTURING & DIGITAL FABRICATION</h4>
-            <p>Edge IoT & Edge AI Processors, Advanced Workstations</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Cyber Physical Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems.png"
-              alt="Cyber Physical">
-            <h4>INDUSTRIAL INTELLIGENCE & DIGITAL PRODUCTION</h4>
-            <p>Vision Intelligence Systems, Drives & Actuators for Automation & Mechatronics, HMI & PLC Systems</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Additive Manufacturing Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems.png"
-              alt="Additive Manufacturing">
-            <h4>ADVANCED COMPUTING & COMMUNICATIONS SYSTEMS</h4>
-            <p>Industrial-Grade Multi-material 3D Printers, 3D Scanners</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Electronics Rapid Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Cyber Physical Control Systems copy.png"
-              alt="Electronics Rapid">
-            <h4>HARDWARE SYSTEMS ENGINEERING</h4>
-            <p>PCB Assembly & Testing Station, PCB Design Software, Electronics Prototyping Toolkits</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-
-          <!-- Industrial Metaverse Card -->
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-              alt="Industrial Metaverse">
-            <h4>EDGE AI & WEARABLE COMPUTING</h4>
-            <p>VR/MR Headsets, CAD/CAM to AR/VR Translation Softwares Metaverse SDKs, 3D Visualisation Softwares</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-              alt="Industrial Metaverse">
-            <h4>EV - POWER ELECTRONICS AND MACHINES</h4>
-            <p>VR/MR Headsets, CAD/CAM to AR/VR Translation Softwares Metaverse SDKs, 3D Visualisation Softwares</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
-          </div>
-          <div class="equipment-card">
-            <img src="../assets/images/industrialinnovationloabs/Accelerated Computing Systems copy.png"
-              alt="Industrial Metaverse">
-            <h4>AUTONOMOUS MOBILE ROBOTICS</h4>
-            <p>VR/MR Headsets, CAD/CAM to AR/VR Translation Softwares Metaverse SDKs, 3D Visualisation Softwares</p>
-            <a href="#" class="equipment-btn">List of Equipments</a>
+      </div>
+      <div
+        class="practicum-container w-100 p-4 py-5"
+        style="background-color: black; border-radius: 20px"
+      >
+        <div class="p-4">
+          <div
+            class="practicum-slide-container modified-pacticum-slide-container"
+          >
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                  </div>
+                  <h3
+                    class="innovation-entry-title text-uppercase m-0"
+                    style="
+                      color: #e50012;
+                      font-size: 26px;
+                      font-weight: 700;
+                      line-height: 1.2;
+                    "
+                  >
+                    INNOVATION PRACTICUM <br />
+                    FOR INDUSTRIAL WORKFORCE
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Building Innovator-grade talent across Industrial Workforces
+                  to create innovation-capable techno-managerial leaders who
+                  drive Industry-Anchored (User-Led) Innovation Projects,
+                  leveraging cutting-edge lab infrastructure and resident
+                  expertise at FORTs to accelerate process innovations - also
+                  offered as university-accredited Diploma/Degree Programs such
+                  as the Masters in Technology Management (MTM) Program.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Industrial Innovation Platform Section -->
-  <section class="innovation-platform-section">
+    <!-- product innnovation labs -->
+    <section class="practicum-banner w-100 d-flex flex-column gap-5 banner">
+      <div class="innovation-workforce-container">
+        <div class="w-100 d-flex justify-content-between flex-wrap text-left">
+          <!-- Headline -->
+          <p class="section-header">
+            PRODUCT INNOVATION<br />
+            LABS
+          </p>
+          <!-- Description -->
+          <p style="max-width: 900px; text-align: left !important">
+            <span style="color: #e01e2c; font-weight: 700; margin-bottom: 8px"
+              >State-of-the-art rapid prototyping [Innovation] Labs</span
+            >
+            <br />
+            <span
+              >Industrial Innovation Labs have state-of-the-art lab facilities
+              equipped with advanced digital fabrication tools such as 3D
+              printers, laser cutters, CNC machines, and electronics prototyping
+              equipment with the primary objective to democratise access to
+              manufacturing technologies across students, innovators, startups
+              and industrial companies.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        class="practicum-container w-100 p-4 py-5"
+        style="background-color: black; border-radius: 20px"
+      >
+        <div class="p-4">
+          <div
+            class="practicum-slide-container modified-pacticum-slide-container innovation-labs-container"
+          >
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    INDUSTRIAL ROBOTICS & COBOTICS
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  6-Axis Multifunctional Industrial Robot, Robotic Controllers,
+                  Robotic Design & Build Tools
+                </p>
+              </div>
+              <a href="" class="red-btn">List of Equipments</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product compliance labs -->
+    <section class="practicum-banner w-100 d-flex flex-column gap-5 banner">
+      <div class="innovation-workforce-container">
+        <div class="w-100 d-flex justify-content-between flex-wrap text-left">
+          <!-- Headline -->
+          <p class="section-header">
+            PRODUCT COMPLIANCE<br />
+            LABS
+          </p>
+          <!-- Description -->
+          <p style="max-width: 900px; text-align: left !important">
+            <span style="color: #e01e2c; font-weight: 700; margin-bottom: 8px"
+              >Product Verification, Validation & Pre-Certification</span
+            >
+            <br />
+            <span
+              >Product Compliance Lab provides the necessary resources and
+              services to verify, validate, and pre-certify products, ensuring
+              they meet regulatory & industry standards. By facilitating
+              rigorous testing and compliance checks, the lab helps innovators
+              and startups navigate the complex approval processes efficiently,
+              reducing time to market and mitigating risks associated with
+              non-compliance.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        class="practicum-container w-100 p-4 py-5"
+        style="background-color: black; border-radius: 20px"
+      >
+        <div class="p-4">
+          <div
+            class="practicum-slide-container modified-pacticum-slide-container innovation-labs-container grid-auto"
+          >
+            <div class="practicum-slide-item">
+              <div
+                class="practicum-slide-content"
+                style="margin-bottom: 0px !important"
+              >
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-start mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    Mechanical Compliance
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Vibration Testing, Sound Level Testing, Coating Thickness
+                  Measurement, Dimensional Measurements, Flaw Detection, Ingress
+                  Protection Test Chambers, and Coordinate Measurement Machines
+                </p>
+              </div>
+            </div>
+
+            <div class="practicum-slide-item">
+              <div
+                class="practicum-slide-content"
+                style="margin-bottom: 0px !important"
+              >
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-start mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    Mechanical Compliance
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Vibration Testing, Sound Level Testing, Coating Thickness
+                  Measurement, Dimensional Measurements, Flaw Detection, Ingress
+                  Protection Test Chambers, and Coordinate Measurement Machines
+                </p>
+              </div>
+            </div>
+
+            <div class="practicum-slide-item">
+              <div
+                class="practicum-slide-content"
+                style="margin-bottom: 0px !important"
+              >
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-start mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    Mechanical Compliance
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Vibration Testing, Sound Level Testing, Coating Thickness
+                  Measurement, Dimensional Measurements, Flaw Detection, Ingress
+                  Protection Test Chambers, and Coordinate Measurement Machines
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product production facilities -->
+    <section class="practicum-banner w-100 d-flex flex-column gap-5 banner">
+      <div class="innovation-workforce-container">
+        <div class="w-100 d-flex justify-content-between flex-wrap text-left">
+          <!-- Headline -->
+          <p class="section-header">
+            PRODUCT PRODUCTION<br />
+            FAAACILITIES
+          </p>
+          <!-- Description -->
+          <p style="max-width: 900px; text-align: left !important">
+            <span style="color: #e01e2c; font-weight: 700; margin-bottom: 8px"
+              >Low Volume Production of Hardware Products & Industrial
+              Systems</span
+            >
+            <br />
+            <span
+              >Pilot Production Facilities offer plug & play manufacturing
+              setups tailored for startups and MSMEs working on new product
+              innovations. They bridge the gap between prototyping and
+              large-scale manufacturing, enabling startups to transform into the
+              next generation of industrial tech majors by offering them
+              pilot-scale manufacturing infrastructure & capabilities that drive
+              production while these startups navigate the market stage, to
+              arrive at a Minimum Viable Product, and optimise unit economics &
+              Product-Factory Fit. With access to modern fabrication methods,
+              materials, and equipment, these facilities help startups bring
+              their products to market faster without the need for significant
+              upfront investments in production infrastructure.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        class="practicum-container w-100 p-4 py-5"
+        style="background-color: black; border-radius: 20px"
+      >
+        <div class="p-4">
+          <div
+            class="practicum-slide-container modified-pacticum-slide-container innovation-labs-container grid-auto grid-center"
+          >
+            <div class="practicum-slide-item">
+              <div
+                class="practicum-slide-content"
+                style="margin-bottom: 0px !important"
+              >
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-start mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    Mechanical Compliance
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Vibration Testing, Sound Level Testing, Coating Thickness
+                  Measurement, Dimensional Measurements, Flaw Detection, Ingress
+                  Protection Test Chambers, and Coordinate Measurement Machines
+                </p>
+              </div>
+            </div>
+
+            <div class="practicum-slide-item">
+              <div
+                class="practicum-slide-content"
+                style="margin-bottom: 0px !important"
+              >
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-start mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-start justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/technology/innovation-labs/Industrial Robotics & Cobotics.png"
+                      alt=""
+                      class="me-4 mb-4"
+                      style="mix-blend-mode: luminosity"
+                    />
+                  </div>
+                  <h3 class="innovation-entry-title text-uppercase m-0">
+                    Mechanical Compliance
+                  </h3>
+                </div>
+                <p class="practicum-slide-text">
+                  Vibration Testing, Sound Level Testing, Coating Thickness
+                  Measurement, Dimensional Measurements, Flaw Detection, Ingress
+                  Protection Test Chambers, and Coordinate Measurement Machines
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industrial Innovation Platform Section -->
+    <!-- <section class="innovation-platform-section banner">
       <div class="row mb-4">
         <div class="col-12 col-md-5">
-          <h2 class="section-header text-uppercase">INDUSTRIAL INNOVATION <br />
-             PLATFORM</h2>
+          <h2 class="section-header text-uppercase">
+            INDUSTRIAL INNOVATION <br />
+            PLATFORM
+          </h2>
         </div>
         <div class="col-12 col-md-7">
-          <h3 class="mb-2" style="color: #E01E2C; font-size: 20pt; font-weight: 700;">Managed Innovation Services</h3>
-          <p class="">The Industrial Innovation Platform provides tailored innovation pathways
-            suited to the technical complexity and readiness level of the required solutions, each designed to meet
-            specific needs.</p>
+          <p class="mb-">
+            The Industrial Innovation Platform provides tailored innovation
+            pathways suited to the technical complexity and readiness level of
+            the required solutions, each designed to meet specific needs.
+          </p>
+          <h3
+            class="mb-2"
+            style="color: #e01e2c; font-size: 20pt; font-weight: 700"
+          >
+            Managed Innovation Services
+          </h3>
+          <p class="">
+            FORTs harness the innovation capacity within startups, academia
+            (students & educators), and research (scientists & technologists) to
+            redefine manufacturing & value chains through bold ideas and
+            breakthrough solutions. As a partner to industrial companies Forge
+            manages the implementation of innovation projects as a service,
+            overcoming several barriers and blockers while increasing the odds
+            of success at lowest cost of innovation and zero financial risk, and
+            achieving fastest time to value. Structured market access pathways
+            in the form of Demand/Demo days hosted at FORTs allow company
+            executives to experience the value startups can deliver as
+            innovation partners, identify the right ones for pilot projects, and
+            eventually establish long term technology partnerships.
+          </p>
         </div>
       </div>
 
       <div class="platform-offerings-container">
-
         <div class="custom-swiper-wrapper px-5">
           <div class="swiper platformSwiper">
             <div class="swiper-wrapper">
               <div class="swiper">
                 <div class="row g-4">
                   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-white d-flex flex-column platform-card-wrapper">
+                    <div
+                      class="text-white d-flex flex-column platform-card-wrapper"
+                    >
                       <div class="platform-image-container">
-                        <img src="../assets/images/innvlab/Group-1.png" alt="Startup Pilot Projects"
-                          class="img-fluid platform-image">
+                        <img
+                          src="../assets/images/innvlab/Group-1.png"
+                          alt="Startup Pilot Projects"
+                          class="img-fluid platform-image"
+                        />
                       </div>
-                      <h4 class="text-uppercase  platform-card-title">STARTUP PILOT PROJECTS FOR INDUSTRIAL PROCESS INNOVATION</h4>
-                      <p class="platform-card-description">Ideal for industrial companies seeking ready-to-use solutions
-                        with proven market demand. Through a curated list of solutions</p>
+                      <h4 class="text-uppercase platform-card-title">
+                        STARTUP PILOT PROJECTS FOR INDUSTRIAL PROCESS INNOVATION
+                      </h4>
+                      <p class="platform-card-description">
+                        Ideal for industrial companies seeking ready-to-use
+                        solutions with proven market demand. Through a curated
+                        list of solutions
+                      </p>
                     </div>
                   </div>
 
                   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-white d-flex flex-column platform-card-wrapper">
+                    <div
+                      class="text-white d-flex flex-column platform-card-wrapper"
+                    >
                       <div class="platform-image-container">
-                        <img src="../assets/images/innvlab/Group.png" alt="Managed Innovation Services"
-                          class="img-fluid platform-image">
+                        <img
+                          src="../assets/images/innvlab/Group.png"
+                          alt="Managed Innovation Services"
+                          class="img-fluid platform-image"
+                        />
                       </div>
-                      <h4 class="text-uppercase  platform-card-title">INDUSTRY-ANCHORED (USER-LED) INNOVATION PROJECTS</h4>
-                      <p class="platform-card-description">Leverage state-of-the-art industrial innovation labs and
-                        Forge's resident expertise and resources</p>
+                      <h4 class="text-uppercase platform-card-title">
+                        INDUSTRY-ANCHORED (USER-LED) INNOVATION PROJECTS
+                      </h4>
+                      <p class="platform-card-description">
+                        Leverage state-of-the-art industrial innovation labs and
+                        Forge's resident expertise and resources
+                      </p>
                     </div>
                   </div>
 
                   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-white d-flex flex-column platform-card-wrapper">
+                    <div
+                      class="text-white d-flex flex-column platform-card-wrapper"
+                    >
                       <div class="platform-image-container">
-                        <img src="../assets/images/innvlab/Group-3.png" alt="Industry Co-Creation Projects"
-                          class="img-fluid platform-image">
+                        <img
+                          src="../assets/images/innvlab/Group-3.png"
+                          alt="Industry Co-Creation Projects"
+                          class="img-fluid platform-image"
+                        />
                       </div>
-                      <h4 class="text-uppercase  platform-card-title">ACADEMIA-ANCHORED (FACULTY/STUDENT-LED) INNOVATION PROJECTS</h4>
-                      <p class="platform-card-description">Harness startup-driven emerging tech innovations to drive
-                        applied research into development of critical capabilities.</p>
+                      <h4 class="text-uppercase platform-card-title">
+                        ACADEMIA-ANCHORED (FACULTY/STUDENT-LED) INNOVATION
+                        PROJECTS
+                      </h4>
+                      <p class="platform-card-description">
+                        Harness startup-driven emerging tech innovations to
+                        drive applied research into development of critical
+                        capabilities.
+                      </p>
                     </div>
                   </div>
 
                   <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-white d-flex flex-column platform-card-wrapper">
+                    <div
+                      class="text-white d-flex flex-column platform-card-wrapper"
+                    >
                       <div class="platform-image-container">
-                        <img src="../assets/images/innvlab/Group-2.png" alt="Academic Research Projects"
-                          class="img-fluid platform-image">
+                        <img
+                          src="../assets/images/innvlab/Group-2.png"
+                          alt="Academic Research Projects"
+                          class="img-fluid platform-image"
+                        />
                       </div>
-                      <h4 class="text-uppercase  platform-card-title">STARTUP-ANCHORED JOINT NEW PRODUCT DEVELOPMENT PROJECTS</h4>
-                      <p class="platform-card-description">Aimed at achieving business excellence by accelerating the
-                        translation of scientific research into tangible products with the potential.</p>
+                      <h4 class="text-uppercase platform-card-title">
+                        STARTUP-ANCHORED JOINT NEW PRODUCT DEVELOPMENT PROJECTS
+                      </h4>
+                      <p class="platform-card-description">
+                        Aimed at achieving business excellence by accelerating
+                        the translation of scientific research into tangible
+                        products with the potential.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-         
         </div>
       </div>
-  </section>
+    </section> -->
 
-
-  <!-- partners-section -->
-  <section class="partner-section d-flex flex-column gap-4">
-    <div class="text-start">
-      <h2 class="banner-head text-uppercase section-header m-0" style="font-size: 32px; color: #E01E2C">
-        Partners
-      </h2>
-    </div>
-    <div class="partners-wrapper">
-      <div class="partners-slide">
-        <div class="d-flex align-items-center gap-3">
-          <span class="fw-bold partner-line">Government Partners</span>
-          <div class="hr"></div>
+    <!-- product compliance labs -->
+    <section class="practicum-banner w-100 d-flex flex-column gap-5 banner">
+      <div class="innovation-workforce-container">
+        <div class="w-100 d-flex justify-content-between flex-wrap text-left">
+          <!-- Headline -->
+          <p class="section-header">
+            PRODUCT<br />
+            ACCELERATION
+          </p>
+          <!-- Description -->
+          <p style="max-width: 900px; text-align: left !important">
+            <span
+              >Supplementing its world-class technical infrastructure,
+              Forge.Labs also provides the requisite processes, tools,
+              techniques, and technical expertise applied in product evelopment
+              to help innovators build industry-grade products that achieve
+              Product- Market Fit in the shortest time, at the lowest cost, and
+              with minimal risk. To enable this, Forge’s product acceleration
+              services offer comprehensive Product Advisory, incorporating
+              Product Management practices and augmenting technical resources to
+              support every stage of product development.</span
+            >
+          </p>
         </div>
-        <div class="mt-3 d-flex flex-column gap-5">
-          <div>
-            <div class="swiper industry-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 1.png" alt="Government Partner 1"
-                    class="img-fluid" style="max-height: 100px" />
+      </div>
+      <div
+        class="practicum-container w-100 p-4 py-5"
+        style="background-color: black; border-radius: 20px"
+      >
+        <div class="p-4">
+          <div
+            class="practicum-slide-container modified-pacticum-slide-container innnovation-labs-container grid-auto grid-center product-acceleration-container"
+          >
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-center justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                    <h3
+                      class="innovation-entry-title text-uppercase m-0"
+                      style="
+                        color: #e50012;
+                        font-size: 26px;
+                        font-weight: 700;
+                        line-height: 1.2;
+                      "
+                    >
+                      PRODUCT <br />
+                      ADVISORY
+                    </h3>
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 2.png" alt="Government Partner 2"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 3.png" alt="Government Partner 3"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 4.png" alt="Government Partner 4"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 5.png" alt="Government Partner 5"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 6.png" alt="Government Partner 6"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Government Partners/File 7.png" alt="Government Partner 7"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
+                <p class="practicum-slide-text">
+                  Startup Product Management Practices to Accelerate Product
+                  Market Fit
+                </p>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="partners-slide international-partner">
-        <div class="d-flex align-items-center gap-3">
-          <span class="fw-bold partner-line">Academic Partners</span>
-          <div class="hr"></div>
-        </div>
-
-        <div class="mt-3 d-flex flex-column gap-5">
-          <div>
-            <div class="swiper industry-swiper centerSlide">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 1.png" alt="Academic Partner 1"
-                    class="img-fluid" style="max-height: 100px" />
+            <div class="practicum-slide-item">
+              <div class="practicum-slide-content">
+                <div
+                  class="innovation-header-row d-flex flex-column align-items-center mb-0"
+                  style="gap: 1px"
+                >
+                  <div
+                    class="innovation-entry-icon d-flex align-items-center justify-content-start w-100"
+                  >
+                    <img
+                      src="../assets/images/fort/talent/Group 2213.svg"
+                      alt=""
+                      class="me-4 mb-4"
+                    />
+                    <h3
+                      class="innovation-entry-title text-uppercase m-0"
+                      style="
+                        color: #e50012;
+                        font-size: 26px;
+                        font-weight: 700;
+                        line-height: 1.2;
+                      "
+                    >
+                      PRODUCT <br />
+                      DEVELOPMENT<br />SUPPORT
+                    </h3>
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 2.png" alt="Academic Partner 2"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 3.png" alt="Academic Partner 3"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 4.png" alt="Academic Partner 4"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 5.png" alt="Academic Partner 5"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 6.png" alt="Academic Partner 6"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 7.png" alt="Academic Partner 7"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 8.png" alt="Academic Partner 8"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 9.png" alt="Academic Partner 9"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 10.png" alt="Academic Partner 10"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 11.png" alt="Academic Partner 11"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 12.png" alt="Academic Partner 12"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 13.png" alt="Academic Partner 13"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 14.png" alt="Academic Partner 14"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 15.png" alt="Academic Partner 15"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 16.png" alt="Academic Partner 16"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 17.png" alt="Academic Partner 17"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Academy Partners/File 18.png" alt="Academic Partner 18"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
+                <p class="practicum-slide-text">
+                  Accelerating the Translation of Industrial Tech IPs into
+                  Commercial Products
+                </p>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="partners-slide international-partner">
-        <div class="d-flex align-items-center gap-3">
-          <span class="fw-bold partner-line">Industry Partners</span>
-          <div class="hr"></div>
-        </div>
+    </section>
 
-        <div class="mt-3 d-flex flex-column gap-5">
-          <div>
-            <div class="swiper industry-swiper centerSlide">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 14.png" alt="Industry Partner 1"
-                    class="img-fluid" style="max-height: 100px" />
+    <!-- partners-section -->
+    <section class="partner-section d-flex flex-column gap-4 banner">
+      <div class="text-start">
+        <h2
+          class="banner-head text-uppercase section-header m-0"
+          style="font-size: 32px; color: #e01e2c"
+        >
+          Partners
+        </h2>
+      </div>
+      <div class="partners-wrapper">
+        <div class="partners-slide">
+          <div class="d-flex align-items-center gap-3">
+            <span class="fw-bold partner-line">Government Partners</span>
+            <div class="hr"></div>
+          </div>
+          <div class="mt-3 d-flex flex-column gap-5">
+            <div>
+              <div class="swiper industry-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 1.png"
+                      alt="Government Partner 1"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 2.png"
+                      alt="Government Partner 2"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 3.png"
+                      alt="Government Partner 3"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 4.png"
+                      alt="Government Partner 4"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 5.png"
+                      alt="Government Partner 5"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 6.png"
+                      alt="Government Partner 6"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Government Partners/File 7.png"
+                      alt="Government Partner 7"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 15.png" alt="Industry Partner 2"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 16.png" alt="Industry Partner 3"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 17.png" alt="Industry Partner 4"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 18.png" alt="Industry Partner 5"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 19.png" alt="Industry Partner 6"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 20.png" alt="Industry Partner 7"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 21.png" alt="Industry Partner 8"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 22.png" alt="Industry Partner 9"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 23.png" alt="Industry Partner 10"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 24.png" alt="Industry Partner 11"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 25.png" alt="Industry Partner 12"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 26.png" alt="Industry Partner 13"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 27.png" alt="Industry Partner 14"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 28.png" alt="Industry Partner 15"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 29.png" alt="Industry Partner 16"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 30.png" alt="Industry Partner 17"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 31.png" alt="Industry Partner 18"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/Partners/FORT-Industry Partners/File 32.png" alt="Industry Partner 19"
-                    class="img-fluid" style="max-height: 100px" />
-                </div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="partners-slide international-partner">
+          <div class="d-flex align-items-center gap-3">
+            <span class="fw-bold partner-line">Academic Partners</span>
+            <div class="hr"></div>
+          </div>
+
+          <div class="mt-3 d-flex flex-column gap-5">
+            <div>
+              <div class="swiper industry-swiper centerSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 1.png"
+                      alt="Academic Partner 1"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 2.png"
+                      alt="Academic Partner 2"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 3.png"
+                      alt="Academic Partner 3"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 4.png"
+                      alt="Academic Partner 4"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 5.png"
+                      alt="Academic Partner 5"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 6.png"
+                      alt="Academic Partner 6"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 7.png"
+                      alt="Academic Partner 7"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 8.png"
+                      alt="Academic Partner 8"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 9.png"
+                      alt="Academic Partner 9"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 10.png"
+                      alt="Academic Partner 10"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 11.png"
+                      alt="Academic Partner 11"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 12.png"
+                      alt="Academic Partner 12"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 13.png"
+                      alt="Academic Partner 13"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 14.png"
+                      alt="Academic Partner 14"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 15.png"
+                      alt="Academic Partner 15"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 16.png"
+                      alt="Academic Partner 16"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 17.png"
+                      alt="Academic Partner 17"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Academy Partners/File 18.png"
+                      alt="Academic Partner 18"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners-slide international-partner">
+          <div class="d-flex align-items-center gap-3">
+            <span class="fw-bold partner-line">Industry Partners</span>
+            <div class="hr"></div>
+          </div>
+
+          <div class="mt-3 d-flex flex-column gap-5">
+            <div>
+              <div class="swiper industry-swiper centerSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 14.png"
+                      alt="Industry Partner 1"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 15.png"
+                      alt="Industry Partner 2"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 16.png"
+                      alt="Industry Partner 3"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 17.png"
+                      alt="Industry Partner 4"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 18.png"
+                      alt="Industry Partner 5"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 19.png"
+                      alt="Industry Partner 6"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 20.png"
+                      alt="Industry Partner 7"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 21.png"
+                      alt="Industry Partner 8"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 22.png"
+                      alt="Industry Partner 9"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 23.png"
+                      alt="Industry Partner 10"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 24.png"
+                      alt="Industry Partner 11"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 25.png"
+                      alt="Industry Partner 12"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 26.png"
+                      alt="Industry Partner 13"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 27.png"
+                      alt="Industry Partner 14"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 28.png"
+                      alt="Industry Partner 15"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 29.png"
+                      alt="Industry Partner 16"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 30.png"
+                      alt="Industry Partner 17"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 31.png"
+                      alt="Industry Partner 18"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/Partners/FORT-Industry Partners/File 32.png"
+                      alt="Industry Partner 19"
+                      class="img-fluid"
+                      style="max-height: 100px"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footer -->
-  <section class="footer w-100 text-white py-5" style="background-color: #000">
-    <div class="d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
-      <div class="">
-        <div class="footer-logo mb-3 d-flex flex-column gap-4">
-          <img class="mx-auto mx-md-0" src="../assets/images/fort/footer/logo1.svg" alt="Forge Logo" />
-          <img class="mx-auto mx-md-0" src="../assets/images/fort/footer/logo2.png" alt="" />
+    <!-- footer -->
+    <section
+      class="footer w-100 text-white py-5"
+      style="background-color: #000"
+    >
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between text-center text-md-start"
+      >
+        <div class="">
+          <div class="footer-logo mb-3 d-flex flex-column gap-4">
+            <img
+              class="mx-auto mx-md-0"
+              src="../assets/images/fort/footer/logo1.svg"
+              alt="Forge Logo"
+            />
+            <img
+              class="mx-auto mx-md-0"
+              src="../assets/images/fort/footer/logo2.png"
+              alt=""
+            />
+          </div>
+          <span>
+            © 2025 Forge Innovation & Ventures.
+            <br />
+            All rights reserved.
+          </span>
         </div>
-        <span>
-          © 2025 Forge Innovation & Ventures.
-          <br />
-          All rights reserved.
-        </span>
-      </div>
 
-      <div class="col-md-2 d-flex flex-column justify-content-between gap-2">
-        <div class="d-flex flex-column gap-1">
-          <span class="footer-head d-block text-uppercase">Chennai</span>
+        <div class="col-md-2 d-flex flex-column justify-content-between gap-2">
+          <div class="d-flex flex-column gap-1">
+            <span class="footer-head d-block text-uppercase">Chennai</span>
 
-          <span class="d-flex align-items-center justify-content-md-start justify-content-center gap-2">
-            <span class="d-flex gap-1">
-              <span>
-                <i class="bi bi-geo-alt"></i>
-                <span class="footer-head">FORT.Chennai</span>
-                <br />
-                SIPCOT Industrial Innovation Centre, Plot No. AM-1, SIPCOT
-                Industrial Park, Phase -IV, Sriperumbudur, Tamil Nadu - 602
-                106. <br />
+            <span
+              class="d-flex align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <span class="d-flex gap-1">
+                <span>
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="footer-head">FORT.Chennai</span>
+                  <br />
+                  SIPCOT Industrial Innovation Centre, Plot No. AM-1, SIPCOT
+                  Industrial Park, Phase -IV, Sriperumbudur, Tamil Nadu - 602
+                  106. <br />
 
-                <a href="#" class="text-white" style="cursor: pointer">Locate Us</a>
+                  <a href="#" class="text-white" style="cursor: pointer"
+                    >Locate Us</a
+                  >
+                </span>
               </span>
+            </span>
+          </div>
+
+          <span>
+            <span
+              class="d-flex align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <i class="bi bi-envelope"></i>
+              <span>kavitha@forge-iv.co </span>
+            </span>
+            <span
+              class="d-flex -align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <i class="bi bi-telephone"></i>
+              <span>+91 95973 91298</span>
             </span>
           </span>
         </div>
 
-        <span>
-          <span class="d-flex align-items-center justify-content-md-start justify-content-center gap-2">
-            <i class="bi bi-envelope"></i>
-            <span>kavitha@forge-iv.co </span>
-          </span>
-          <span class="d-flex -align-items-center justify-content-md-start justify-content-center gap-2">
-            <i class="bi bi-telephone"></i>
-            <span>+91 95973 91298</span>
-          </span>
-        </span>
-      </div>
+        <div class="col-md-2 d-flex flex-column justify-content-between gap-2">
+          <div class="d-flex flex-column gap-1">
+            <span class="footer-head d-block text-uppercase">Hosur</span>
 
-      <div class="col-md-2 d-flex flex-column justify-content-between gap-2">
-        <div class="d-flex flex-column gap-1">
-          <span class="footer-head d-block text-uppercase">Hosur</span>
+            <span
+              class="d-flex align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <span class="d-flex gap-1">
+                <span>
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="footer-head">FORT.Hosur</span>
+                  <br />
+                  SIPCOT Industrial Innovation Centre, Plot No. CP-3 & CP 4,
+                  SIPCOT Industrial Complex, Phase - II, Moranapalli, Hosur,
+                  Tamil Nadu - 635 109. <br />
 
-          <span class="d-flex align-items-center justify-content-md-start justify-content-center gap-2">
-            <span class="d-flex gap-1">
-              <span>
-                <i class="bi bi-geo-alt"></i>
-                <span class="footer-head">FORT.Hosur</span>
-                <br />
-                SIPCOT Industrial Innovation Centre, Plot No. CP-3 & CP 4,
-                SIPCOT Industrial Complex, Phase - II, Moranapalli, Hosur,
-                Tamil Nadu - 635 109. <br />
-
-                <a href="#" class="text-white" style="cursor: pointer">Locate Us</a>
+                  <a href="#" class="text-white" style="cursor: pointer"
+                    >Locate Us</a
+                  >
+                </span>
               </span>
+            </span>
+          </div>
+          <span>
+            <span
+              class="d-flex align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <i class="bi bi-envelope"></i>
+              <span>saisuneela.vs@forge-iv.co </span>
+            </span>
+            <span
+              class="d-flex -align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <i class="bi bi-telephone"></i>
+              <span>+91 93459 65018</span>
             </span>
           </span>
         </div>
-        <span>
-          <span class="d-flex align-items-center justify-content-md-start justify-content-center gap-2">
-            <i class="bi bi-envelope"></i>
-            <span>saisuneela.vs@forge-iv.co </span>
-          </span>
-          <span class="d-flex -align-items-center justify-content-md-start justify-content-center gap-2">
-            <i class="bi bi-telephone"></i>
-            <span>+91 93459 65018</span>
-          </span>
-        </span>
-      </div>
 
-      <div class="col-md-2 d-flex flex-column justify-content-between gap-2">
-        <div class="d-flex flex-column gap-1">
-          <span class="footer-head d-block text-uppercase">Coimbatore</span>
+        <div class="col-md-2 d-flex flex-column justify-content-between gap-2">
+          <div class="d-flex flex-column gap-1">
+            <span class="footer-head d-block text-uppercase">Coimbatore</span>
 
-          <span class="d-flex align-items-center justify-content-md-start justify-content-center gap-2">
-            <span class="d-flex gap-1">
-              <span>
-                <i class="bi bi-geo-alt"></i>
-                <span class="footer-head">Forge.Factory</span>
-                <br />
-                G Floor, KCT Tech Park, #3 Athipalayam Road, Chinnavedampatti,
-                Coimbatore 641049 <br />
+            <span
+              class="d-flex align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <span class="d-flex gap-1">
+                <span>
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="footer-head">Forge.Factory</span>
+                  <br />
+                  G Floor, KCT Tech Park, #3 Athipalayam Road, Chinnavedampatti,
+                  Coimbatore 641049 <br />
 
-                <a href="#" class="text-white" style="cursor: pointer">Locate Us</a>
+                  <a href="#" class="text-white" style="cursor: pointer"
+                    >Locate Us</a
+                  >
+                </span>
               </span>
+            </span>
+          </div>
+          <span>
+            <span
+              class="d-flex align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <i class="bi bi-envelope"></i>
+              <span>operations@forge-iv.co </span>
+            </span>
+            <span
+              class="d-flex -align-items-center justify-content-md-start justify-content-center gap-2"
+            >
+              <i class="bi bi-telephone"></i>
+              <span>+91 95973 90974</span>
             </span>
           </span>
         </div>
-        <span>
-          <span class="d-flex align-items-center justify-content-md-start justify-content-center gap-2">
-            <i class="bi bi-envelope"></i>
-            <span>operations@forge-iv.co </span>
-          </span>
-          <span class="d-flex -align-items-center justify-content-md-start justify-content-center gap-2">
-            <i class="bi bi-telephone"></i>
-            <span>+91 95973 90974</span>
-          </span>
-        </span>
-      </div>
 
-      <div class="col-md-2">
-        <span class="footer-head d-block mb-2 fw-bold">Join Our Email List</span>
-        <p class="mb-3">
-          Subscribe to our newsletter to get our news and details delivered to
-          you
-        </p>
-        <div id="footer-input-container" class="d-flex footer-input-container">
-          <input id="footer-input" type="email" class="" placeholder="Your Email ID" />
-          <button class="">Join</button>
+        <div class="col-md-2">
+          <span class="footer-head d-block mb-2 fw-bold"
+            >Join Our Email List</span
+          >
+          <p class="mb-3">
+            Subscribe to our newsletter to get our news and details delivered to
+            you
+          </p>
+          <div
+            id="footer-input-container"
+            class="d-flex footer-input-container"
+          >
+            <input
+              id="footer-input"
+              type="email"
+              class=""
+              placeholder="Your Email ID"
+            />
+            <button class="">Join</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script>
-    const swiper = new Swiper(".fort-centre-swiper", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-    });
-    const swiper3 = new Swiper(".fort-right-swiper", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".custom-next1",
-        prevEl: ".custom-prev1",
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-    });
-    const swiper2 = new Swiper(".fort-swiper2", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      slidesPerView: 4,
-      spaceBetween: 20,
-      loopFillGroupWithBlank: true,
-      slidesPerGroup: 4,
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      },
-    });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      const industrySwiper = new Swiper(".industry-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
+    <script>
+      const swiper = new Swiper(".fort-centre-swiper", {
         loop: true,
-        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      const swiper3 = new Swiper(".fort-right-swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".custom-next1",
+          prevEl: ".custom-prev1",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      const swiper2 = new Swiper(".fort-swiper2", {
+        loop: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
         },
-        pagination: {
-          el: ".industry-swiper .swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loopFillGroupWithBlank: true,
+        slidesPerGroup: 4,
         breakpoints: {
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
         },
       });
-
-    });
-  </script>
-
-  <script>
-    // Initialize tabSwiper
-    const tabSwiper = new Swiper(".tabSwiper", {
-      loop: true,
-      navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
-      },
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      slidesPerView: 1,
-      spaceBetween: 30,
-      on: {
-        slideChange: function () {
-          updateTabHighlight(this.realIndex);
-        }
-      }
-    });
-
-    // Initialize tabSwiper2
-    const tabSwiper2 = new Swiper(".tabSwiper2", {
-      loop: true,
-      navigation: {
-        nextEl: ".custom-next2",
-        prevEl: ".custom-prev2",
-      },
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      slidesPerView: 1,
-      spaceBetween: 30,
-      on: {
-        slideChange: function () {
-          updateTabHighlight2(this.realIndex);
-        }
-      }
-    });
-
-    // Tab highlight functionality
-    function updateTabHighlight(activeIndex) {
-      const tabHeaders = document.querySelectorAll('.tab-header');
-      tabHeaders.forEach((header, index) => {
-        header.classList.remove('active');
-        if (index === activeIndex) {
-          header.classList.add('active');
-        }
-      });
-    }
-
-    // Tab highlight functionality for tabSwiper2
-    function updateTabHighlight2(activeIndex) {
-      const tabHeaders2 = document.querySelectorAll('.tab-header2');
-      tabHeaders2.forEach((header, index) => {
-        header.classList.remove('active');
-        if (index === activeIndex) {
-          header.classList.add('active');
-        }
-      });
-    }
-
-    // Manual tab clicking
-    document.querySelectorAll('.tab-header').forEach((header, index) => {
-      header.addEventListener('click', () => {
-        tabSwiper.slideToLoop(index);
-        updateTabHighlight(index);
-      });
-    });
-
-    // Manual tab clicking for tabSwiper2
-    document.querySelectorAll('.tab-header2').forEach((header, index) => {
-      header.addEventListener('click', () => {
-        tabSwiper2.slideToLoop(index);
-        updateTabHighlight2(index);
-      });
-    });
-  </script>
-
-  <script src="../js/main.js"></script>
-  <script src="../js/hero-video.js"></script>
-  <!-- <script src="observer.js"></script>
-  <script src="scripts.js"></script>  -->
-  <script src="../js/scroll-animation.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
-      const mobileMenu = document.querySelector(".mobile-menu");
-      const navLinks = document.querySelectorAll(".mobile-menu .nav-link:not(.contact-btn)");
-      const closeMenu = document.querySelector(".close-menu");
-
-      // Toggle mobile menu visibility
-      hamburgerMenu.addEventListener("click", () => {
-        mobileMenu.classList.toggle("show");
-        mobileMenu.classList.toggle("hide");
-        document.body.style.overflow = mobileMenu.classList.contains("show") ? "hidden" : "";
-      });
-
-      closeMenu.addEventListener("click", () => {
-        mobileMenu.classList.toggle("show");
-        mobileMenu.classList.toggle("hide");
-        document.body.style.overflow = "";
-      });
-
-      navLinks.forEach((element) => {
-        element.addEventListener("click", () => {
-          mobileMenu.classList.add("hide");
-          mobileMenu.classList.remove("show");
-          document.body.style.overflow = "";
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        const industrySwiper = new Swiper(".industry-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          grabCursor: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".industry-swiper .swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          },
         });
       });
-    });
+    </script>
 
-    // Updated Mobile Menu JavaScript
-    window.addEventListener('load', function () {
-      const hamburger = document.getElementById('hamburger-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const closeBtn = document.getElementById('close-btn');
-
-      function showMenu() {
-        if (mobileMenu && hamburger) {
-          mobileMenu.style.display = 'flex';
-          mobileMenu.classList.remove('hide');
-          mobileMenu.classList.add('show');
-          hamburger.classList.add('menu-open');
-          document.body.style.overflow = 'hidden';
-        }
-      }
-
-      function hideMenu() {
-        if (mobileMenu && hamburger) {
-          mobileMenu.style.display = 'none';
-          mobileMenu.classList.remove('show');
-          mobileMenu.classList.add('hide');
-          hamburger.classList.remove('menu-open');
-          document.body.style.overflow = '';
-        }
-      }
-
-      if (hamburger) {
-        hamburger.onclick = function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          showMenu();
-        };
-      }
-
-      if (closeBtn) {
-        closeBtn.onclick = function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          hideMenu();
-        };
-      }
-
-      const navLinks = document.querySelectorAll('#mobile-menu .nav-link');
-      navLinks.forEach(function (link) {
-        link.onclick = function () {
-          hideMenu();
-        };
+    <script>
+      // Initialize tabSwiper2
+      const tabSwiper2 = new Swiper(".tabSwiper2", {
+        loop: true,
+        navigation: {
+          nextEl: ".custom-next2",
+          prevEl: ".custom-prev2",
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        on: {
+          slideChange: function () {
+            updateTabHighlight2(this.realIndex);
+          },
+        },
       });
 
-      if (mobileMenu) {
-        mobileMenu.onclick = function (e) {
-          if (e.target === mobileMenu) {
-            hideMenu();
+      // Tab highlight functionality for tabSwiper2
+      function updateTabHighlight2(activeIndex) {
+        const tabHeaders2 = document.querySelectorAll(".tab-header2");
+        tabHeaders2.forEach((header, index) => {
+          header.classList.remove("active");
+          if (index === activeIndex) {
+            header.classList.add("active");
           }
-        };
+        });
       }
 
-      const menuContent = document.querySelector('#mobile-menu ul');
-      if (menuContent) {
-        menuContent.onclick = function (e) {
-          e.stopPropagation();
-        };
-      }
+      // Manual tab clicking for tabSwiper2
+      document.querySelectorAll(".tab-header2").forEach((header, index) => {
+        header.addEventListener("click", () => {
+          tabSwiper2.slideToLoop(index);
+          updateTabHighlight2(index);
+        });
+      });
+    </script>
 
-      hideMenu();
-    });
-  </script>
-</body>
+    <script src="../js/main.js"></script>
+    <script src="../js/hero-video.js"></script>
+    <!-- <script src="observer.js"></script>
+  <script src="scripts.js"></script>  -->
+    <script src="../js/scroll-animation.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelectorAll(
+          ".mobile-menu .nav-link:not(.contact-btn)"
+        );
+        const closeMenu = document.querySelector(".close-menu");
 
+        // Toggle mobile menu visibility
+        hamburgerMenu.addEventListener("click", () => {
+          mobileMenu.classList.toggle("show");
+          mobileMenu.classList.toggle("hide");
+          document.body.style.overflow = mobileMenu.classList.contains("show")
+            ? "hidden"
+            : "";
+        });
+
+        closeMenu.addEventListener("click", () => {
+          mobileMenu.classList.toggle("show");
+          mobileMenu.classList.toggle("hide");
+          document.body.style.overflow = "";
+        });
+
+        navLinks.forEach((element) => {
+          element.addEventListener("click", () => {
+            mobileMenu.classList.add("hide");
+            mobileMenu.classList.remove("show");
+            document.body.style.overflow = "";
+          });
+        });
+      });
+
+      // Updated Mobile Menu JavaScript
+      window.addEventListener("load", function () {
+        const hamburger = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeBtn = document.getElementById("close-btn");
+
+        function showMenu() {
+          if (mobileMenu && hamburger) {
+            mobileMenu.style.display = "flex";
+            mobileMenu.classList.remove("hide");
+            mobileMenu.classList.add("show");
+            hamburger.classList.add("menu-open");
+            document.body.style.overflow = "hidden";
+          }
+        }
+
+        function hideMenu() {
+          if (mobileMenu && hamburger) {
+            mobileMenu.style.display = "none";
+            mobileMenu.classList.remove("show");
+            mobileMenu.classList.add("hide");
+            hamburger.classList.remove("menu-open");
+            document.body.style.overflow = "";
+          }
+        }
+
+        if (hamburger) {
+          hamburger.onclick = function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            showMenu();
+          };
+        }
+
+        if (closeBtn) {
+          closeBtn.onclick = function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            hideMenu();
+          };
+        }
+
+        const navLinks = document.querySelectorAll("#mobile-menu .nav-link");
+        navLinks.forEach(function (link) {
+          link.onclick = function () {
+            hideMenu();
+          };
+        });
+
+        if (mobileMenu) {
+          mobileMenu.onclick = function (e) {
+            if (e.target === mobileMenu) {
+              hideMenu();
+            }
+          };
+        }
+
+        const menuContent = document.querySelector("#mobile-menu ul");
+        if (menuContent) {
+          menuContent.onclick = function (e) {
+            e.stopPropagation();
+          };
+        }
+
+        hideMenu();
+      });
+    </script>
+  </body>
 </html>

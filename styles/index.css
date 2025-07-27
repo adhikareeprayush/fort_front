@@ -13,16 +13,14 @@ h1 {
   margin: 0;
 }
 
-
-body,p{
+body,
+p {
   font-size: 18pt;
 }
-
 
 section {
   padding: 50px 200px;
 }
-
 
 @media (max-width: 1500px) {
   section {
@@ -240,7 +238,7 @@ section {
     padding: 0 20px;
     position: relative;
   }
-  
+
   nav .nav-menus {
     display: none !important;
   }
@@ -250,7 +248,7 @@ section {
     position: relative;
     margin-left: auto;
   }
-  
+
   .logo-container {
     min-width: auto;
     flex: 1;
@@ -297,7 +295,7 @@ section {
   width: 100vw;
   height: calc(100vh - 122px); /* Adjusted for nav height */
   position: relative;
-  background: url('../assets/images/hero-1.png') center center/cover no-repeat;
+  background: url("../assets/images/hero-1.png") center center/cover no-repeat;
   padding: 0 200px; /* Match about section padding */
 }
 
@@ -336,7 +334,7 @@ section {
   .hero {
     padding: 0 160px; /* Match about section padding */
   }
-  
+
   .hero-right {
     font-size: 32px;
   }
@@ -346,7 +344,7 @@ section {
   .hero {
     padding: 0 120px; /* Match about section padding */
   }
-  
+
   .hero-right {
     font-size: 30px;
   }
@@ -356,7 +354,7 @@ section {
   .hero {
     padding: 0 80px; /* Match about section padding */
   }
-  
+
   .hero-right {
     font-size: 28px;
   }
@@ -366,7 +364,7 @@ section {
   .hero {
     padding: 0 60px; /* Match about section padding */
   }
-  
+
   .hero-right {
     font-size: 26px;
   }
@@ -395,11 +393,11 @@ section {
   .hero {
     padding: 0 40px; /* Match about section padding */
   }
-  
+
   .hero-left {
     width: 70%;
   }
-  
+
   .hero-right {
     font-size: 22px;
   }
@@ -425,12 +423,12 @@ section {
     padding: 0 15px;
     height: calc(100vh - 100px);
   }
-  
+
   .hero-left {
     width: 90%;
     margin-bottom: 20px;
   }
-  
+
   .hero-right {
     font-size: clamp(0.9rem, 7vw, 1.2rem);
   }
@@ -440,11 +438,11 @@ section {
   .hero {
     padding: 0 10px;
   }
-  
+
   .hero-left {
     width: 95%;
   }
-  
+
   .hero-right {
     font-size: 16px;
     line-height: 1.4;
@@ -526,7 +524,7 @@ section {
 }
 
 .about-left {
-  color: #E50012;
+  color: #e50012;
   margin: 0;
   text-transform: uppercase;
   font-weight: 900;
@@ -534,8 +532,6 @@ section {
   flex-direction: column;
   font-family: "Akhand", sans-serif;
 }
-
-
 
 .about-title-line2 {
   margin-top: 4px;
@@ -569,7 +565,7 @@ section {
   .about-banner {
     padding: 80px 160px;
   }
-  
+
   .about-content {
     padding-left: 60px;
     margin-top: 0;
@@ -580,7 +576,7 @@ section {
   .about-banner {
     padding: 80px 120px;
   }
-  
+
   .about-content {
     padding-left: 50px;
     margin-top: 0;
@@ -591,7 +587,7 @@ section {
   .about-banner {
     padding: 80px 80px;
   }
-  
+
   .about-content {
     padding-left: 40px;
     margin-top: 0;
@@ -602,7 +598,7 @@ section {
   .about-banner {
     padding: 80px 60px;
   }
-  
+
   .about-content {
     padding-left: 40px;
     margin-top: 0;
@@ -620,19 +616,19 @@ section {
     padding: 60px 40px;
     min-height: 400px;
   }
-  
+
   .about-content {
     padding-left: 0;
     margin-top: 40px;
   }
-  
+
   .about-title-line1,
   .about-title-line2 {
     font-size: 26px;
     line-height: 28pt;
     text-align: center;
   }
-  
+
   .about-description {
     font-family: "Akhand", sans-serif;
     font-size: 18px;
@@ -880,11 +876,27 @@ section {
 
 /* partners */
 
+/* about section */
 .partner-section {
-  background-image: url('../assets/images/fort/about/background.png');
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Background image layer */
+.partner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/fort/about/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.3; /* 👈 Set your desired background opacity here */
+  z-index: -1;
 }
 
 .img-fluid {
@@ -927,10 +939,8 @@ section {
   flex-direction: column;
   gap: 40px;
   background-color: transparent;
-  padding: 40px;
   border-radius: 15px;
 }
-
 
 .partners-slide {
   background-color: transparent;
@@ -955,7 +965,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .partners-slide .swiper-slide img {
@@ -981,7 +991,7 @@ section {
 /* footer */
 .footer {
   background-color: #181819;
-  font-size:16px;
+  font-size: 16px;
 }
 
 .footer .footer-head {
@@ -1073,11 +1083,11 @@ section {
     padding: 30px 0 0 160px !important;
     font-size: 38px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 160px 50px 160px !important;
   }
-  
+
   .fort-centres-main-container {
     transform: scale(1.02);
   }
@@ -1088,13 +1098,13 @@ section {
     padding: 30px 0 0 120px !important;
     font-size: 36px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 120px 50px 120px !important;
   }
-  
+
   .fort-centres-main-container {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 }
 
@@ -1103,11 +1113,11 @@ section {
     padding: 25px 0 0 80px !important;
     font-size: 34px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 80px 40px 80px !important;
   }
-  
+
   .fort-centres-main-container {
     transform: scale(0.98);
   }
@@ -1118,11 +1128,11 @@ section {
     padding: 25px 0 0 60px !important;
     font-size: 32px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 60px 40px 60px !important;
   }
-  
+
   .fort-centres-main-container {
     transform: scale(0.95);
   }
@@ -1133,15 +1143,15 @@ section {
     padding: 20px 0 0 60px !important;
     font-size: 30px !important;
   }
-  
+
   .fort-centres-section {
     height: 650px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 60px 30px 60px !important;
   }
-  
+
   .fort-centres-main-container {
     transform: scale(0.92);
   }
@@ -1152,15 +1162,15 @@ section {
     padding: 20px 0 0 40px !important;
     font-size: 28px !important;
   }
-  
+
   .fort-centres-section {
     height: 550px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 40px 30px 40px !important;
   }
-  
+
   .fort-centres-main-container {
     transform: scale(0.9);
   }
@@ -1171,15 +1181,15 @@ section {
     padding: 15px 0 0 20px !important;
     font-size: 24px !important;
   }
-  
+
   .fort-centres-section {
     height: 450px !important;
   }
-  
+
   .fort-centres-content {
     margin: 0 20px 20px 20px !important;
   }
-  
+
   .fort-centres-main-container {
     transform: scale(0.85);
   }
@@ -1194,47 +1204,45 @@ section {
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  
+
   .nav-section {
     padding: 0 15px;
   }
-  
+
   .logo-container {
     min-width: auto;
     max-width: 200px;
   }
-  
+
   .logo-container > img {
     height: 40px;
     max-width: 80px;
   }
 }
 
-
-
 /* Common Section Responsive Styles */
 @media (max-width: 768px) {
- .logo-container > img {
-  width: auto;
-  height: 60px;
-  object-fit: contain;
-  max-width: 120px;
-}
-.nav-logo:first-child {
-  border-right: 2px solid white;
-  padding-right: 10px;
-  max-width: 140px;
-  margin-right: 10px;
-}
-  
+  .logo-container > img {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    max-width: 120px;
+  }
+  .nav-logo:first-child {
+    border-right: 2px solid white;
+    padding-right: 10px;
+    max-width: 140px;
+    margin-right: 10px;
+  }
+
   .container {
     padding: 0 15px;
   }
-  
+
   .row {
     margin: 0 -10px;
   }
-  
+
   [class*="col-"] {
     padding: 0 10px;
   }
@@ -1244,21 +1252,21 @@ section {
   .section-header {
     font-size: 2rem !important;
   }
-  
+
   .section-subheader {
     font-size: 1.3rem !important;
   }
-  
+
   .section-description {
     font-size: 0.95rem !important;
   }
-  
+
   .container {
     padding: 0 20px;
   }
 }
 
-.section-header{
+.section-header {
   font-size: 42px;
   line-height: 1.1;
   font-weight: 900;
@@ -1266,4 +1274,3 @@ section {
   margin-bottom: 24px;
   letter-spacing: 0.5px;
 }
-

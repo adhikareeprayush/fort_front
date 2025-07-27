@@ -2,11 +2,6 @@
 
 /* Body background */
 body {
-  background-image: url("../assets/images/fort/about/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -23,7 +18,8 @@ h1 {
   margin: 0;
 }
 
-body,p{
+body,
+p {
   font-size: 18pt;
 }
 
@@ -81,7 +77,10 @@ section {
   }
 }
 
-.nav-section, .nav-menus, .nav-item, .nav-link {
+.nav-section,
+.nav-menus,
+.nav-item,
+.nav-link {
   font-family: "Akhand", sans-serif !important;
 }
 
@@ -155,7 +154,7 @@ section {
 }
 
 .contact-btn:hover {
-  background-color: #B71825;
+  background-color: #b71825;
   transform: translateY(-2px);
   color: white;
   text-decoration: none;
@@ -256,7 +255,7 @@ section {
   width: 100vw;
   height: calc(100vh - 122px);
   position: relative;
-  background: url('../assets/images/hero-3.png') center center/cover no-repeat;
+  background: url("../assets/images/hero-3.png") center center/cover no-repeat;
   padding: 0 200px; /* Match about section padding */
 }
 
@@ -295,7 +294,6 @@ section {
   text-align: left;
 }
 
-
 .hero-subtitle {
   color: #fff;
   font-size: 28pt;
@@ -326,19 +324,19 @@ section {
   .hero {
     padding: 0 160px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 50pt;
   }
-  
+
   .hero-subtitle {
     font-size: 24pt;
   }
-  
+
   .hero-right p {
     font-size: 28pt;
   }
-  
+
   .hero-right {
     padding-left: 50px;
   }
@@ -348,19 +346,19 @@ section {
   .hero {
     padding: 0 120px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 42pt;
   }
-  
+
   .hero-subtitle {
     font-size: 20pt;
   }
-  
+
   .hero-right p {
     font-size: 24pt;
   }
-  
+
   .hero-right {
     padding-left: 40px;
   }
@@ -370,19 +368,19 @@ section {
   .hero {
     padding: 0 80px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 36pt;
   }
-  
+
   .hero-subtitle {
     font-size: 18pt;
   }
-  
+
   .hero-right p {
     font-size: 22pt;
   }
-  
+
   .hero-right {
     padding-left: 30px;
   }
@@ -392,19 +390,19 @@ section {
   .hero {
     padding: 0 60px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 32pt;
   }
-  
+
   .hero-subtitle {
     font-size: 16pt;
   }
-  
+
   .hero-right p {
     font-size: 20pt;
   }
-  
+
   .hero-right {
     padding-left: 25px;
   }
@@ -417,14 +415,14 @@ section {
     padding: 40px 60px; /* Match about section padding pattern */
     height: auto;
   }
-  
+
   .hero-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 30px;
   }
-  
+
   .hero-left {
     width: 80%;
     margin-bottom: 24px;
@@ -432,24 +430,24 @@ section {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .hero-title {
     font-size: 28pt;
     text-align: center;
     margin-bottom: 0.3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 14pt;
     text-align: center;
   }
-  
+
   .hero-right {
     width: 100%;
     padding-left: 0;
     text-align: center;
   }
-  
+
   .hero-right p {
     font-size: 18pt;
     text-align: center;
@@ -463,22 +461,22 @@ section {
   .hero {
     padding: 0 40px; /* Match about section padding */
   }
-  
+
   .hero-left {
     width: 70%;
   }
-  
+
   .hero-title {
     font-size: 24pt;
     margin-bottom: 0.3rem;
     text-align: center;
   }
-  
+
   .hero-subtitle {
     font-size: 12pt;
     text-align: center;
   }
-  
+
   .hero-right p {
     font-size: 16pt;
     text-align: center;
@@ -490,23 +488,23 @@ section {
     padding: 24px 20px; /* Match about section padding */
     min-height: 320px;
   }
-  
+
   .hero-left {
     width: 95%;
     margin-bottom: 16px;
   }
-  
+
   .hero-title {
     font-size: 22pt;
     margin-bottom: 0.2rem;
     text-align: center;
   }
-  
+
   .hero-subtitle {
     font-size: 11pt;
     text-align: center;
   }
-  
+
   .hero-right p {
     font-size: 14pt;
     text-align: center;
@@ -520,20 +518,20 @@ section {
     padding: 0 15px;
     height: calc(100vh - 100px);
   }
-  
+
   .hero-left {
     width: 90%;
     margin-bottom: 20px;
   }
-  
+
   .hero-title {
     font-size: 20pt;
   }
-  
+
   .hero-subtitle {
     font-size: 10pt;
   }
-  
+
   .hero-right p {
     font-size: clamp(0.9rem, 7vw, 1.2rem);
   }
@@ -543,21 +541,21 @@ section {
   .hero {
     padding: 0 10px;
   }
-  
+
   .hero-left {
     width: 95%;
   }
-  
+
   .hero-title {
     font-size: 18pt;
     line-height: 1.4;
   }
-  
+
   .hero-subtitle {
     font-size: 9pt;
     line-height: 1.4;
   }
-  
+
   .hero-right p {
     font-size: 12pt;
     line-height: 1.4;
@@ -608,9 +606,6 @@ section {
 }
 
 /* innovation practicum */
-.practicum-banner {
-  background-image: url("./assets/images/fort/about/background.png");
-}
 
 .practicum-left {
   margin: 0;
@@ -785,7 +780,6 @@ section {
   flex-direction: column;
   gap: 40px;
   background-color: transparent;
-  padding: 40px;
   border-radius: 15px;
 }
 
@@ -812,7 +806,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .projects-container {
@@ -983,8 +977,7 @@ section {
   padding: 8px 0; /* Reduced from 10px */
 }
 
-
-.table th p{
+.table th p {
   font-size: 32px; /* Reduced from 20px */
   line-height: 1.2; /* Reduced from 1.3 */
   font-weight: 700;
@@ -1126,7 +1119,6 @@ section {
   object-fit: contain;
 }
 
-
 @media (max-width: 768px) {
   .industrial-labs-section,
   .innovation-platform-section {
@@ -1182,7 +1174,7 @@ section {
     background: #f8f8f8;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   .industrial-labs-section p {
@@ -1231,7 +1223,7 @@ section {
 
   .industrial-labs-section .equipment-btn {
     display: inline-block;
-    background: #E01E2C;
+    background: #e01e2c;
     color: #fff;
     padding: 8px 20px;
     border-radius: 25px;
@@ -1248,7 +1240,7 @@ section {
   }
 
   .industrial-labs-section .equipment-btn:hover {
-    background: #B71825;
+    background: #b71825;
     transform: translateY(-2px);
   }
 }
@@ -1286,7 +1278,7 @@ section {
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   }
 
   .industrial-labs-section p {
@@ -1344,7 +1336,7 @@ section {
 
   .industrial-labs-section .equipment-btn {
     display: inline-block;
-    background: #E01E2C;
+    background: #e01e2c;
     color: #fff;
     padding: 10px 25px;
     border-radius: 25px;
@@ -1361,7 +1353,7 @@ section {
   }
 
   .industrial-labs-section .equipment-btn:hover {
-    background: #B71825;
+    background: #b71825;
     transform: translateY(-2px);
   }
 }
@@ -1371,34 +1363,34 @@ section {
   .innovation-platform-section {
     padding: 40px 0;
   }
-  
+
   .innovation-platform-section .container {
     padding: 0 15px;
   }
-  
+
   .innovation-platform-section .row {
     gap: 30px;
   }
-  
+
   .innovation-platform-section .col-md-6 {
     margin-bottom: 30px;
   }
-  
+
   .innovation-platform-section .text-white {
     height: auto !important;
     padding: 20px;
   }
-  
+
   .innovation-platform-section h4 {
     font-size: 1.2rem !important;
     margin-bottom: 15px !important;
   }
-  
+
   .innovation-platform-section p {
     font-size: 0.9rem !important;
     line-height: 1.5;
   }
-  
+
   .innovation-platform-section img {
     width: 180px !important;
     height: 180px !important;
@@ -1410,15 +1402,15 @@ section {
     height: auto !important;
     padding: 25px;
   }
-  
+
   .innovation-platform-section h4 {
     font-size: 1.3rem !important;
   }
-  
+
   .innovation-platform-section p {
     font-size: 0.92rem !important;
   }
-  
+
   .innovation-platform-section img {
     width: 200px !important;
     height: 200px !important;
@@ -1430,29 +1422,29 @@ section {
   .partner-section {
     padding: 40px 15px;
   }
-  
+
   .partner-section .section-header {
     font-size: 1.8rem;
     text-align: center;
   }
-  
+
   .partners-wrapper {
     margin-top: 20px;
   }
-  
+
   .partner-line {
     font-size: 1.1rem !important;
   }
-  
+
   .partners-header {
     font-size: 1.1rem !important;
     margin-bottom: 20px;
   }
-  
+
   .partners-slide {
     padding: 15px;
   }
-  
+
   .partners-slide img {
     max-width: 120px;
     height: auto;
@@ -1463,19 +1455,19 @@ section {
   .partner-section {
     padding: 50px 25px;
   }
-  
+
   .partner-section .section-header {
     font-size: 2rem;
   }
-  
+
   .partner-line {
     font-size: 1.2rem !important;
   }
-  
+
   .partners-header {
     font-size: 1.2rem !important;
   }
-  
+
   .partners-slide img {
     max-width: 140px;
   }
@@ -1487,34 +1479,34 @@ section {
     min-height: calc(100vh - 80px);
     height: calc(100vh - 80px);
   }
-  
+
   .hero-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
   }
-  
+
   .hero-left {
     align-items: center;
     margin-bottom: 25px;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
     text-align: center;
   }
-  
+
   .hero-subtitle {
     font-size: 1.3rem;
     text-align: center;
   }
-  
+
   .hero-right {
     padding-left: 0;
     margin-top: 20px;
   }
-  
+
   .hero-right p {
     font-size: 1.1rem;
     text-align: center;
@@ -1525,11 +1517,11 @@ section {
   .hero-title {
     font-size: 3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.5rem;
   }
-  
+
   .hero-right p {
     font-size: 1.3rem;
   }
@@ -1540,27 +1532,27 @@ section {
   .practicum-banner {
     padding: 40px 0;
   }
-  
+
   .practicum-left {
     font-size: 1.8rem !important;
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .practicum-slide-image {
     max-height: 70px !important;
   }
-  
+
   .fort-swiper-container {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
   }
-  
+
   .custom-swiper-wrapper {
     gap: 10px;
   }
-  
+
   .swiper-slide {
     padding: 10px;
   }
@@ -1570,11 +1562,11 @@ section {
   .practicum-left {
     font-size: 2rem !important;
   }
-  
+
   .practicum-slide-image {
     max-height: 80px !important;
   }
-  
+
   .fort-swiper-container {
     max-width: 400px;
   }
@@ -1585,18 +1577,18 @@ section {
   .metrics-section {
     padding: 40px 0;
   }
-  
+
   .metrics-item {
     flex-direction: column;
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   .metrics-number h1 {
     font-size: 4rem !important;
     line-height: 1;
   }
-  
+
   .metrics-text {
     font-size: 1.1rem !important;
     margin-top: 10px;
@@ -1607,7 +1599,7 @@ section {
   .metrics-number h1 {
     font-size: 5rem !important;
   }
-  
+
   .metrics-text {
     font-size: 1.2rem !important;
   }
@@ -1621,27 +1613,27 @@ section {
     gap: 20px;
     padding: 20px 0;
   }
-  
+
   .lab-card {
     background: #111;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
   }
-  
+
   .lab-card img {
     width: 100%;
     max-width: 200px;
     height: auto;
     margin: 0 auto 15px;
   }
-  
+
   .lab-card h4 {
     color: #e50012;
     font-size: 1.2rem !important;
     margin-bottom: 10px;
   }
-  
+
   .lab-card p {
     color: #fff;
     font-size: 0.9rem;
@@ -1654,19 +1646,19 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-  
+
   .lab-card {
     padding: 25px;
   }
-  
+
   .lab-card img {
     max-width: 180px;
   }
-  
+
   .lab-card h4 {
     font-size: 1.3rem !important;
   }
-  
+
   .lab-card p {
     font-size: 0.95rem;
   }
@@ -1677,11 +1669,11 @@ section {
   .research-projects-section {
     padding: 40px 0;
   }
-  
+
   .research-projects-section .row {
     gap: 30px;
   }
-  
+
   .research-card {
     background: #111;
     border-radius: 15px;
@@ -1689,20 +1681,20 @@ section {
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .research-card img {
     width: 100%;
     max-width: 180px;
     height: auto;
     margin: 0 auto 15px;
   }
-  
+
   .research-card h4 {
     color: #e50012;
     font-size: 1.2rem !important;
     margin-bottom: 10px;
   }
-  
+
   .research-card p {
     color: #fff;
     font-size: 0.9rem;
@@ -1714,19 +1706,19 @@ section {
   .research-projects-section {
     padding: 50px 0;
   }
-  
+
   .research-card {
     padding: 25px;
   }
-  
+
   .research-card img {
     max-width: 200px;
   }
-  
+
   .research-card h4 {
     font-size: 1.3rem !important;
   }
-  
+
   .research-card p {
     font-size: 0.95rem;
   }
@@ -1740,15 +1732,15 @@ section {
     height: 30px !important;
     bottom: 20px !important;
   }
-  
+
   .fort-swiper-container-left {
     left: 10px !important;
   }
-  
+
   .fort-swiper-container-right {
     right: 10px !important;
   }
-  
+
   .custom-button {
     width: 12px !important;
     height: 12px !important;
@@ -1761,7 +1753,7 @@ section {
     width: 35px !important;
     height: 35px !important;
   }
-  
+
   .custom-button {
     width: 14px !important;
     height: 14px !important;
@@ -1770,27 +1762,27 @@ section {
 
 /* Common Section Responsive Styles */
 @media (max-width: 768px) {
- .logo-container > img {
-  width: auto;
-  height: 60px;
-  object-fit: contain;
-  max-width: 120px;
-}
-.nav-logo:first-child {
-  border-right: 2px solid white;
-  padding-right: 10px;
-  max-width: 140px;
-  margin-right: 10px;
-}
-  
+  .logo-container > img {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    max-width: 120px;
+  }
+  .nav-logo:first-child {
+    border-right: 2px solid white;
+    padding-right: 10px;
+    max-width: 140px;
+    margin-right: 10px;
+  }
+
   .container {
     padding: 0 15px;
   }
-  
+
   .row {
     margin: 0 -10px;
   }
-  
+
   [class*="col-"] {
     padding: 0 10px;
   }
@@ -1800,15 +1792,15 @@ section {
   .section-header {
     font-size: 2rem !important;
   }
-  
+
   .section-subheader {
     font-size: 1.3rem !important;
   }
-  
+
   .section-description {
     font-size: 0.95rem !important;
   }
-  
+
   .container {
     padding: 0 20px;
   }
@@ -1946,15 +1938,8 @@ section {
 }
 
 /* Industrial Innovation Platform Section */
-.platform-section-bg {
-  background: url('../assets/images/fort/about/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .platform-main-title {
-  color: #E01E2C;
+  color: #e01e2c;
   font-size: 26px;
   font-weight: 900;
   line-height: 100%;
@@ -1963,7 +1948,7 @@ section {
 }
 
 .platform-subtitle {
-  color: #E50012;
+  color: #e50012;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0%;
@@ -1985,11 +1970,11 @@ section {
   .platform-main-title {
     font-size: 30px;
   }
-  
+
   .platform-subtitle {
     font-size: 22px;
   }
-  
+
   .platform-description {
     font-size: 17px;
   }
@@ -1999,11 +1984,11 @@ section {
   .platform-main-title {
     font-size: 28px;
   }
-  
+
   .platform-subtitle {
     font-size: 21px;
   }
-  
+
   .platform-description {
     font-size: 16px;
   }
@@ -2013,11 +1998,11 @@ section {
   .platform-main-title {
     font-size: 26px;
   }
-  
+
   .platform-subtitle {
     font-size: 20px;
   }
-  
+
   .platform-description {
     font-size: 15px;
   }
@@ -2027,11 +2012,11 @@ section {
   .platform-main-title {
     font-size: 24px;
   }
-  
+
   .platform-subtitle {
     font-size: 19px;
   }
-  
+
   .platform-description {
     font-size: 14px;
   }
@@ -2042,12 +2027,12 @@ section {
     font-size: 22px;
     text-align: center;
   }
-  
+
   .platform-subtitle {
     font-size: 18px;
     text-align: center;
   }
-  
+
   .platform-description {
     font-size: 13px;
     text-align: center;
@@ -2060,22 +2045,22 @@ section {
     text-align: center;
     margin-bottom: 20px !important;
   }
-  
+
   .innovation-platform-section .col-12.col-md-5,
   .innovation-platform-section .col-12.col-md-7 {
     margin-bottom: 15px;
   }
-  
+
   .platform-main-title {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  
+
   .platform-subtitle {
     font-size: 17px;
     margin-bottom: 10px;
   }
-  
+
   .platform-description {
     font-size: 12px;
     max-width: 100%;
@@ -2088,12 +2073,12 @@ section {
     font-size: 18px;
     margin-bottom: 12px;
   }
-  
+
   .platform-subtitle {
     font-size: 16px;
     margin-bottom: 8px;
   }
-  
+
   .platform-description {
     font-size: 11px;
     line-height: 1.3;
@@ -2107,12 +2092,12 @@ section {
     word-break: break-word;
     hyphens: auto;
   }
-  
+
   .platform-subtitle {
     font-size: 15px;
     word-break: break-word;
   }
-  
+
   .platform-description {
     font-size: 10px;
     line-height: 1.2;
@@ -2124,11 +2109,11 @@ section {
   .platform-main-title {
     font-size: 15px;
   }
-  
+
   .platform-subtitle {
     font-size: 14px;
   }
-  
+
   .platform-description {
     font-size: 9px;
     max-width: 100%;
@@ -2145,7 +2130,7 @@ section {
 }
 
 .platform-offerings-title {
-  color: #E01E2C;
+  color: #e01e2c;
   font-size: 28px;
   font-weight: 900;
   letter-spacing: 0%;
@@ -2161,7 +2146,7 @@ section {
   flex-direction: column;
   text-align: left;
   justify-content: space-between;
-  
+
   color: white;
 }
 
@@ -2179,7 +2164,7 @@ section {
 
 .platform-image {
   width: auto;
-  height: 120px ;
+  height: 120px;
   object-fit: contain !important;
   margin-left: 0 !important;
   margin-right: auto !important;
@@ -2189,7 +2174,7 @@ section {
 }
 
 .platform-card-title {
-  color: #E01E2C;
+  color: #e01e2c;
   font-size: 1.4rem;
   font-weight: 800;
   line-height: 1.2;
@@ -2201,8 +2186,8 @@ section {
   /* height: 100px;   */
 }
 
-@media(max-width: 1000px) {
-  .platform-card-title{
+@media (max-width: 1000px) {
+  .platform-card-title {
     height: auto;
   }
 }
@@ -2222,7 +2207,7 @@ section {
 }
 
 .innovation-platform-section .btn-outline-light:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 1200px) {
@@ -2300,12 +2285,12 @@ section {
     opacity: 0 !important;
     pointer-events: none !important;
   }
-  
+
   /* Ensure swiper wrapper doesn't reserve space for arrows */
   .custom-swiper-wrapper {
     position: relative !important;
   }
-  
+
   .platformSwiper {
     width: 100% !important;
     margin: 0 !important;
@@ -2353,7 +2338,7 @@ section {
   padding-left: 0 !important;
 }
 
-.innovation-platform-section h3{
+.innovation-platform-section h3 {
   color: #e50012;
 }
 
@@ -2364,7 +2349,7 @@ section {
   .platform-offerings-container {
     padding: 45px 80px 20px 80px;
   }
-  
+
   .platform-card-wrapper {
     height: 280px;
   }
@@ -2376,28 +2361,28 @@ section {
     font-size: 28px !important;
     line-height: 1.2;
   }
-  
+
   .innovation-platform-section .col-md-7 h3 {
     font-size: 22px !important;
   }
-  
+
   .innovation-platform-section .col-md-7 p {
     font-size: 16px !important;
     line-height: 1.4;
   }
-  
+
   .platform-offerings-container {
     padding: 40px 60px 20px 60px;
   }
-  
+
   .platform-card-wrapper {
     height: 260px;
   }
-  
+
   .platform-card-title {
     font-size: 1.3rem;
   }
-  
+
   .platform-card-description {
     font-size: 0.9rem;
   }
@@ -2408,65 +2393,65 @@ section {
   .innovation-platform-section .container {
     padding: 0 15px;
   }
-  
+
   .innovation-platform-section .row.mb-4 {
     margin-bottom: 25px !important;
   }
-  
+
   .innovation-platform-section .col-md-5,
   .innovation-platform-section .col-md-7 {
     margin-bottom: 15px;
   }
-  
+
   .innovation-platform-section .col-md-5 h2 {
     font-size: 24px !important;
     text-align: center;
     margin-bottom: 15px;
   }
-  
+
   .innovation-platform-section .col-md-7 h3 {
     font-size: 20px !important;
     text-align: center;
     margin-bottom: 10px;
   }
-  
+
   .innovation-platform-section .col-md-7 p {
     font-size: 15px !important;
     text-align: center;
     line-height: 1.5;
   }
-  
+
   .innovation-platform-section .col-md-7 p br {
     display: none;
   }
-  
+
   .platform-offerings-container {
     padding: 30px 40px 20px 40px;
     margin-top: 25px;
   }
-  
+
   .platform-offerings-title {
     font-size: 22px;
     text-align: left;
     margin-bottom: 20px;
   }
-  
+
   .platform-card-wrapper {
     height: auto;
     min-height: 240px;
     margin-bottom: 20px;
   }
-  
+
   .platform-image-container {
     height: 80px;
     margin-bottom: 12px;
   }
-  
+
   .platform-card-title {
     font-size: 1.2rem;
     margin-bottom: 8px;
   }
-  
+
   .platform-card-description {
     font-size: 0.88rem;
     line-height: 1.4;
@@ -2478,62 +2463,62 @@ section {
   .innovation-platform-section {
     padding: 40px 0;
   }
-  
+
   .innovation-platform-section .container {
     padding: 0 20px;
   }
-  
+
   .innovation-platform-section .row.mb-4 {
     margin-bottom: 20px !important;
     text-align: center;
   }
-  
+
   .innovation-platform-section .col-md-5 h2 {
     font-size: 22px !important;
     margin-bottom: 12px;
   }
-  
+
   .innovation-platform-section .col-md-7 h3 {
     font-size: 18px !important;
     margin-bottom: 8px;
   }
-  
+
   .innovation-platform-section .col-md-7 p {
     font-size: 14px !important;
     line-height: 1.5;
     max-width: 600px;
     margin: 0 auto;
   }
-  
+
   .innovation-platform-section .col-md-7 p br {
     display: none;
   }
-  
+
   .platform-offerings-container {
     padding: 25px 20px 15px 20px;
     margin-top: 20px;
     border-radius: 12px;
   }
-  
+
   .platform-offerings-title {
     font-size: 20px;
     text-align: left;
     margin-bottom: 18px;
   }
-  
+
   /* Convert to stack layout on mobile */
   .platformSwiper .row {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .platformSwiper .col-md-6,
   .platformSwiper .col-lg-3 {
     width: 100%;
     max-width: 400px;
     margin-bottom: 20px;
   }
-  
+
   .platform-card-wrapper {
     height: auto;
     min-height: 200px;
@@ -2542,31 +2527,31 @@ section {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   .platform-image-container {
     height: 70px;
     margin-bottom: 15px;
     text-align: center;
   }
-  
+
   .platform-image {
     max-width: 80px;
     height: auto;
   }
-  
+
   .platform-card-title {
     font-size: 1.1rem;
     text-align: center;
     margin-bottom: 10px;
     line-height: 1.2;
   }
-  
+
   .platform-card-description {
     font-size: 0.85rem;
     text-align: center;
     line-height: 1.4;
   }
-  
+
   /* Hide navigation arrows on mobile */
   .platform-custom-prev,
   .platform-custom-next {
@@ -2579,71 +2564,71 @@ section {
   .innovation-platform-section {
     padding: 30px 0;
   }
-  
+
   .innovation-platform-section .container {
     padding: 0 15px;
   }
-  
+
   .innovation-platform-section .row.mb-4 {
     margin-bottom: 15px !important;
   }
-  
+
   .innovation-platform-section .col-md-5 h2 {
     font-size: 20px !important;
     margin-bottom: 10px;
     text-align: center;
   }
-  
+
   .innovation-platform-section .col-md-7 h3 {
     font-size: 16px !important;
     margin-bottom: 6px;
     text-align: center;
   }
-  
+
   .innovation-platform-section .col-md-7 p {
     font-size: 13px !important;
     line-height: 1.5;
     text-align: center;
   }
-  
+
   .platform-offerings-container {
     padding: 20px 15px 12px 15px;
     margin-top: 15px;
     border-radius: 10px;
   }
-  
+
   .platform-offerings-title {
     font-size: 18px;
     text-align: left;
     margin-bottom: 15px;
   }
-  
+
   .platformSwiper .col-md-6,
   .platformSwiper .col-lg-3 {
     max-width: 350px;
     margin-bottom: 15px;
   }
-  
+
   .platform-card-wrapper {
     min-height: 180px;
     padding: 15px;
   }
-  
+
   .platform-image-container {
     height: 60px;
     margin-bottom: 12px;
   }
-  
+
   .platform-image {
     max-width: 70px;
   }
-  
+
   .platform-card-title {
     font-size: 1rem;
     margin-bottom: 8px;
     line-height: 1.1;
   }
-  
+
   .platform-card-description {
     font-size: 0.8rem;
     line-height: 1.3;
@@ -2655,48 +2640,48 @@ section {
   .innovation-platform-section .col-md-5 h2 {
     font-size: 18px !important;
   }
-  
+
   .innovation-platform-section .col-md-7 h3 {
     font-size: 15px !important;
   }
-  
+
   .innovation-platform-section .col-md-7 p {
     font-size: 12px !important;
   }
-  
+
   .platform-offerings-container {
     padding: 15px 10px 10px 10px;
   }
-  
+
   .platform-offerings-title {
     font-size: 16px;
     text-align: left;
   }
-  
+
   .platformSwiper .col-md-6,
   .platformSwiper .col-lg-3 {
     max-width: 300px;
   }
-  
+
   .platform-card-wrapper {
     min-height: 160px;
     padding: 12px;
   }
-  
+
   .platform-image-container {
     height: 50px;
     margin-bottom: 10px;
   }
-  
+
   .platform-image {
     max-width: 60px;
   }
-  
+
   .platform-card-title {
     font-size: 0.9rem;
     margin-bottom: 6px;
   }
-  
+
   .platform-card-description {
     font-size: 0.75rem;
     line-height: 1.2;
@@ -2708,17 +2693,17 @@ section {
   .platformSwiper {
     overflow: hidden !important;
   }
-  
+
   .platformSwiper .swiper-slide {
     display: flex;
     justify-content: center;
   }
-  
+
   .platformSwiper .row.g-4 {
     gap: 0 !important;
     margin: 0 !important;
   }
-  
+
   .platformSwiper .row.g-4.px-5 {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -2734,7 +2719,7 @@ section {
     opacity: 0 !important;
     pointer-events: none !important;
   }
-  
+
   .custom-swiper-wrapper {
     position: relative !important;
     gap: 0 !important;
@@ -2789,20 +2774,20 @@ section {
   .innovation-platform-section .container {
     padding: 0 10px;
   }
-  
+
   .platform-offerings-container {
     padding: 10px 8px 8px 8px;
   }
-  
+
   .platform-card-wrapper {
     padding: 10px;
     min-height: 140px;
   }
-  
+
   .platform-card-title {
     font-size: 0.8rem;
   }
-  
+
   .platform-card-description {
     font-size: 0.7rem;
   }
@@ -2819,9 +2804,9 @@ section {
     gap: 0 !important;
     margin: 0 !important;
   }
-  
+
   .platformSwiper .col-12,
-  .platformSwiper .col-sm-6, 
+  .platformSwiper .col-sm-6,
   .platformSwiper .col-md-6,
   .platformSwiper .col-lg-3 {
     width: 100% !important;
@@ -2829,7 +2814,7 @@ section {
     margin-bottom: 20px !important;
     padding: 0 10px !important;
   }
-  
+
   /* Enhanced card design for mobile */
   .platform-card-wrapper {
     padding: 20px !important;
@@ -2841,9 +2826,9 @@ section {
     min-height: 220px !important;
     height: auto !important;
   }
-  
+
   /* Removed hover animation */
-  
+
   /* Improve image presentation on mobile */
   .platform-image-container {
     height: 80px !important;
@@ -2853,7 +2838,7 @@ section {
     background: rgba(255, 255, 255, 0.05) !important;
     border-radius: 10px !important;
   }
-  
+
   .platform-image {
     max-width: 70px !important;
     max-height: 60px !important;
@@ -2862,7 +2847,7 @@ section {
     object-fit: contain !important;
     filter: brightness(1.1) !important;
   }
-  
+
   /* Better typography for mobile */
   .platform-card-title {
     font-size: 1rem !important;
@@ -2872,7 +2857,7 @@ section {
     font-weight: 800 !important;
     letter-spacing: 0.3px !important;
   }
-  
+
   .platform-card-description {
     font-size: 0.88rem !important;
     line-height: 1.4 !important;
@@ -2880,7 +2865,7 @@ section {
     opacity: 0.95 !important;
     color: #f0f0f0 !important;
   }
-  
+
   /* Improve platform offerings title on mobile */
   .platform-offerings-title {
     font-size: 22px !important;
@@ -2889,14 +2874,14 @@ section {
     padding: 0 10px !important;
     line-height: 1.2 !important;
   }
-  
+
   /* Better platform container spacing */
   .platform-offerings-container {
     margin-top: 25px !important;
     padding: 25px 15px 20px 15px !important;
     border-radius: 18px !important;
   }
-  
+
   /* Ensure swiper doesn't interfere with mobile layout */
   .platformSwiper .row.g-4.px-5 {
     padding-left: 0 !important;
@@ -2911,7 +2896,7 @@ section {
     justify-content: center !important;
     gap: 20px !important;
   }
-  
+
   .platformSwiper .col-12,
   .platformSwiper .col-sm-6,
   .platformSwiper .col-md-6,
@@ -2920,7 +2905,7 @@ section {
     max-width: 350px !important;
     margin-bottom: 25px !important;
   }
-  
+
   .platform-card-wrapper {
     padding: 25px !important;
     border-radius: 12px !important;
@@ -2929,26 +2914,26 @@ section {
     min-height: 250px !important;
     /* Removed transition property */
   }
-  
+
   /* Removed hover animation */
-  
+
   .platform-image-container {
     height: 85px !important;
     justify-content: center !important;
     margin-bottom: 15px !important;
   }
-  
+
   .platform-image {
     max-width: 80px !important;
     max-height: 70px !important;
   }
-  
+
   .platform-card-title {
     font-size: 1.1rem !important;
     text-align: center !important;
     margin-bottom: 10px !important;
   }
-  
+
   .platform-card-description {
     font-size: 0.9rem !important;
     text-align: center !important;
@@ -2963,22 +2948,22 @@ section {
     cursor: pointer !important;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1) !important;
   }
-  
+
   /* Better swiper behavior on touch devices */
   .platformSwiper {
     touch-action: pan-y !important;
     overflow: hidden !important;
   }
-  
+
   .platformSwiper .swiper-slide {
     touch-action: pan-y !important;
   }
-  
+
   /* Ensure proper spacing between sections */
   .innovation-platform-section {
     margin-bottom: 30px !important;
   }
-  
+
   /* Better mobile navigation behavior */
   .platformSwiper .swiper-wrapper {
     will-change: transform !important;
@@ -2992,31 +2977,31 @@ section {
     padding: 18px !important;
     min-height: 200px !important;
   }
-  
+
   .platform-image-container {
     height: 70px !important;
     padding: 8px !important;
   }
-  
+
   .platform-image {
     max-width: 60px !important;
     max-height: 50px !important;
   }
-  
+
   .platform-card-title {
     font-size: 0.95rem !important;
     margin-bottom: 10px !important;
   }
-  
+
   .platform-card-description {
     font-size: 0.82rem !important;
     line-height: 1.3 !important;
   }
-  
+
   .platform-offerings-container {
     padding: 20px 12px 18px 12px !important;
   }
-  
+
   .platformSwiper .col-12,
   .platformSwiper .col-sm-6,
   .platformSwiper .col-md-6,
@@ -3054,7 +3039,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 20px;
   gap: 15px;
 }
 
@@ -3064,7 +3048,7 @@ section {
   font-size: 32px;
   line-height: 120%;
   font-weight: 900;
-  color: #E01E2C;
+  color: #e01e2c;
   font-family: "Akhand", sans-serif !important;
   text-align: left;
   width: 450px;
@@ -3079,7 +3063,7 @@ section {
 }
 
 .practicum-workforce-subtitle {
-  color: #E01E2C;
+  color: #e01e2c;
   font-size: 20pt;
   line-height: 28.8px;
   font-weight: 700;
@@ -3101,17 +3085,17 @@ section {
   .practicum-workforce-container {
     gap: 35px;
   }
-  
+
   .practicum-workforce-title {
     font-size: 30px;
     width: 380px;
   }
-  
+
   .practicum-workforce-subtitle {
     font-size: 22px;
     line-height: 26px;
   }
-  
+
   .practicum-workforce-description {
     font-size: 17px;
   }
@@ -3122,17 +3106,17 @@ section {
   .practicum-workforce-container {
     gap: 30px;
   }
-  
+
   .practicum-workforce-title {
     font-size: 28px;
     width: 360px;
   }
-  
+
   .practicum-workforce-subtitle {
     font-size: 21px;
     line-height: 25px;
   }
-  
+
   .practicum-workforce-description {
     font-size: 16px;
   }
@@ -3143,23 +3127,19 @@ section {
   .practicum-workforce-container {
     gap: 25px;
   }
-  
+
   .practicum-workforce-title {
     font-size: 26px;
     width: 340px;
   }
-  
+
   .practicum-workforce-subtitle {
     font-size: 20px;
     line-height: 24px;
   }
-  
+
   .practicum-workforce-description {
     font-size: 15px;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 15px;
   }
 }
 
@@ -3168,23 +3148,19 @@ section {
   .practicum-workforce-container {
     gap: 20px;
   }
-  
+
   .practicum-workforce-title {
     font-size: 24px;
     width: 320px;
   }
-  
+
   .practicum-workforce-subtitle {
     font-size: 19px;
     line-height: 23px;
   }
-  
+
   .practicum-workforce-description {
     font-size: 14px;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 10px;
   }
 }
 
@@ -3193,29 +3169,25 @@ section {
   .practicum-workforce-container {
     gap: 18px;
   }
-  
+
   .practicum-workforce-title-wrapper {
     flex: 0 0 40%;
   }
-  
+
   .practicum-workforce-title {
     font-size: 22px;
     width: 300px;
   }
-  
+
   .practicum-workforce-subtitle {
     font-size: 18px;
     line-height: 22px;
   }
-  
+
   .practicum-workforce-description {
     font-size: 13px;
     line-height: 1.5;
   }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 8px;
-  }
 }
 
 /* Tablet Portrait */
@@ -3223,7 +3195,7 @@ section {
   .practicum-workforce-container {
     gap: 15px;
   }
-  
+
   .practicum-workforce-title-wrapper {
     flex: 0 0 45%;
   }
@@ -3233,19 +3205,18 @@ section {
     width: auto;
     max-width: 100%;
   }
-  
+
   .practicum-workforce-subtitle {
     font-size: 17px;
     line-height: 20px;
   }
-  
+
   .practicum-workforce-description {
     font-size: 12px;
     line-height: 1.4;
   }
-  
+
   .practicum-workforce-description-wrapper {
-    padding-left: 5px;
     gap: 12px;
   }
 }
@@ -3257,682 +3228,703 @@ section {
     gap: 20px;
     text-align: center;
   }
-  
+
   .practicum-workforce-title-wrapper {
     flex: none;
     width: 100%;
     justify-content: center;
   }
-  
+
   .practicum-workforce-description-wrapper {
     flex: none;
     width: 100%;
     padding-left: 0;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
   }
-  
-  .practicum-workforce-title {
-    font-size: 18px;
-    text-align: center;
-    width: auto;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 11px;
-    text-align: center;
-    line-height: 1.3;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-}
 
-/* Mobile Portrait */
-@media (max-width: 480px) {
-  .practicum-workforce-container {
-    gap: 15px;
-    padding: 0 10px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 16px;
-    max-width: 95%;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 10px;
-    line-height: 1.2;
-    max-width: 95%;
-  }
-}
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .practicum-workforce-container {
+      gap: 15px;
+      padding: 0 10px;
+    }
 
-/* Extra Small Mobile */
-@media (max-width: 375px) {
-  .practicum-workforce-container {
-    gap: 12px;
-    padding: 0 5px;
+    .practicum-workforce-title {
+      font-size: 16px;
+      max-width: 95%;
+    }
+
+    .practicum-workforce-subtitle {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .practicum-workforce-description {
+      font-size: 10px;
+      line-height: 1.2;
+      max-width: 95%;
+    }
   }
-  
-  .practicum-workforce-title {
-    font-size: 15px;
-    word-break: break-word;
-    hyphens: auto;
-    max-width: 100%;
+
+  /* Extra Small Mobile */
+  @media (max-width: 375px) {
+    .practicum-workforce-container {
+      gap: 12px;
+      padding: 0 5px;
+    }
+
+    .practicum-workforce-title {
+      font-size: 15px;
+      word-break: break-word;
+      hyphens: auto;
+      max-width: 100%;
+    }
+
+    .practicum-workforce-subtitle {
+      font-size: 14px;
+      line-height: 17px;
+      word-break: break-word;
+    }
+
+    .practicum-workforce-description {
+      font-size: 9px;
+      line-height: 1.2;
+      max-width: 100%;
+    }
   }
-  
-  .practicum-workforce-subtitle {
-    font-size: 14px;
-    line-height: 17px;
-    word-break: break-word;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 9px;
-    line-height: 1.2;
-    max-width: 100%;
-  }
-}
 
-/* Industrial Innovation Studios Section Styles */
-.industrial-studios-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  width: 100%;
-  min-height: auto;
-}
-
-.industrial-studios-title-wrapper {
-  flex: 0 0 35%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.industrial-studios-description-wrapper {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  padding-left: 20px;
-}
-
-.industrial-studios-title {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 32px;
-  line-height: 120%;
-  font-weight: 900;
-  color: #E01E2C;
-  font-family: "Akhand", sans-serif !important;
-  text-align: left;
-  width: 400px;
-}
-
-.industrial-studios-description {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: "Akhand", sans-serif !important;
-  margin: 0;
-  text-align: left;
-}
-
-/* Large Desktop */
-@media (max-width: 1500px) {
+  /* Industrial Innovation Studios Section Styles */
   .industrial-studios-container {
-    gap: 35px;
-  }
-  
-  .industrial-studios-title {
-    font-size: 30px;
-    width: 380px;
-  }
-  
-  .industrial-studios-description {
-    font-size: 17px;
-  }
-}
-
-/* Medium Desktop */
-@media (max-width: 1360px) {
-  .industrial-studios-container {
-    gap: 30px;
-  }
-  
-  .industrial-studios-title {
-    font-size: 28px;
-    width: 360px;
-  }
-  
-  .industrial-studios-description {
-    font-size: 16px;
-  }
-}
-
-/* Small Desktop */
-@media (max-width: 1275px) {
-  .industrial-studios-container {
-    gap: 25px;
-  }
-  
-  .industrial-studios-title {
-    font-size: 26px;
-    width: 340px;
-  }
-  
-  .industrial-studios-description {
-    font-size: 15px;
-  }
-  
-  .industrial-studios-description-wrapper {
-    padding-left: 15px;
-  }
-}
-
-/* Large Tablet */
-@media (max-width: 1120px) {
-  .industrial-studios-container {
-    gap: 20px;
-  }
-  
-  .industrial-studios-title {
-    font-size: 24px;
-    width: 320px;
-  }
-  
-  .industrial-studios-description {
-    font-size: 14px;
-  }
-  
-  .industrial-studios-description-wrapper {
-    padding-left: 10px;
-  }
-}
-
-/* Medium Tablet */
-@media (max-width: 920px) {
-  .industrial-studios-container {
-    gap: 18px;
-  }
-  
-  .industrial-studios-title-wrapper {
-    flex: 0 0 40%;
-  }
-  
-  .industrial-studios-title {
-    font-size: 22px;
-    width: 300px;
-  }
-  
-  .industrial-studios-description {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-  
-  .industrial-studios-description-wrapper {
-    padding-left: 8px;
-  }
-}
-
-/* Tablet Portrait */
-@media (max-width: 768px) {
-  .industrial-studios-container {
-    gap: 15px;
-  }
-  
-  .industrial-studios-title-wrapper {
-    flex: 0 0 45%;
-  }
-
-  .industrial-studios-title {
-    font-size: 20px;
-    width: auto;
-    max-width: 100%;
-  }
-  
-  .industrial-studios-description {
-    font-size: 12px;
-    line-height: 1.3;
-  }
-  
-  .industrial-studios-description-wrapper {
-    padding-left: 5px;
-  }
-}
-
-/* Mobile Landscape - Switch to Vertical Stack */
-@media (max-width: 576px) {
-  .industrial-studios-container {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-  
-  .industrial-studios-title-wrapper {
-    flex: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
     width: 100%;
-    justify-content: center;
+    min-height: auto;
   }
-  
+
+  .industrial-studios-title-wrapper {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .industrial-studios-description-wrapper {
-    flex: none;
-    width: 100%;
-    padding-left: 0;
-    justify-content: center;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
   }
-  
+
   .industrial-studios-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 900;
+    color: #e01e2c;
+    font-family: "Akhand", sans-serif !important;
+    text-align: left;
+    width: 400px;
+  }
+
+  .industrial-studios-description {
+    color: #000;
     font-size: 18px;
-    text-align: center;
-    width: auto;
-    max-width: 90%;
-    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Akhand", sans-serif !important;
+    margin: 0;
+    text-align: left;
   }
-  
-  .industrial-studios-description {
-    font-size: 11px;
-    text-align: center;
-    line-height: 1.2;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-}
 
-/* Mobile Portrait */
-@media (max-width: 480px) {
-  .industrial-studios-container {
-    gap: 15px;
-    padding: 0 10px;
-  }
-  
-  .industrial-studios-title {
-    font-size: 16px;
-    max-width: 95%;
-  }
-  
-  .industrial-studios-description {
-    font-size: 10px;
-    line-height: 1.1;
-    max-width: 95%;
-  }
-}
+  /* Large Desktop */
+  @media (max-width: 1500px) {
+    .industrial-studios-container {
+      gap: 35px;
+    }
 
-/* Extra Small Mobile */
-@media (max-width: 375px) {
-  .industrial-studios-container {
-    gap: 12px;
-    padding: 0 5px;
-  }
-  
-  .industrial-studios-title {
-    font-size: 15px;
-    word-break: break-word;
-    hyphens: auto;
-    max-width: 100%;
-  }
-  
-  .industrial-studios-description {
-    font-size: 9px;
-    line-height: 1.1;
-    max-width: 100%;
-  }
-}
+    .industrial-studios-title {
+      font-size: 30px;
+      width: 380px;
+    }
 
-/* Make swiper wrapper more compact */
-.custom-swiper-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  position: relative;
-  width: 100%;
-  margin: auto;
-  padding: 0 20px; /* Reduced padding */
-}
+    .industrial-studios-description {
+      font-size: 17px;
+    }
+  }
 
-/* Optimize section padding for this specific section */
-#industry {
-  padding: 30px 0 !important; /* Reduced from py-5 */
-}
+  /* Medium Desktop */
+  @media (max-width: 1360px) {
+    .industrial-studios-container {
+      gap: 30px;
+    }
 
-/* Ensure consistent vertical alignment for section headers */
-.practicum-banner .col-md-4 p {
-  margin-top: 0 !important;
-}
+    .industrial-studios-title {
+      font-size: 28px;
+      width: 360px;
+    }
 
-.practicum-banner .col-md-7 {
-  margin-top: 0 !important;
-}
+    .industrial-studios-description {
+      font-size: 16px;
+    }
+  }
 
-/* Ensure section headers are consistently aligned */
-.section-header {
-  margin-top: 0;
-  padding-top: 0;
-}
+  /* Small Desktop */
+  @media (max-width: 1275px) {
+    .industrial-studios-container {
+      gap: 25px;
+    }
 
-/* Consistent alignment for two-column layouts */
-.row.mb-4 .col-md-5 h2,
-.row.mb-4 .col-md-4 h2 {
-  margin-top: 0;
-  padding-top: 0;
-}
+    .industrial-studios-title {
+      font-size: 26px;
+      width: 340px;
+    }
 
-.row.mb-4 .col-md-7,
-.row.mb-4 .col-md-8 {
-  margin-top: 0;
-  padding-top: 0;
-}
+    .industrial-studios-description {
+      font-size: 15px;
+    }
 
-/* Responsive adjustments for compact design */
-@media (max-width: 768px) {
-  .tab-image > img {
-    width: 280px; /* Further reduced for mobile */
+    .industrial-studios-description-wrapper {
+      padding-left: 15px;
+    }
   }
-  
-  .table tr {
-    min-height: 80px; /* Even more compact on mobile */
-  }
-  
-  .table tbody tr td:first-child {
-    font-size: 16px;
-  }
-  
-  .table tbody {
-    font-size: 14px;
-  }
-  
-  .outcome-tab p {
-    font-size: 14px !important;
-  }
-}
 
-@media (max-width: 576px) {
-  .tab-image > img {
-    width: 250px;
-  }
-  
-  .table tr {
-    min-height: 70px;
-  }
-  
-  .tab-header p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
+  /* Large Tablet */
+  @media (max-width: 1120px) {
+    .industrial-studios-container {
+      gap: 20px;
+    }
 
-/* Innovation Infrastructure Section - Responsive Improvements */
-@media (max-width: 1200px) {
-  .tab2-img-container > div {
-    width: 280px; /* Increased from 220px */
-    height: 120px; /* Increased from 90px */
-  }
-  
-  .tab2-img-container {
-    gap: 20px;
-  }
-}
+    .industrial-studios-title {
+      font-size: 24px;
+      width: 320px;
+    }
 
-@media (max-width: 768px) {
-  .tab2-p {
-    font-size: 16px; /* Slightly smaller for mobile but still readable */
-    line-height: 1.4;
+    .industrial-studios-description {
+      font-size: 14px;
+    }
+
+    .industrial-studios-description-wrapper {
+      padding-left: 10px;
+    }
   }
-  
-  .tab2-img-container {
-    flex-direction: column;
+
+  /* Medium Tablet */
+  @media (max-width: 920px) {
+    .industrial-studios-container {
+      gap: 18px;
+    }
+
+    .industrial-studios-title-wrapper {
+      flex: 0 0 40%;
+    }
+
+    .industrial-studios-title {
+      font-size: 22px;
+      width: 300px;
+    }
+
+    .industrial-studios-description {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .industrial-studios-description-wrapper {
+      padding-left: 8px;
+    }
+  }
+
+  /* Tablet Portrait */
+  @media (max-width: 768px) {
+    .industrial-studios-container {
+      gap: 15px;
+    }
+
+    .industrial-studios-title-wrapper {
+      flex: 0 0 45%;
+    }
+
+    .industrial-studios-title {
+      font-size: 20px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .industrial-studios-description {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+
+    .industrial-studios-description-wrapper {
+      padding-left: 5px;
+    }
+  }
+
+  /* Mobile Landscape - Switch to Vertical Stack */
+  @media (max-width: 576px) {
+    .industrial-studios-container {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .industrial-studios-title-wrapper {
+      flex: none;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .industrial-studios-description-wrapper {
+      flex: none;
+      width: 100%;
+      padding-left: 0;
+      justify-content: center;
+    }
+
+    .industrial-studios-title {
+      font-size: 18px;
+      text-align: center;
+      width: auto;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .industrial-studios-description {
+      font-size: 11px;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .industrial-studios-container {
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .industrial-studios-title {
+      font-size: 16px;
+      max-width: 95%;
+    }
+
+    .industrial-studios-description {
+      font-size: 10px;
+      line-height: 1.1;
+      max-width: 95%;
+    }
+  }
+
+  /* Extra Small Mobile */
+  @media (max-width: 375px) {
+    .industrial-studios-container {
+      gap: 12px;
+      padding: 0 5px;
+    }
+
+    .industrial-studios-title {
+      font-size: 15px;
+      word-break: break-word;
+      hyphens: auto;
+      max-width: 100%;
+    }
+
+    .industrial-studios-description {
+      font-size: 9px;
+      line-height: 1.1;
+      max-width: 100%;
+    }
+  }
+
+  /* Make swiper wrapper more compact */
+  .custom-swiper-wrapper {
+    display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px; /* Reduced padding */
   }
-  
-  .tab2-img-container > div {
-    width: 260px; /* Increased from 200px */
-    height: 110px; /* Increased from 80px */
-  }
-  
-  .tab-slide2 {
-    gap: 20px;
-  }
-}
 
-@media (max-width: 576px) {
-  .tab2-h1 {
-    font-size: 20px;
-    line-height: 24px;
+  /* Optimize section padding for this specific section */
+  #industry {
+    padding: 30px 0 !important; /* Reduced from py-5 */
   }
-  
-  .tab2-p {
-    font-size: 15px;
-  }
-  
-  .main-tab-container2 {
-    padding: 20px 0;
-  }
-  
-  .tab2-img-container > div {
-    width: 240px;
-    height: 100px;
-  }
-}
 
-/* Future Factory Sections - Responsive Improvements */
-@media (max-width: 768px) {
-  .future_container {
-    padding: 30px 20px !important;
+  /* Ensure consistent vertical alignment for section headers */
+  .practicum-banner .col-md-4 p {
+    margin-top: 0 !important;
   }
-  
-  .future_title {
-    font-size: 20px;
+
+  .practicum-banner .col-md-7 {
+    margin-top: 0 !important;
+  }
+
+  /* Ensure section headers are consistently aligned */
+  .section-header {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Consistent alignment for two-column layouts */
+  .row.mb-4 .col-md-5 h2,
+  .row.mb-4 .col-md-4 h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .row.mb-4 .col-md-7,
+  .row.mb-4 .col-md-8 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Responsive adjustments for compact design */
+  @media (max-width: 768px) {
+    .tab-image > img {
+      width: 280px; /* Further reduced for mobile */
+    }
+
+    .table tr {
+      min-height: 80px; /* Even more compact on mobile */
+    }
+
+    .table tbody tr td:first-child {
+      font-size: 16px;
+    }
+
+    .table tbody {
+      font-size: 14px;
+    }
+
+    .outcome-tab p {
+      font-size: 14px !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .tab-image > img {
+      width: 250px;
+    }
+
+    .table tr {
+      min-height: 70px;
+    }
+
+    .tab-header p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  /* Innovation Infrastructure Section - Responsive Improvements */
+  @media (max-width: 1200px) {
+    .tab2-img-container > div {
+      width: 280px; /* Increased from 220px */
+      height: 120px; /* Increased from 90px */
+    }
+
+    .tab2-img-container {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tab2-p {
+      font-size: 16px; /* Slightly smaller for mobile but still readable */
+      line-height: 1.4;
+    }
+
+    .tab2-img-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .tab2-img-container > div {
+      width: 260px; /* Increased from 200px */
+      height: 110px; /* Increased from 80px */
+    }
+
+    .tab-slide2 {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .tab2-h1 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .tab2-p {
+      font-size: 15px;
+    }
+
+    .main-tab-container2 {
+      padding: 20px 0;
+    }
+
+    .tab2-img-container > div {
+      width: 240px;
+      height: 100px;
+    }
+  }
+
+  /* Future Factory Sections - Responsive Improvements */
+  @media (max-width: 768px) {
+    .future_container {
+      padding: 30px 20px !important;
+    }
+
+    .future_title {
+      font-size: 20px;
+      max-width: none;
+    }
+
+    .future_container img {
+      height: 60px !important;
+    }
+
+    /* Ensure description text is smaller than titles on mobile */
+    .future_container p.text-white {
+      font-size: 14px !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .future_title {
+      font-size: 18px;
+    }
+
+    .future_container img {
+      height: 50px !important;
+    }
+
+    .future_container p.text-white {
+      font-size: 13px !important;
+    }
+  }
+
+  /* Enhanced zoom-level responsive fixes for Industrial Innovation Labs */
+
+  /* Equipment Section - Zoom Level Fixes */
+  .equipment-main-container {
+    margin: 0 auto;
     max-width: none;
+    padding: 40px 0;
+    background: #000;
+    border-radius: 8px;
   }
-  
-  .future_container img {
-    height: 60px !important;
-  }
-  
-  /* Ensure description text is smaller than titles on mobile */
-  .future_container p.text-white {
-    font-size: 14px !important;
-  }
-}
 
-@media (max-width: 576px) {
-  .future_title {
-    font-size: 18px;
-  }
-  
-  .future_container img {
-    height: 50px !important;
-  }
-  
-  .future_container p.text-white {
-    font-size: 13px !important;
-  }
-}
-
-/* Enhanced zoom-level responsive fixes for Industrial Innovation Labs */
-
-/* Equipment Section - Zoom Level Fixes */
-.equipment-main-container {
-  margin: 0 auto;
-  max-width: none;
-  padding: 40px 0;
-  background: #000;
-  border-radius: 8px;
-}
-
-/* Add responsive padding for equipment section */
-.equipment-main-container .platform-offerings-title {
-  text-align: left;
-  color: #E01E2C;
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 30px;
-}
-
-.equipment-main-container .custom-swiper-wrapper {
-  gap: 5px;
-}
-
-/* Zoom-level specific breakpoints (90% zoom = ~1440px becomes ~1296px) */
-@media (max-width: 1400px) and (min-width: 1200px) {
+  /* Add responsive padding for equipment section */
   .equipment-main-container .platform-offerings-title {
-    font-size: 26px;
+    text-align: left;
+    color: #e01e2c;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 30px;
   }
-  
-  .platform-card-wrapper {
-    padding: 18px;
-  }
-  
-  .platform-card-title {
-    font-size: 1.3rem;
-  }
-  
-  .platform-card-description {
-    font-size: 0.9rem;
-  }
-}
 
-/* 90% zoom level specific (handles ~1296px viewport) */
-@media (max-width: 1350px) and (min-width: 1200px) {
-  .industrial-labs-section {
-    padding: 50px 80px;
+  .equipment-main-container .custom-swiper-wrapper {
+    gap: 5px;
   }
-  
-  .equipment-main-container .platform-offerings-title {
-    font-size: 24px;
+
+  /* Zoom-level specific breakpoints (90% zoom = ~1440px becomes ~1296px) */
+  @media (max-width: 1400px) and (min-width: 1200px) {
+    .equipment-main-container .platform-offerings-title {
+      font-size: 26px;
+    }
+
+    .platform-card-wrapper {
+      padding: 18px;
+    }
+
+    .platform-card-title {
+      font-size: 1.3rem;
+    }
+
+    .platform-card-description {
+      font-size: 0.9rem;
+    }
   }
-  
-  .platform-card-wrapper {
-    padding: 16px;
-    height: 260px;
+
+  /* 90% zoom level specific (handles ~1296px viewport) */
+  @media (max-width: 1350px) and (min-width: 1200px) {
+    .industrial-labs-section {
+      padding: 50px 80px;
+    }
+
+    .equipment-main-container .platform-offerings-title {
+      font-size: 24px;
+    }
+
+    .platform-card-wrapper {
+      padding: 16px;
+      height: 260px;
+    }
+
+    .platform-image-container {
+      height: 90px;
+    }
+
+    .platform-card-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .platform-card-description {
+      font-size: 0.85rem;
+      line-height: 1.3;
+    }
   }
-  
-  .platform-image-container {
-    height: 90px;
+
+  /* Remove any potential overflow issues */
+  .equipment-main-container,
+  .platform-offerings-container {
+    overflow-x: hidden;
   }
-  
-  .platform-card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+
+  .custom-swiper-wrapper {
+    overflow: visible;
   }
-  
-  .platform-card-description {
-    font-size: 0.85rem;
-    line-height: 1.3;
-  }
-}
 
-
-/* Remove any potential overflow issues */
-.equipment-main-container,
-.platform-offerings-container {
-  overflow-x: hidden;
-}
-
-.custom-swiper-wrapper {
-  overflow: visible;
-}
-
-/* Ensure proper row spacing */
-.equipment-main-container .row.g-4 {
-  margin: 0;
-  row-gap: 20px;
-}
-
-.equipment-main-container .col-md-6.col-lg-3 {
-  padding: 0 10px;
-}
-
-/* Better responsive handling for intermediate screen sizes */
-@media (max-width: 1300px) and (min-width: 1100px) {
+  /* Ensure proper row spacing */
   .equipment-main-container .row.g-4 {
-    row-gap: 15px;
+    margin: 0;
+    row-gap: 20px;
   }
-  
+
   .equipment-main-container .col-md-6.col-lg-3 {
-    padding: 0 8px;
+    padding: 0 10px;
   }
-}
 
-/* Fix for very specific zoom scenarios */
-@media (min-width: 1200px) {
-  .equipment-main-container .row {
-    margin-left: 0;
-    margin-right: 0;
+  /* Better responsive handling for intermediate screen sizes */
+  @media (max-width: 1300px) and (min-width: 1100px) {
+    .equipment-main-container .row.g-4 {
+      row-gap: 15px;
+    }
+
+    .equipment-main-container .col-md-6.col-lg-3 {
+      padding: 0 8px;
+    }
   }
-  
-  .equipment-main-container [class*="col-"] {
-    padding-left: 10px;
-    padding-right: 10px;
+
+  /* Fix for very specific zoom scenarios */
+  @media (min-width: 1200px) {
+    .equipment-main-container .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .equipment-main-container [class*="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
-}
 
+  .section-header {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: #e50012;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
 
-.section-header{
-  font-size: 42px;
-  line-height: 1.1;
-  font-weight: 900;
-  color: #e50012;
-  margin-bottom: 24px;
-  letter-spacing: 0.5px;
-}
-
-
-/* For col 2.5 */
-.col-lg-2-5{
-  flex: 0 0 20%;
-  max-width: 20%;
-}
-
-@media (max-width: 1320px) {
+  /* For col 2.5 */
   .col-lg-2-5 {
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 20%;
+    max-width: 20%;
   }
-}
 
- .innovationTab-left-title{
-  font-size: 140px;
-  line-height: 1.1;
-  font-weight: 900;
-  color: #7f7f7f;
-  margin-bottom: 16px;
-}
+  @media (max-width: 1320px) {
+    .col-lg-2-5 {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
 
-.innovationTab-left-image{
-  position: absolute;
-  bottom: 50px;
-  height: 70px;
-  object-fit: contain;
-  left: 30px;
-}
+  .innovationTab-left-title {
+    font-size: 140px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: #7f7f7f;
+    margin-bottom: 16px;
+  }
 
-.innovationTab-left h3{
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: 400;
-  margin-bottom: 8px;
-  max-width: 400px;
-}
+  .innovationTab-left-image {
+    position: absolute;
+    bottom: 50px;
+    height: 70px;
+    object-fit: contain;
+    left: 30px;
+  }
 
-.innovationTab-left ul li{
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  margin-bottom: 4px;
+  .innovationTab-left h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 8px;
+    max-width: 400px;
+  }
+
+  .innovationTab-left ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  /* Industrial Innovation Pactrium Section  */
+  .industrial-innovation-pactrium-red {
+    background-color: #e50012;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .industrial-innovation-pactrium-red p {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 1200px) {
+    .industrial-innovation-pactrium-red {
+      flex-direction: column;
+      align-items: start;
+      text-align: start;
+      gap: 24px;
+    }
+  }
+
+  /* Background Image */
+  .banner {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  /* Background image layer */
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/fort/about/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* 👈 Set your desired background opacity here */
+    z-index: -1;
+  }
 }
