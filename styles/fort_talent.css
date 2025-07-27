@@ -2317,3 +2317,100 @@ section {
     margin-bottom: 0px !important;
   }
 }
+
+/* modified-pacticum-slide-container */
+.modified-pacticum-slide-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+}
+
+.modified-pacticum-slide-container .practicum-slide-item {
+  width: 100% !important;
+  margin-right: 0;
+  min-height: 320px;
+  padding: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.red-btn {
+  display: inline-flex;
+  padding: 7px 13px;
+  align-items: center;
+  background: #e01e2c;
+  font-family: "Roboto", sans-serif !important;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  text-decoration: none;
+}
+
+.innovation-labs-container .practicum-slide-item {
+  margin-right: 0;
+  min-height: 320px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.innovation-labs-container img {
+  min-width: 100% !important;
+}
+
+.innovation-labs-container .practicum-slide-content {
+  max-width: 100% !important;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.innovation-labs-container .practicum-slide-item p {
+  font-size: 14px;
+  font-style: normal;
+  max-width: 300px;
+  line-height: 18.627px; /* 133.051% */
+}
+
+.innovation-labs-container .practicum-slide-item h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  line-height: 24px; /* 133.051% */
+}
+
+@media (min-width: 1600px) {
+  .innovation-labs-container.modified-pacticum-slide-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+.innovation-labs-container.modified-pacticum-slide-container.grid-auto {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+  gap: 20px !important;
+  width: 100%;
+  place-items: center !important;
+}
+
+.innovation-labs-container.modified-pacticum-slide-container.grid-auto.grid-center {
+  display: grid !important;
+  grid-template-columns: repeat(2, 320px) !important;
+  gap: 200px !important;
+  width: 100%;
+  place-content: center !important;
+}
+
+.modified-pacticum-slide-container.product-acceleration-container
+  .practicum-slide-item {
+  min-height: 200px !important;
+  max-width: 400px !important;
+}
+
+.practicum-slide-container.modified-pacticum-slide-container.innnovation-labs-container.grid-auto.grid-center.product-acceleration-container {
+  grid-template-columns: repeat(2, 320px) !important;
+  gap: 200px !important;
+  width: 100%;
+  place-content: center !important;
+}
