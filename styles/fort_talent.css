@@ -13,15 +13,14 @@ h1 {
   margin: 0;
 }
 
-body,p{
+body,
+p {
   font-size: 18pt;
 }
-
 
 section {
   padding: 50px 200px;
 }
-
 
 @media (max-width: 1500px) {
   section {
@@ -93,7 +92,10 @@ section {
   }
 }
 
-.nav-section, .nav-menus, .nav-item, .nav-link {
+.nav-section,
+.nav-menus,
+.nav-item,
+.nav-link {
   font-family: "Akhand", sans-serif !important;
 }
 
@@ -267,7 +269,7 @@ section {
   width: 100vw;
   height: calc(100vh - 122px);
   position: relative;
-  background: url('../assets/images/hero-2.png') center center/cover no-repeat;
+  background: url("../assets/images/hero-2.png") center center/cover no-repeat;
   padding: 0 200px; /* Match about section padding */
 }
 
@@ -346,19 +348,19 @@ section {
   .hero {
     padding: 0 160px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 50pt;
   }
-  
+
   .hero-subtitle {
     font-size: 24pt;
   }
-  
+
   .hero-right p {
     font-size: 28pt;
   }
-  
+
   .hero-right {
     padding-left: 50px;
   }
@@ -368,19 +370,19 @@ section {
   .hero {
     padding: 0 120px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 42pt;
   }
-  
+
   .hero-subtitle {
     font-size: 20pt;
   }
-  
+
   .hero-right p {
     font-size: 24pt;
   }
-  
+
   .hero-right {
     padding-left: 40px;
   }
@@ -390,19 +392,19 @@ section {
   .hero {
     padding: 0 80px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 36pt;
   }
-  
+
   .hero-subtitle {
     font-size: 18pt;
   }
-  
+
   .hero-right p {
     font-size: 22pt;
   }
-  
+
   .hero-right {
     padding-left: 30px;
   }
@@ -412,19 +414,19 @@ section {
   .hero {
     padding: 0 60px; /* Match about section padding */
   }
-  
+
   .hero-title {
     font-size: 32pt;
   }
-  
+
   .hero-subtitle {
     font-size: 16pt;
   }
-  
+
   .hero-right p {
     font-size: 20pt;
   }
-  
+
   .hero-right {
     padding-left: 25px;
   }
@@ -437,14 +439,14 @@ section {
     padding: 40px 60px; /* Match about section padding pattern */
     height: auto;
   }
-  
+
   .hero-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 30px;
   }
-  
+
   .hero-left {
     width: 80%;
     margin-bottom: 24px;
@@ -452,24 +454,24 @@ section {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .hero-title {
     font-size: 28pt;
     text-align: center;
     margin-bottom: 0.3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 14pt;
     text-align: center;
   }
-  
+
   .hero-right {
     width: 100%;
     padding-left: 0;
     text-align: center;
   }
-  
+
   .hero-right p {
     font-size: 18pt;
     text-align: center;
@@ -481,22 +483,22 @@ section {
   .hero {
     padding: 0 40px; /* Match about section padding */
   }
-  
+
   .hero-left {
     width: 70%;
   }
-  
+
   .hero-title {
     font-size: 24pt;
     margin-bottom: 0.3rem;
     text-align: center;
   }
-  
+
   .hero-subtitle {
     font-size: 12pt;
     text-align: center;
   }
-  
+
   .hero-right p {
     font-size: 16pt;
     text-align: center;
@@ -508,23 +510,23 @@ section {
     padding: 24px 20px; /* Match about section padding */
     min-height: 320px;
   }
-  
+
   .hero-left {
     width: 95%;
     margin-bottom: 16px;
   }
-  
+
   .hero-title {
     font-size: 22pt;
     margin-bottom: 0.2rem;
     text-align: center;
   }
-  
+
   .hero-subtitle {
     font-size: 11pt;
     text-align: center;
   }
-  
+
   .hero-right p {
     font-size: 14pt;
     text-align: center;
@@ -538,20 +540,20 @@ section {
     padding: 0 15px;
     height: calc(100vh - 100px);
   }
-  
+
   .hero-left {
     width: 90%;
     margin-bottom: 20px;
   }
-  
+
   .hero-title {
     font-size: 20pt;
   }
-  
+
   .hero-subtitle {
     font-size: 10pt;
   }
-  
+
   .hero-right p {
     font-size: clamp(0.9rem, 7vw, 1.2rem);
   }
@@ -561,21 +563,21 @@ section {
   .hero {
     padding: 0 10px;
   }
-  
+
   .hero-left {
     width: 95%;
   }
-  
+
   .hero-title {
     font-size: 18pt;
     line-height: 1.4;
   }
-  
+
   .hero-subtitle {
     font-size: 9pt;
     line-height: 1.4;
   }
-  
+
   .hero-right p {
     font-size: 12pt;
     line-height: 1.4;
@@ -626,10 +628,6 @@ section {
 }
 
 /* innovation practicum */
-.practicum-banner {
-  background-image: url("../assets/images/fort/about/background.png");
-}
-
 /* Ensure right content aligns with section margins */
 .practicum-banner .h-100 {
   width: 100%;
@@ -704,12 +702,12 @@ section {
   .innovation-workforce-container {
     gap: 35px;
   }
-  
+
   .innovation-workforce-title {
     font-size: 30px;
     line-height: 28px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 19px;
   }
@@ -720,12 +718,12 @@ section {
   .innovation-workforce-container {
     gap: 30px;
   }
-  
+
   .innovation-workforce-title {
     font-size: 28px;
     line-height: 26px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 18px;
   }
@@ -736,16 +734,16 @@ section {
   .innovation-workforce-container {
     gap: 25px;
   }
-  
+
   .innovation-workforce-title {
     font-size: 26px;
     line-height: 24px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 17px;
   }
-  
+
   .innovation-workforce-description-wrapper {
     padding-left: 15px;
   }
@@ -756,16 +754,16 @@ section {
   .innovation-workforce-container {
     gap: 20px;
   }
-  
+
   .innovation-workforce-title {
     font-size: 24px;
     line-height: 22px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 16px;
   }
-  
+
   .innovation-workforce-description-wrapper {
     padding-left: 10px;
   }
@@ -776,21 +774,21 @@ section {
   .innovation-workforce-container {
     gap: 18px;
   }
-  
+
   .innovation-workforce-title-wrapper {
     flex: 0 0 40%;
   }
-  
+
   .innovation-workforce-title {
     font-size: 22px;
     line-height: 20px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 15px;
     line-height: 1.5;
   }
-  
+
   .innovation-workforce-description-wrapper {
     padding-left: 8px;
   }
@@ -801,7 +799,7 @@ section {
   .innovation-workforce-container {
     gap: 15px;
   }
-  
+
   .innovation-workforce-title-wrapper {
     flex: 0 0 45%;
   }
@@ -810,12 +808,12 @@ section {
     font-size: 20px;
     line-height: 18px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 14px;
     line-height: 1.4;
   }
-  
+
   .innovation-workforce-description-wrapper {
     padding-left: 5px;
   }
@@ -832,27 +830,27 @@ section {
     gap: 20px;
     text-align: center;
   }
-  
+
   .innovation-workforce-title-wrapper {
     flex: none;
     width: 100%;
     justify-content: center;
   }
-  
+
   .innovation-workforce-description-wrapper {
     flex: none;
     width: 100%;
     padding-left: 0;
     justify-content: center;
   }
-  
+
   .innovation-workforce-title {
     font-size: 18px;
     line-height: 16px;
     text-align: center;
     margin-bottom: 0;
   }
-  
+
   .innovation-workforce-description {
     font-size: 13px;
     text-align: center;
@@ -860,7 +858,7 @@ section {
     max-width: 90%;
     margin: 0 auto;
   }
-  
+
   .practicum-description {
     text-align: center !important;
   }
@@ -872,12 +870,12 @@ section {
     gap: 15px;
     padding: 0 10px;
   }
-  
+
   .innovation-workforce-title {
     font-size: 16px;
     line-height: 15px;
   }
-  
+
   .innovation-workforce-description {
     font-size: 12px;
     line-height: 1.2;
@@ -891,14 +889,14 @@ section {
     gap: 12px;
     padding: 0 5px;
   }
-  
+
   .innovation-workforce-title {
     font-size: 15px;
     line-height: 14px;
     word-break: break-word;
     hyphens: auto;
   }
-  
+
   .innovation-workforce-description {
     font-size: 11px;
     line-height: 1.2;
@@ -917,7 +915,7 @@ section {
 }
 
 .practicum-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -985,16 +983,6 @@ section {
   text-align: left;
   align-items: flex-start;
   width: 100%;
-}
-
-.practicum-image-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 0;
-  margin-bottom: -100px;
-  min-height: 200px;
 }
 
 /* Removed hover animation */
@@ -1121,16 +1109,11 @@ section {
     max-height: 260px;
     max-width: 340px;
   }
-  
+
   .practicum-slide-text {
     font-size: 17px !important;
   }
-  
-  .practicum-image-container {
-    min-height: 240px;
-    margin-bottom: 8px;
-  }
-  
+
   .practicum-slide-content {
     gap: 8px;
   }
@@ -1141,20 +1124,15 @@ section {
     max-height: 240px;
     max-width: 320px;
   }
-  
+
   .practicum-slide-text {
     font-size: 16px !important;
   }
-  
+
   .practicum-description {
     max-width: 100%;
   }
-  
-  .practicum-image-container {
-    min-height: 220px;
-    margin-bottom: 6px;
-  }
-  
+
   .practicum-slide-content {
     gap: 6px;
   }
@@ -1165,18 +1143,13 @@ section {
     width: 100% !important; /* Single slide on mobile */
     margin-right: 0;
   }
-  
+
   .practicum-slide-image {
     max-height: 180px;
   }
-  
+
   .practicum-slide-text {
     font-size: 15px !important;
-  }
-  
-  .practicum-image-container {
-    justify-content: center; /* Center images on mobile */
-    min-height: 180px;
   }
 }
 
@@ -1184,41 +1157,37 @@ section {
   .practicum-header h1 {
     font-size: 22px !important;
   }
-  
+
   .practicum-header p {
     font-size: 16px !important;
   }
-  
+
   .practicum-description {
     font-size: 15px !important;
   }
-  
+
   .custom-button {
     width: auto;
     height: auto;
   }
-  
+
   .custom-button img {
     width: 20px;
     height: 20px;
   }
-  
+
   .practicum-slide-item {
     min-height: 280px;
     padding: 12px;
   }
-  
+
   .practicum-slide-text {
     font-size: 14px !important;
   }
-  
+
   .practicum-slide-image {
     max-height: 180px;
     max-width: 240px;
-  }
-  
-  .practicum-image-container {
-    min-height: 180px;
   }
 }
 
@@ -1329,7 +1298,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px;
   border-radius: 15px;
 }
 
@@ -1367,7 +1335,7 @@ section {
 /* footer */
 .footer {
   background-color: #181819;
-  font-size: 16px;;
+  font-size: 16px;
 }
 
 .footer .footer-head {
@@ -1421,7 +1389,7 @@ section {
     gap: 30px;
     align-items: center;
   }
-  
+
   .practicum-entry-horizontal {
     flex-direction: column;
     text-align: center;
@@ -1429,20 +1397,20 @@ section {
     max-width: 100%;
     align-items: center;
   }
-  
+
   .entry-icon {
     align-self: center;
   }
-  
+
   .entry-icon img {
     width: 200px;
     height: 100px;
   }
-  
+
   .entry-content-horizontal {
     max-width: 100%;
   }
-  
+
   .entry-content-horizontal p {
     font-size: 12px;
     text-align: center;
@@ -1453,16 +1421,16 @@ section {
   .practicum-entries-display {
     gap: 40px;
   }
-  
+
   .practicum-entry-horizontal {
     gap: 10px;
   }
-  
+
   .entry-icon img {
     width: 280px;
     height: 140px;
   }
-  
+
   .entry-content-horizontal p {
     font-size: 13px;
   }
@@ -1473,7 +1441,7 @@ section {
     width: 320px;
     height: 160px;
   }
-  
+
   .entry-content-horizontal p {
     font-size: 13px;
   }
@@ -1537,20 +1505,15 @@ section {
     border: none;
     background: rgba(255, 255, 255, 0.01);
   }
-  
+
   .custom-swiper-wrapper {
     padding: 0 10px;
   }
-  
+
   .practicum-container {
     margin: 30px 0;
   }
-  
-  .practicum-image-container {
-    justify-content: center;
-    margin-bottom: 8px;
-  }
-  
+
   .practicum-slide-content {
     gap: 8px;
   }
@@ -1560,49 +1523,42 @@ section {
   .practicum-header h1 {
     font-size: 24px !important;
   }
-  
+
   .practicum-header p {
     font-size: 18px !important;
   }
-  
+
   .practicum-description {
     font-size: 16px !important;
   }
-  
+
   .custom-button {
     width: 45px;
     height: 45px;
   }
-  
+
   .custom-button img {
     width: 20px;
     height: 20px;
   }
-  
+
   /* Removed hover animations */
-  
+
   .practicum-slide-item {
     min-height: 340px;
     padding: 15px;
     border: none;
     background: rgba(255, 255, 255, 0.01);
   }
-  
+
   .practicum-slide-text {
     font-size: 15px !important;
   }
-  
+
   .practicum-slide-image {
     max-height: 200px;
     max-width: 260px;
   }
-  
-  .practicum-image-container {
-    min-height: 180px;
-    justify-content: center;
-    margin-bottom: 6px;
-  }
-  
   .practicum-slide-content {
     gap: 6px;
   }
@@ -1612,41 +1568,37 @@ section {
   .practicum-header h1 {
     font-size: 22px !important;
   }
-  
+
   .practicum-header p {
     font-size: 16px !important;
   }
-  
+
   .practicum-description {
     font-size: 15px !important;
   }
-  
+
   .custom-button {
     width: auto;
     height: auto;
   }
-  
+
   .custom-button img {
     width: 20px;
     height: 20px;
   }
-  
+
   .practicum-slide-item {
     min-height: 280px;
     padding: 12px;
   }
-  
+
   .practicum-slide-text {
     font-size: 13px !important;
   }
-  
+
   .practicum-slide-image {
     max-height: 120px;
     max-width: 180px;
-  }
-  
-  .practicum-image-container {
-    min-height: 120px;
   }
 }
 
@@ -1707,21 +1659,21 @@ section {
   .innovation-entry-container {
     padding: 30px;
   }
-  
+
   .innovation-header-row {
     gap: 25px;
     margin-bottom: 25px;
   }
-  
+
   .innovation-entry-image {
     width: 140px;
     height: 140px;
   }
-  
+
   .innovation-entry-title {
     font-size: 24px;
   }
-  
+
   .innovation-entry-text {
     font-size: 16px;
   }
@@ -1731,24 +1683,24 @@ section {
   .innovation-entry-container {
     padding: 30px 20px;
   }
-  
+
   .innovation-header-row {
     flex-direction: column;
     text-align: center;
     gap: 20px;
     margin-bottom: 25px;
   }
-  
+
   .innovation-entry-image {
     width: 120px;
     height: 120px;
   }
-  
+
   .innovation-entry-title {
     font-size: 22px;
     text-align: center;
   }
-  
+
   .innovation-entry-text {
     font-size: 16px;
     text-align: center;
@@ -1759,21 +1711,21 @@ section {
   .innovation-entry-container {
     padding: 20px 15px;
   }
-  
+
   .innovation-header-row {
     gap: 15px;
     margin-bottom: 20px;
   }
-  
+
   .innovation-entry-image {
     width: 100px;
     height: 100px;
   }
-  
+
   .innovation-entry-title {
     font-size: 20px;
   }
-  
+
   .innovation-entry-text {
     font-size: 15px;
   }
@@ -1783,51 +1735,49 @@ section {
   .innovation-entry-container {
     padding: 20px 10px;
   }
-  
+
   .innovation-header-row {
     gap: 15px;
     margin-bottom: 15px;
   }
-  
+
   .innovation-entry-image {
     width: 80px;
     height: 80px;
   }
-  
+
   .innovation-entry-title {
     font-size: 18px;
   }
-  
+
   .innovation-entry-text {
     font-size: 14px;
   }
 }
 
-
-
 /* Common Section Responsive Styles */
 @media (max-width: 768px) {
- .logo-container > img {
-  width: auto;
-  height: 60px;
-  object-fit: contain;
-  max-width: 120px;
-}
-.nav-logo:first-child {
-  border-right: 2px solid white;
-  padding-right: 10px;
-  max-width: 140px;
-  margin-right: 10px;
-}
-  
+  .logo-container > img {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    max-width: 120px;
+  }
+  .nav-logo:first-child {
+    border-right: 2px solid white;
+    padding-right: 10px;
+    max-width: 140px;
+    margin-right: 10px;
+  }
+
   .container {
     padding: 0 15px;
   }
-  
+
   .row {
     margin: 0 -10px;
   }
-  
+
   [class*="col-"] {
     padding: 0 10px;
   }
@@ -1837,22 +1787,21 @@ section {
   .section-header {
     font-size: 2rem !important;
   }
-  
+
   .section-subheader {
     font-size: 1.3rem !important;
   }
-  
+
   .section-description {
     font-size: 0.95rem !important;
   }
-  
+
   .container {
     padding: 0 20px;
   }
 }
 
-
-.section-header{
+.section-header {
   font-size: 42px;
   line-height: 1.1;
   font-weight: 900;
@@ -1861,11 +1810,9 @@ section {
   letter-spacing: 0.5px;
 }
 
-
 #industry {
   padding: 30px 0 !important; /* Reduced from py-5 */
 }
-
 
 /* Ensure consistent vertical alignment for section headers */
 .practicum-banner .col-md-4 p {
@@ -1900,19 +1847,19 @@ section {
   .tab-image > img {
     width: 280px; /* Further reduced for mobile */
   }
-  
+
   .table tr {
     min-height: 80px; /* Even more compact on mobile */
   }
-  
+
   .table tbody tr td:first-child {
     font-size: 16px;
   }
-  
+
   .table tbody {
     font-size: 14px;
   }
-  
+
   .outcome-tab p {
     font-size: 14px !important;
   }
@@ -1922,11 +1869,11 @@ section {
   .tab-image > img {
     width: 250px;
   }
-  
+
   .table tr {
     min-height: 70px;
   }
-  
+
   .tab-header p {
     font-size: 14px;
     line-height: 20px;
@@ -1939,7 +1886,7 @@ section {
     width: 280px; /* Increased from 220px */
     height: 120px; /* Increased from 90px */
   }
-  
+
   .tab2-img-container {
     gap: 20px;
   }
@@ -1950,18 +1897,18 @@ section {
     font-size: 16px; /* Slightly smaller for mobile but still readable */
     line-height: 1.4;
   }
-  
+
   .tab2-img-container {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-  
+
   .tab2-img-container > div {
     width: 260px; /* Increased from 200px */
     height: 110px; /* Increased from 80px */
   }
-  
+
   .tab-slide2 {
     gap: 20px;
   }
@@ -1972,15 +1919,15 @@ section {
     font-size: 20px;
     line-height: 24px;
   }
-  
+
   .tab2-p {
     font-size: 15px;
   }
-  
+
   .main-tab-container2 {
     padding: 20px 0;
   }
-  
+
   .tab2-img-container > div {
     width: 240px;
     height: 100px;
@@ -2071,8 +2018,7 @@ section {
   padding: 8px 0; /* Reduced from 10px */
 }
 
-
-.table th p{
+.table th p {
   font-size: 32px; /* Reduced from 20px */
   line-height: 1.2; /* Reduced from 1.3 */
   font-weight: 700;
@@ -2142,23 +2088,24 @@ section {
 }
 
 /* Innovation Tab Left Styles */
-.innovationTab-left-title{
+.innovationTab-left-title {
   font-size: 140px;
   line-height: 1.1;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 900;
   color: #7f7f7f;
   margin-bottom: 16px;
 }
 
-.innovationTab-left-image{
+.innovationTab-left-image {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   height: 70px;
   object-fit: contain;
-  left: 30px;
+  left: 40px;
 }
 
-.innovationTab-left h3{
+.innovationTab-left h3 {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
@@ -2166,7 +2113,7 @@ section {
   max-width: 400px;
 }
 
-.innovationTab-left ul li{
+.innovationTab-left ul li {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -2213,16 +2160,20 @@ section {
 .tabSwiper {
   width: 100% !important;
   height: auto !important;
+  overflow: hidden !important;
 }
 
 .tabSwiper .swiper-wrapper {
   align-items: stretch !important;
+  display: flex !important;
 }
 
 .tabSwiper .swiper-slide {
   height: auto !important;
   display: flex !important;
   align-items: flex-start !important;
+  width: 100% !important;
+  flex-shrink: 0 !important;
 }
 
 /* Fix innovation tab layout to prevent jittering */
@@ -2238,7 +2189,7 @@ section {
   .tab-image > img {
     width: 350px !important;
   }
-  
+
   .innovationTab-left {
     min-width: 300px !important;
     max-width: 400px !important;
@@ -2250,11 +2201,11 @@ section {
     flex-direction: column !important;
     gap: 20px !important;
   }
-  
+
   .tab-image > img {
     width: 300px !important;
   }
-  
+
   .innovationTab-left {
     min-width: 100% !important;
     max-width: 100% !important;
@@ -2276,34 +2227,6 @@ section {
   min-height: auto;
 }
 
-.practicum-workforce-title-wrapper {
-  flex: 0 0 35%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.practicum-workforce-description-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 20px;
-  gap: 15px;
-}
-
-.practicum-workforce-title {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 32px;
-  line-height: 120%;
-  font-weight: 900;
-  color: #E01E2C;
-  font-family: "Akhand", sans-serif !important;
-  text-align: left;
-  width: 450px;
-}
-
 .practicum-workforce-title .title-light {
   font-weight: 400 !important;
 }
@@ -2312,269 +2235,85 @@ section {
   font-weight: 900 !important;
 }
 
-.practicum-workforce-subtitle {
-  color: #E01E2C;
-  font-size: 20pt;
-  line-height: 28.8px;
+/* Industrial Innovation Pactrium Section  */
+.industrial-innovation-pactrium-red {
+  background-color: #e50012;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.industrial-innovation-pactrium-red p {
+  font-size: 22px;
   font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
-  font-family: "Akhand", sans-serif !important;
+  line-height: 1.2;
 }
 
-.practicum-workforce-description {
-  color: #000;
-  line-height: 140%;
-  font-family: "Akhand", sans-serif !important;
-  margin: 0;
-  text-align: left;
-}
-
-/* Large Desktop */
-@media (max-width: 1500px) {
-  .practicum-workforce-container {
-    gap: 35px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 30px;
-    width: 380px;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 22px;
-    line-height: 26px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 17px;
-  }
-}
-
-/* Medium Desktop */
-@media (max-width: 1360px) {
-  .practicum-workforce-container {
-    gap: 30px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 28px;
-    width: 360px;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 21px;
-    line-height: 25px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 16px;
-  }
-}
-
-/* Small Desktop */
-@media (max-width: 1275px) {
-  .practicum-workforce-container {
-    gap: 25px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 26px;
-    width: 340px;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 15px;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 15px;
-  }
-}
-
-/* Large Tablet */
-@media (max-width: 1120px) {
-  .practicum-workforce-container {
-    gap: 20px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 24px;
-    width: 320px;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 19px;
-    line-height: 23px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 14px;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 10px;
-  }
-}
-
-/* Medium Tablet */
-@media (max-width: 920px) {
-  .practicum-workforce-container {
-    gap: 18px;
-  }
-  
-  .practicum-workforce-title-wrapper {
-    flex: 0 0 40%;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 22px;
-    width: 300px;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 8px;
-  }
-}
-
-/* Tablet Portrait */
-@media (max-width: 768px) {
-  .practicum-workforce-container {
-    gap: 15px;
-  }
-  
-  .practicum-workforce-title-wrapper {
-    flex: 0 0 45%;
-  }
-
-  .practicum-workforce-title {
-    font-size: 20px;
-    width: auto;
-    max-width: 100%;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 17px;
-    line-height: 20px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 5px;
-    gap: 12px;
-  }
-}
-
-/* Mobile Landscape - Switch to Vertical Stack */
-@media (max-width: 576px) {
-  .practicum-workforce-container {
+@media (max-width: 1200px) {
+  .industrial-innovation-pactrium-red {
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-  
-  .practicum-workforce-title-wrapper {
-    flex: none;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    flex: none;
-    width: 100%;
-    padding-left: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 18px;
-    text-align: center;
-    width: auto;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 11px;
-    text-align: center;
-    line-height: 1.3;
-    max-width: 90%;
-    margin: 0 auto;
+    align-items: start;
+    text-align: start;
+    gap: 24px;
   }
 }
 
-/* Mobile Portrait */
-@media (max-width: 480px) {
-  .practicum-workforce-container {
-    gap: 15px;
-    padding: 0 10px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 16px;
-    width: auto;
-    max-width: 95%;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 10px;
-    line-height: 1.2;
-    max-width: 95%;
-  }
+/* Background Image */
+.banner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
-/* Extra Small Mobile */
-@media (max-width: 375px) {
-  .practicum-workforce-container {
-    gap: 12px;
-    padding: 0 5px;
+/* Background image layer */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/fort/about/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* 👈 Set your desired background opacity here */
+  z-index: -1;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.practicum-slide-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+@media (max-width: 1020px) {
+  .practicum-slide-container {
+    flex-direction: column;
+    align-items: start;
   }
-  
-  .practicum-workforce-title {
-    font-size: 15px;
-    word-break: break-word;
-    hyphens: auto;
+
+  .practicum-slide-item {
+    width: 100% !important;
+    margin-right: 0;
+    min-height: 320px;
+    padding: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.01);
   }
-  
-  .practicum-workforce-subtitle {
-    font-size: 14px;
-    line-height: 16px;
+
+  .practicum-slide-content {
+    gap: 0px !important;
   }
-  
-  .practicum-workforce-description {
-    font-size: 9px;
-    line-height: 1.2;
-    max-width: 100%;
+
+  .practicum-slide-container .innovation-header-row {
+    margin-bottom: 0px !important;
   }
 }
