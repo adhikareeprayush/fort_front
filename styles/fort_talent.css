@@ -963,6 +963,7 @@ section {
   width: calc(50% - 15px) !important; /* Two slides per view */
   flex-shrink: 0 !important;
   margin-right: 30px;
+  height: 100% !important;
   box-sizing: border-box;
   padding: 20px;
   background: rgba(255, 255, 255, 0.01);
@@ -2289,8 +2290,8 @@ section {
 
 .practicum-slide-container {
   display: flex;
+  align-items: start !important;
   justify-content: space-between;
-  align-items: start;
   gap: 20px;
 }
 
@@ -2329,6 +2330,7 @@ section {
   margin-right: 0;
   min-height: 320px;
   padding: 20px;
+  align-content: start !important;
   border: none;
   background: rgba(255, 255, 255, 0.01);
 }
@@ -2362,7 +2364,6 @@ section {
 .innovation-labs-container .practicum-slide-content {
   max-width: 100% !important;
   overflow: hidden;
-  margin-bottom: 60px;
 }
 
 .innovation-labs-container .practicum-slide-item p {
@@ -2390,6 +2391,7 @@ section {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
   gap: 20px !important;
+  align-items: start !important;
   width: 100%;
   place-items: center !important;
 }
@@ -2397,13 +2399,15 @@ section {
 .innovation-labs-container.modified-pacticum-slide-container.grid-auto.grid-center {
   display: grid !important;
   grid-template-columns: repeat(2, 320px) !important;
+  align-content: start !important;
   gap: 200px !important;
   width: 100%;
   place-content: center !important;
 }
 
 .modified-pacticum-slide-container.product-acceleration-container
-  .practicum-slide-item {
+  .practicum-slide-item,
+.modified-pacticum-slide-container.height-fit .practicum-slide-item {
   min-height: 200px !important;
   max-width: 400px !important;
 }
@@ -2413,4 +2417,8 @@ section {
   gap: 200px !important;
   width: 100%;
   place-content: center !important;
+}
+
+.fort-swiper-container .practicum-text-container {
+  margin-top: 0px !important;
 }
