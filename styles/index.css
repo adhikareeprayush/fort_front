@@ -321,8 +321,8 @@ section {
 }
 
 .hero-right {
-  font-size: clamp(1.2rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-size: 28pt;
+  font-weight: 500;
   line-height: 1.2;
   width: 60%;
   text-align: left;

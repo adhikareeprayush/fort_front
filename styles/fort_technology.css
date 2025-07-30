@@ -311,8 +311,8 @@ section {
 }
 
 .hero-right p {
-  font-size: 32pt;
-  font-weight: 700;
+  font-size: 28pt;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 0;
   color: #fff;
@@ -909,7 +909,7 @@ section {
   cursor: pointer;
 }
 .tab-header p {
-  font-size: 15px;
+  font-size: 20px; /* Reduced from 24px */
   line-height: 24px; /* Reduced from 28.8px */
   font-weight: 400;
 }
