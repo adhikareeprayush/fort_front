@@ -1903,6 +1903,7 @@ section {
   padding: 20px;
   height: 320px;
   color: white;
+  padding-inline: 40px !important;
 }
 
 .card-black img {
@@ -1914,10 +1915,19 @@ section {
 
 .card-black h3 {
   color: #e50012;
-  font-size: 28px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.2;
+}
+
+.card-black-container p,
+.practicum-slide-content p {
+  font-size: 18px !important;
+  line-height: 22px;
+  text-align: left;
+  color: white;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
