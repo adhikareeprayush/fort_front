@@ -2430,3 +2430,8 @@ section {
 .innovation-labs-container .innovation-header-row {
   align-items: start !important;
 }
+
+.practicum-slide-content h3 {
+  font-size: 32px !important;
+  line-height: normal !important;
+}
