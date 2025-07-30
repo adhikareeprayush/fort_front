@@ -310,7 +310,7 @@ section {
 
 .hero-title {
   color: #e50012;
-  font-size: 90px;
+  font-size: 98px;
   font-weight: 900;
   margin-bottom: 0.3rem;
   text-transform: uppercase;
@@ -320,7 +320,7 @@ section {
 
 .hero-subtitle {
   color: #fff;
-  font-size: 28pt;
+  font-size: 30pt;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
@@ -913,7 +913,7 @@ section {
   /* Override Bootstrap padding classes */
   padding: 10px !important; /* Reduce from p-4 py-5 (24px + 48px top/bottom) */
 }
-
+/* 
 .practicum-container::before {
   content: "";
   position: absolute;
@@ -923,7 +923,7 @@ section {
   height: 3px;
   background: linear-gradient(90deg, #e50012, #ff4444, #e50012);
   z-index: 1;
-}
+} */
 
 .practicum-left {
   margin: 0;
@@ -2278,7 +2278,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.3; /* 👈 Set your desired background opacity here */
+  opacity: 0.5; /* 👈 Set your desired background opacity here */
   z-index: -1;
 }
 
@@ -2421,4 +2421,12 @@ section {
 
 .fort-swiper-container .practicum-text-container {
   margin-top: 0px !important;
+}
+
+.innovation-labs-container img {
+  height: 180px !important;
+}
+
+.innovation-labs-container .innovation-header-row {
+  align-items: start !important;
 }
