@@ -1620,7 +1620,7 @@ section {
 }
 
 /* Responsive adjustments for diagram positioning */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .compass-section .diagram-container {
     padding-left: 40px;
   }
@@ -1631,7 +1631,7 @@ section {
     padding-left: 15px;
     text-align: center;
   }
-}
+} */
 
 /* Common Elements Responsive Styles */
 @media (max-width: 768px) {
@@ -1993,4 +1993,25 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 60px;
+}
+
+.compass-diagram-container {
+  position: relative;
+}
+
+.compass-diagram-container .inner-image {
+  position: absolute;
+  top: 52%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+
+.compass-diagram-container .inner-last-img {
+  position: absolute;
+  top: 52%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: -1;
 }
