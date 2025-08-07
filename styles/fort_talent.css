@@ -1239,6 +1239,7 @@ section {
 .metrics-item {
   display: flex;
   align-items: center;
+  width: fit-content;
   gap: 5px;
 }
 .metrics-number {
@@ -1996,31 +1997,31 @@ section {
   width: 35%;
 }
 .table tbody tr td:first-child {
-  font-size: 18px; /* Reduced from 20px */
+  font-size: 24px;
   font-weight: 600;
-  line-height: 1.3; /* Reduced from 1.4 */
+  line-height: 1.3;
 }
 
 .table tbody {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-size: 16px; /* Reduced from 18px */
-  line-height: 1.4; /* Reduced from 1.5 */
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .table th {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 18px; /* Reduced from 20px */
+  font-size: 24px;
   display: flex;
   align-items: center;
-  padding: 8px 0; /* Reduced from 10px */
+  padding: 8px 0;
 }
 
 .table th p {
-  font-size: 32px; /* Reduced from 20px */
-  line-height: 1.2; /* Reduced from 1.3 */
+  font-size: 32px;
+  line-height: 1.2;
   font-weight: 700;
 }
 
@@ -2055,13 +2056,13 @@ section {
   text-transform: uppercase;
   font-weight: 600;
   padding: 12px 0px; /* Reduced from 15px */
-  font-size: 16px; /* Reduced from 18px */
+  font-size: 20px; /* Reduced from 18px */
   line-height: 1.2; /* Reduced from 1.3 */
 }
 .double-row {
   display: flex !important;
   align-items: center;
-  font-size: 16px; /* Reduced from 18px */
+  font-size: 24px;
   line-height: 1.3; /* Reduced from 1.4 */
 }
 .double-row > div:first-child {
@@ -2122,7 +2123,7 @@ section {
 
 /* Outcome text optimization */
 .outcome-tab p {
-  font-size: 15px !important; /* Reduced font size */
+  font-size: 20px !important; /* Reduced font size */
   line-height: 1.3 !important; /* Tighter line height */
   margin: 0 !important; /* Remove default margins */
 }
@@ -2140,6 +2141,10 @@ section {
   height: auto;
   object-fit: contain;
   display: block;
+}
+
+.tab-image ul li {
+  font-size: 20px !important;
 }
 
 /* Fix table sizing */
@@ -2360,10 +2365,10 @@ section {
   min-width: 100% !important;
 }
 
-.innovation-labs-container .practicum-slide-content {
+/* .innovation-labs-container .practicum-slide-content {
   max-width: 100% !important;
   overflow: hidden;
-}
+} */
 
 .innovation-labs-container .practicum-slide-item p {
   font-size: 14px;
@@ -2380,9 +2385,14 @@ section {
   line-height: 24px; /* 133.051% */
 }
 
+.innovation-labs-container.modified-pacticum-slide-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+}
+
 @media (min-width: 1600px) {
   .innovation-labs-container.modified-pacticum-slide-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
   }
 }
 /* @media (max-width: 1600px) {
@@ -2438,4 +2448,13 @@ section {
 .practicum-slide-content h3 {
   font-size: 32px !important;
   line-height: normal !important;
+}
+
+@media (max-width: 770px) {
+  .metrics-start {
+    align-items: start !important;
+  }
+  .metrics-start .col-12.col-md-6.col-lg-4.row.justify-content-center {
+    justify-content: start !important;
+  }
 }
