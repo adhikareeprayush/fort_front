@@ -151,7 +151,7 @@ section {
   font-size: 24px;
   text-transform: uppercase;
   font-family: "Akhand", sans-serif !important;
-  font-weight: normal;
+  font-weight: 600;
 }
 .nav-item:hover {
   color: #e50012;
@@ -312,15 +312,14 @@ section {
   color: #e50012;
   font-size: 98px;
   font-weight: 900;
-  margin-bottom: 0.3rem;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 0.9;
   text-align: left;
 }
 
 .hero-subtitle {
   color: #fff;
-  font-size: 30pt;
+  font-size: 24pt;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
@@ -335,7 +334,7 @@ section {
 }
 
 .hero-right p {
-  font-size: 28pt;
+  font-size: 32pt;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
@@ -2383,9 +2382,14 @@ section {
 
 @media (min-width: 1600px) {
   .innovation-labs-container.modified-pacticum-slide-container {
-    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
   }
 }
+/* @media (max-width: 1600px) {
+  .innovation-labs-container.modified-pacticum-slide-container {
+    grid-template-columns: repeat(2, minmax(300px, 1fr)) !important;
+  }
+} */
 
 .innovation-labs-container.modified-pacticum-slide-container.grid-auto {
   display: grid !important;
