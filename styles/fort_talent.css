@@ -1014,9 +1014,9 @@ section {
   text-align: left !important;
   margin: 0 !important;
   padding: 0 !important;
-  word-wrap: break-word;
+  /* word-wrap: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  hyphens: auto; */
   width: 100%;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -2020,7 +2020,7 @@ section {
 }
 
 .table th p {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -2467,4 +2467,10 @@ section {
   .metrics-start .col-12.col-md-6.col-lg-4.row.justify-content-center {
     justify-content: start !important;
   }
+}
+
+table td,
+table td .outcome-tab p {
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
