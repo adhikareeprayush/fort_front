@@ -2147,6 +2147,12 @@ section {
   font-size: 20px !important;
 }
 
+.tab-image h2 {
+  font-size: 32px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+}
+
 /* Fix table sizing */
 .tab-slide {
   display: flex !important;
@@ -2326,7 +2332,7 @@ section {
 /* modified-pacticum-slide-container */
 .modified-pacticum-slide-container {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
 }
 
 .modified-pacticum-slide-container .practicum-slide-item {
@@ -2347,7 +2353,7 @@ section {
   font-family: "Roboto", sans-serif !important;
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 150% */
@@ -2384,16 +2390,20 @@ section {
   color: white;
   line-height: 24px; /* 133.051% */
 }
-
+/* 
 .innovation-labs-container.modified-pacticum-slide-container {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
-}
+} */
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .innovation-labs-container.modified-pacticum-slide-container {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    grid-template-columns: repeat(5, minmax(207px, 1fr)) !important;
   }
+}
+.innovation-labs-container.modified-pacticum-slide-container
+  .innovation-header-row.d-flex.flex-column.align-items-center.mb-0 {
+  max-width: 100% !important;
 }
 /* @media (max-width: 1600px) {
   .innovation-labs-container.modified-pacticum-slide-container {

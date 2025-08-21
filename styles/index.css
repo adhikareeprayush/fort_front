@@ -852,11 +852,28 @@ section {
   color: white;
 }
 
+.metrics-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.metrics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 60px;
+  width: 100% !important;
+}
+
 .metrics-item {
   display: flex;
   align-items: center;
-  gap: 5px;
+  width: fit-content;
+  gap: 15px;
+  text-align: center;
 }
+
 .metrics-number {
   display: flex;
   align-items: center;
@@ -872,6 +889,52 @@ section {
 .metrics-text {
   font-size: 24px;
   line-height: 26px;
+}
+
+/* Responsive styles for metrics grid */
+@media (max-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+  }
+
+  .metrics-number h1 {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  .metrics-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .metrics-number h1 {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .metrics-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .metrics-number h1 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .metrics-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 /* partners */
@@ -1273,4 +1336,50 @@ section {
   color: #e50012;
   margin-bottom: 24px;
   letter-spacing: 0.5px;
+}
+
+@media (min-width: 1080px) {
+  .metrics-item {
+    width: 33.335 !important;
+  }
+
+  @media (max-width: 1200px) {
+    .metrics-flex {
+      display: flex;
+      flex-direction: row !important;
+      flex-wrap: important !important;
+      width: 100% !important;
+      justify-content: space-between !important;
+    }
+  }
+}
+
+section.section-show-1248,
+section.section-hide-1248 {
+  display: flex;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+section.section-show-1248 {
+  display: none !important;
+}
+
+section.section-hide-1248 {
+  display: flex !important;
+}
+
+@media (max-width: 1248px) {
+  .metrics-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+  }
+
+  section.section-hide-1248 {
+    display: none !important;
+  }
+
+  section.section-show-1248 {
+    display: flex !important;
+  }
 }
