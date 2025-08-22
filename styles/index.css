@@ -888,6 +888,7 @@ section {
 
 .metrics-text {
   font-size: 24px;
+  text-align: left !important;
   line-height: 26px;
 }
 
