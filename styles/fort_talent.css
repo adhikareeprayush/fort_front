@@ -2474,3 +2474,31 @@ table td .outcome-tab p {
   font-size: 18px !important;
   font-weight: 500 !important;
 }
+
+.practicum-slide-container.modified-pacticum-slide-container {
+  display: flex !important;
+  gap: 40px !important;
+  align-items: start !important;
+  justify-content: center !important;
+  width: 100%;
+}
+
+.modified-swiper .swiper-wrapper {
+  display: flex !important;
+  width: 100% !important;
+  align-items: start !important;
+  justify-content: start !important;
+}
+
+.modified-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.modified-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
