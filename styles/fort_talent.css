@@ -2486,13 +2486,13 @@ table td .outcome-tab p {
 .modified-prev {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 20px;
   transform: translateY(-50%);
 }
 .modified-next {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   transform: translateY(-50%);
 }
 
